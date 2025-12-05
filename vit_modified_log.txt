@@ -1,0 +1,4177 @@
+(Computer_Vision) D:\Projects\aol-cv-dl\dementia dataset>python vit.py
+Using device: cuda
+
+==================================================
+Step 1: Stratified K-fold Cross-Validation
+==================================================
+
+Starting K-fold Cross Validation...
+Class distribution - Negative: 2720, Positive: 680
+Using positive weight of 4.0000 for weighted loss
+
+==================================================
+Fold 1/10
+==================================================
+Applying SMOTE to balance the dataset...
+Original class distribution: Counter({0: 2448, 1: 612})
+Resampled class distribution: Counter({0: 2448, 1: 2448})
+
+Epoch 1/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 1.4048 | Acc: 0.4947 | F1: 0.6396 | AUC: 0.5867
+Val   | Loss: 1.2859 | Acc: 0.2118 | F1: 0.3366 | AUC: 0.6987
+*** New best model for Fold 1 saved with Val F1: 0.3366 at epoch 1 ***
+EarlyStopping: Best score set to 0.336634
+
+Epoch 2/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 1.0874 | Acc: 0.5923 | F1: 0.7062 | AUC: 0.7246
+Val   | Loss: 1.1927 | Acc: 0.4265 | F1: 0.4000 | AUC: 0.7210
+*** New best model for Fold 1 saved with Val F1: 0.4000 at epoch 2 ***
+EarlyStopping: Validation score improved (0.336634 --> 0.400000). Resetting counter.
+
+Epoch 3/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 1.0514 | Acc: 0.6238 | F1: 0.7195 | AUC: 0.7433
+Val   | Loss: 1.2505 | Acc: 0.4147 | F1: 0.3951 | AUC: 0.7398
+EarlyStopping counter: 1 out of 10
+
+Epoch 4/50
+------------------------------
+Current learning rate: 0.000040
+Train | Loss: 0.9798 | Acc: 0.6589 | F1: 0.7389 | AUC: 0.7859
+Val   | Loss: 1.2078 | Acc: 0.4000 | F1: 0.3964 | AUC: 0.7647
+EarlyStopping counter: 2 out of 10
+
+Epoch 5/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.9747 | Acc: 0.6657 | F1: 0.7445 | AUC: 0.7762
+Val   | Loss: 1.0336 | Acc: 0.5118 | F1: 0.4430 | AUC: 0.7832
+*** New best model for Fold 1 saved with Val F1: 0.4430 at epoch 5 ***
+EarlyStopping: Validation score improved (0.400000 --> 0.442953). Resetting counter.
+
+Epoch 6/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.9032 | Acc: 0.6931 | F1: 0.7599 | AUC: 0.8158
+Val   | Loss: 1.2265 | Acc: 0.4706 | F1: 0.4231 | AUC: 0.8018
+EarlyStopping counter: 1 out of 10
+
+Epoch 7/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.8284 | Acc: 0.7253 | F1: 0.7807 | AUC: 0.8424
+Val   | Loss: 1.2256 | Acc: 0.4382 | F1: 0.4123 | AUC: 0.8273
+EarlyStopping counter: 2 out of 10
+
+Epoch 8/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.7745 | Acc: 0.7457 | F1: 0.7937 | AUC: 0.8654
+Val   | Loss: 0.9574 | Acc: 0.5647 | F1: 0.4752 | AUC: 0.8426
+*** New best model for Fold 1 saved with Val F1: 0.4752 at epoch 8 ***
+EarlyStopping: Validation score improved (0.442953 --> 0.475177). Resetting counter.
+
+Epoch 9/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.7684 | Acc: 0.7473 | F1: 0.7949 | AUC: 0.8687
+Val   | Loss: 0.7197 | Acc: 0.7265 | F1: 0.5592 | AUC: 0.8667
+*** New best model for Fold 1 saved with Val F1: 0.5592 at epoch 9 ***
+EarlyStopping: Validation score improved (0.475177 --> 0.559242). Resetting counter.
+
+Epoch 10/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.6994 | Acc: 0.7720 | F1: 0.8104 | AUC: 0.8966
+Val   | Loss: 0.7808 | Acc: 0.6853 | F1: 0.5408 | AUC: 0.8589
+EarlyStopping counter: 1 out of 10
+
+Epoch 11/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.6596 | Acc: 0.7878 | F1: 0.8209 | AUC: 0.9077
+Val   | Loss: 0.8157 | Acc: 0.6676 | F1: 0.5311 | AUC: 0.8915
+EarlyStopping counter: 2 out of 10
+
+Epoch 12/50
+------------------------------
+Current learning rate: 0.000048
+Train | Loss: 0.5872 | Acc: 0.8098 | F1: 0.8373 | AUC: 0.9273
+Val   | Loss: 0.6034 | Acc: 0.8029 | F1: 0.6417 | AUC: 0.9119
+*** New best model for Fold 1 saved with Val F1: 0.6417 at epoch 12 ***
+EarlyStopping: Validation score improved (0.559242 --> 0.641711). Resetting counter.
+
+Epoch 13/50
+------------------------------
+Current learning rate: 0.000047
+Train | Loss: 0.6165 | Acc: 0.8063 | F1: 0.8344 | AUC: 0.9224
+Val   | Loss: 0.7005 | Acc: 0.7471 | F1: 0.5943 | AUC: 0.9015
+EarlyStopping counter: 1 out of 10
+
+Epoch 14/50
+------------------------------
+Current learning rate: 0.000046
+Train | Loss: 0.5159 | Acc: 0.8382 | F1: 0.8574 | AUC: 0.9478
+Val   | Loss: 0.5884 | Acc: 0.7647 | F1: 0.6078 | AUC: 0.9345
+EarlyStopping counter: 2 out of 10
+
+Epoch 15/50
+------------------------------
+Current learning rate: 0.000045
+Train | Loss: 0.4970 | Acc: 0.8512 | F1: 0.8680 | AUC: 0.9501
+Val   | Loss: 0.5405 | Acc: 0.8118 | F1: 0.6632 | AUC: 0.9424
+*** New best model for Fold 1 saved with Val F1: 0.6632 at epoch 15 ***
+EarlyStopping: Validation score improved (0.641711 --> 0.663158). Resetting counter.
+
+Epoch 16/50
+------------------------------
+Current learning rate: 0.000044
+Train | Loss: 0.4065 | Acc: 0.8766 | F1: 0.8879 | AUC: 0.9690
+Val   | Loss: 0.5987 | Acc: 0.7912 | F1: 0.6396 | AUC: 0.9314
+EarlyStopping counter: 1 out of 10
+
+Epoch 17/50
+------------------------------
+Current learning rate: 0.000043
+Train | Loss: 0.3744 | Acc: 0.8956 | F1: 0.9037 | AUC: 0.9711
+Val   | Loss: 0.4606 | Acc: 0.8500 | F1: 0.7119 | AUC: 0.9557
+*** New best model for Fold 1 saved with Val F1: 0.7119 at epoch 17 ***
+EarlyStopping: Validation score improved (0.663158 --> 0.711864). Resetting counter.
+
+Epoch 18/50
+------------------------------
+Current learning rate: 0.000042
+Train | Loss: 0.4143 | Acc: 0.8771 | F1: 0.8878 | AUC: 0.9672
+Val   | Loss: 0.3628 | Acc: 0.9059 | F1: 0.7949 | AUC: 0.9685
+*** New best model for Fold 1 saved with Val F1: 0.7949 at epoch 18 ***
+EarlyStopping: Validation score improved (0.711864 --> 0.794872). Resetting counter.
+
+Epoch 19/50
+------------------------------
+Current learning rate: 0.000041
+Train | Loss: 0.3395 | Acc: 0.8966 | F1: 0.9046 | AUC: 0.9791
+Val   | Loss: 0.6731 | Acc: 0.7588 | F1: 0.6239 | AUC: 0.9588
+EarlyStopping counter: 1 out of 10
+
+Epoch 20/50
+------------------------------
+Current learning rate: 0.000039
+Train | Loss: 0.3144 | Acc: 0.9071 | F1: 0.9132 | AUC: 0.9820
+Val   | Loss: 0.3363 | Acc: 0.9029 | F1: 0.7950 | AUC: 0.9740
+*** New best model for Fold 1 saved with Val F1: 0.7950 at epoch 20 ***
+EarlyStopping: Validation score improved (0.794872 --> 0.795031). Resetting counter.
+
+Epoch 21/50
+------------------------------
+Current learning rate: 0.000038
+Train | Loss: 0.2401 | Acc: 0.9356 | F1: 0.9389 | AUC: 0.9884
+Val   | Loss: 0.3749 | Acc: 0.8912 | F1: 0.7730 | AUC: 0.9712
+EarlyStopping counter: 1 out of 10
+
+Epoch 22/50
+------------------------------
+Current learning rate: 0.000036
+Train | Loss: 0.2962 | Acc: 0.9176 | F1: 0.9224 | AUC: 0.9840
+Val   | Loss: 0.2970 | Acc: 0.9235 | F1: 0.8289 | AUC: 0.9798
+*** New best model for Fold 1 saved with Val F1: 0.8289 at epoch 22 ***
+EarlyStopping: Validation score improved (0.795031 --> 0.828947). Resetting counter.
+
+Epoch 23/50
+------------------------------
+Current learning rate: 0.000035
+Train | Loss: 0.2312 | Acc: 0.9373 | F1: 0.9402 | AUC: 0.9904
+Val   | Loss: 0.3191 | Acc: 0.9265 | F1: 0.8366 | AUC: 0.9773
+*** New best model for Fold 1 saved with Val F1: 0.8366 at epoch 23 ***
+EarlyStopping: Validation score improved (0.828947 --> 0.836601). Resetting counter.
+
+Epoch 24/50
+------------------------------
+Current learning rate: 0.000033
+Train | Loss: 0.1870 | Acc: 0.9531 | F1: 0.9547 | AUC: 0.9931
+Val   | Loss: 0.3086 | Acc: 0.9206 | F1: 0.8258 | AUC: 0.9806
+EarlyStopping counter: 1 out of 10
+
+Epoch 25/50
+------------------------------
+Current learning rate: 0.000031
+Train | Loss: 0.1641 | Acc: 0.9537 | F1: 0.9554 | AUC: 0.9954
+Val   | Loss: 0.2538 | Acc: 0.9265 | F1: 0.8387 | AUC: 0.9861
+*** New best model for Fold 1 saved with Val F1: 0.8387 at epoch 25 ***
+EarlyStopping: Validation score improved (0.836601 --> 0.838710). Resetting counter.
+
+Epoch 26/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 0.1325 | Acc: 0.9638 | F1: 0.9648 | AUC: 0.9967
+Val   | Loss: 0.2343 | Acc: 0.9294 | F1: 0.8462 | AUC: 0.9894
+*** New best model for Fold 1 saved with Val F1: 0.8462 at epoch 26 ***
+EarlyStopping: Validation score improved (0.838710 --> 0.846154). Resetting counter.
+
+Epoch 27/50
+------------------------------
+Current learning rate: 0.000028
+Train | Loss: 0.1689 | Acc: 0.9564 | F1: 0.9578 | AUC: 0.9941
+Val   | Loss: 0.2472 | Acc: 0.9412 | F1: 0.8684 | AUC: 0.9863
+*** New best model for Fold 1 saved with Val F1: 0.8684 at epoch 27 ***
+EarlyStopping: Validation score improved (0.846154 --> 0.868421). Resetting counter.
+
+Epoch 28/50
+------------------------------
+Current learning rate: 0.000026
+Train | Loss: 0.1189 | Acc: 0.9685 | F1: 0.9693 | AUC: 0.9974
+Val   | Loss: 0.2403 | Acc: 0.9382 | F1: 0.8627 | AUC: 0.9889
+EarlyStopping counter: 1 out of 10
+
+Epoch 29/50
+------------------------------
+Current learning rate: 0.000025
+Train | Loss: 0.1207 | Acc: 0.9688 | F1: 0.9694 | AUC: 0.9969
+Val   | Loss: 0.1918 | Acc: 0.9676 | F1: 0.9220 | AUC: 0.9923
+*** New best model for Fold 1 saved with Val F1: 0.9220 at epoch 29 ***
+EarlyStopping: Validation score improved (0.868421 --> 0.921986). Resetting counter.
+
+Epoch 30/50
+------------------------------
+Current learning rate: 0.000023
+Train | Loss: 0.0986 | Acc: 0.9762 | F1: 0.9765 | AUC: 0.9982
+Val   | Loss: 0.2049 | Acc: 0.9324 | F1: 0.8497 | AUC: 0.9924
+EarlyStopping counter: 1 out of 10
+
+Epoch 31/50
+------------------------------
+Current learning rate: 0.000021
+Train | Loss: 0.0985 | Acc: 0.9772 | F1: 0.9776 | AUC: 0.9981
+Val   | Loss: 0.2205 | Acc: 0.9765 | F1: 0.9420 | AUC: 0.9921
+*** New best model for Fold 1 saved with Val F1: 0.9420 at epoch 31 ***
+EarlyStopping: Validation score improved (0.921986 --> 0.942029). Resetting counter.
+
+Epoch 32/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 0.1038 | Acc: 0.9706 | F1: 0.9712 | AUC: 0.9982
+Val   | Loss: 0.2360 | Acc: 0.9324 | F1: 0.8535 | AUC: 0.9917
+EarlyStopping counter: 1 out of 10
+
+Epoch 33/50
+------------------------------
+Current learning rate: 0.000018
+Train | Loss: 0.0832 | Acc: 0.9780 | F1: 0.9783 | AUC: 0.9987
+Val   | Loss: 0.1853 | Acc: 0.9706 | F1: 0.9286 | AUC: 0.9937
+EarlyStopping counter: 2 out of 10
+
+Epoch 34/50
+------------------------------
+Current learning rate: 0.000016
+Train | Loss: 0.0803 | Acc: 0.9809 | F1: 0.9811 | AUC: 0.9983
+Val   | Loss: 0.1996 | Acc: 0.9618 | F1: 0.9103 | AUC: 0.9908
+EarlyStopping counter: 3 out of 10
+
+Epoch 35/50
+------------------------------
+Current learning rate: 0.000015
+Train | Loss: 0.0708 | Acc: 0.9838 | F1: 0.9839 | AUC: 0.9990
+Val   | Loss: 0.2016 | Acc: 0.9353 | F1: 0.8590 | AUC: 0.9961
+EarlyStopping counter: 4 out of 10
+
+Epoch 36/50
+------------------------------
+Current learning rate: 0.000013
+Train | Loss: 0.0738 | Acc: 0.9852 | F1: 0.9854 | AUC: 0.9988
+Val   | Loss: 0.1881 | Acc: 0.9676 | F1: 0.9220 | AUC: 0.9906
+EarlyStopping counter: 5 out of 10
+
+Epoch 37/50
+------------------------------
+Current learning rate: 0.000012
+Train | Loss: 0.0524 | Acc: 0.9860 | F1: 0.9861 | AUC: 0.9992
+Val   | Loss: 0.1621 | Acc: 0.9853 | F1: 0.9635 | AUC: 0.9939
+*** New best model for Fold 1 saved with Val F1: 0.9635 at epoch 37 ***
+EarlyStopping: Validation score improved (0.942029 --> 0.963504). Resetting counter.
+
+Epoch 38/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 0.0509 | Acc: 0.9881 | F1: 0.9882 | AUC: 0.9996
+Val   | Loss: 0.1800 | Acc: 0.9824 | F1: 0.9565 | AUC: 0.9917
+EarlyStopping counter: 1 out of 10
+
+Epoch 39/50
+------------------------------
+Current learning rate: 0.000009
+Train | Loss: 0.0422 | Acc: 0.9897 | F1: 0.9898 | AUC: 0.9997
+Val   | Loss: 0.1849 | Acc: 0.9853 | F1: 0.9635 | AUC: 0.9909
+EarlyStopping counter: 2 out of 10
+
+Epoch 40/50
+------------------------------
+Current learning rate: 0.000008
+Train | Loss: 0.0545 | Acc: 0.9870 | F1: 0.9871 | AUC: 0.9991
+Val   | Loss: 0.1362 | Acc: 0.9824 | F1: 0.9565 | AUC: 0.9932
+EarlyStopping counter: 3 out of 10
+
+Epoch 41/50
+------------------------------
+Current learning rate: 0.000007
+Train | Loss: 0.0392 | Acc: 0.9901 | F1: 0.9902 | AUC: 0.9997
+Val   | Loss: 0.1828 | Acc: 0.9794 | F1: 0.9496 | AUC: 0.9912
+EarlyStopping counter: 4 out of 10
+
+Epoch 42/50
+------------------------------
+Current learning rate: 0.000006
+Train | Loss: 0.0371 | Acc: 0.9905 | F1: 0.9906 | AUC: 0.9998
+Val   | Loss: 0.1456 | Acc: 0.9765 | F1: 0.9429 | AUC: 0.9936
+EarlyStopping counter: 5 out of 10
+
+Epoch 43/50
+------------------------------
+Current learning rate: 0.000005
+Train | Loss: 0.0494 | Acc: 0.9897 | F1: 0.9898 | AUC: 0.9996
+Val   | Loss: 0.1454 | Acc: 0.9794 | F1: 0.9496 | AUC: 0.9930
+EarlyStopping counter: 6 out of 10
+
+Epoch 44/50
+------------------------------
+Current learning rate: 0.000004
+Train | Loss: 0.0430 | Acc: 0.9912 | F1: 0.9912 | AUC: 0.9996
+Val   | Loss: 0.1421 | Acc: 0.9853 | F1: 0.9635 | AUC: 0.9943
+EarlyStopping counter: 7 out of 10
+
+Epoch 45/50
+------------------------------
+Current learning rate: 0.000003
+Train | Loss: 0.0332 | Acc: 0.9920 | F1: 0.9920 | AUC: 0.9998
+Val   | Loss: 0.1438 | Acc: 0.9765 | F1: 0.9429 | AUC: 0.9952
+EarlyStopping counter: 8 out of 10
+
+Epoch 46/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0328 | Acc: 0.9916 | F1: 0.9916 | AUC: 0.9999
+Val   | Loss: 0.1564 | Acc: 0.9794 | F1: 0.9496 | AUC: 0.9948
+EarlyStopping counter: 9 out of 10
+
+Epoch 47/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0295 | Acc: 0.9924 | F1: 0.9924 | AUC: 0.9999
+Val   | Loss: 0.1627 | Acc: 0.9735 | F1: 0.9362 | AUC: 0.9943
+EarlyStopping counter: 10 out of 10
+Early stopping triggered at epoch 47 for Fold 1
+Using best standard model state from Fold 1 (Val F1: 0.9635)
+Saved training history plot to D:\Projects\aol-cv-dl\dementia dataset\plots\tuned_v2\training_metrics_fold_1_20251205-125957.png
+--------------------------------------------------
+
+==================================================
+Fold 2/10
+==================================================
+Applying SMOTE to balance the dataset...
+Original class distribution: Counter({0: 2448, 1: 612})
+Resampled class distribution: Counter({0: 2448, 1: 2448})
+
+Epoch 1/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 1.3261 | Acc: 0.4942 | F1: 0.6432 | AUC: 0.6015
+Val   | Loss: 1.3504 | Acc: 0.2147 | F1: 0.3375 | AUC: 0.7275
+*** New best model for Fold 2 saved with Val F1: 0.3375 at epoch 1 ***
+EarlyStopping: Best score set to 0.337469
+
+Epoch 2/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 1.0964 | Acc: 0.5900 | F1: 0.7037 | AUC: 0.7252
+Val   | Loss: 1.2060 | Acc: 0.3941 | F1: 0.3977 | AUC: 0.7750
+*** New best model for Fold 2 saved with Val F1: 0.3977 at epoch 2 ***
+EarlyStopping: Validation score improved (0.337469 --> 0.397661). Resetting counter.
+
+Epoch 3/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 1.0532 | Acc: 0.6186 | F1: 0.7181 | AUC: 0.7467
+Val   | Loss: 1.0062 | Acc: 0.5559 | F1: 0.4588 | AUC: 0.7857
+*** New best model for Fold 2 saved with Val F1: 0.4588 at epoch 3 ***
+EarlyStopping: Validation score improved (0.397661 --> 0.458781). Resetting counter.
+
+Epoch 4/50
+------------------------------
+Current learning rate: 0.000040
+Train | Loss: 1.0105 | Acc: 0.6441 | F1: 0.7309 | AUC: 0.7671
+Val   | Loss: 1.0092 | Acc: 0.4824 | F1: 0.4323 | AUC: 0.8276
+EarlyStopping counter: 1 out of 10
+
+Epoch 5/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.9772 | Acc: 0.6626 | F1: 0.7419 | AUC: 0.7751
+Val   | Loss: 1.0183 | Acc: 0.4941 | F1: 0.4379 | AUC: 0.8289
+EarlyStopping counter: 2 out of 10
+
+Epoch 6/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.9490 | Acc: 0.6684 | F1: 0.7458 | AUC: 0.7980
+Val   | Loss: 1.0236 | Acc: 0.5735 | F1: 0.4689 | AUC: 0.8251
+*** New best model for Fold 2 saved with Val F1: 0.4689 at epoch 6 ***
+EarlyStopping: Validation score improved (0.458781 --> 0.468864). Resetting counter.
+
+Epoch 7/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.8606 | Acc: 0.7142 | F1: 0.7724 | AUC: 0.8355
+Val   | Loss: 0.9627 | Acc: 0.5500 | F1: 0.4632 | AUC: 0.8513
+EarlyStopping counter: 1 out of 10
+
+Epoch 8/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.8125 | Acc: 0.7290 | F1: 0.7827 | AUC: 0.8503
+Val   | Loss: 1.3264 | Acc: 0.4324 | F1: 0.4134 | AUC: 0.8872
+EarlyStopping counter: 2 out of 10
+
+Epoch 9/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.7981 | Acc: 0.7381 | F1: 0.7869 | AUC: 0.8656
+Val   | Loss: 1.4844 | Acc: 0.3971 | F1: 0.3988 | AUC: 0.8865
+EarlyStopping counter: 3 out of 10
+
+Epoch 10/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.7460 | Acc: 0.7545 | F1: 0.7980 | AUC: 0.8810
+Val   | Loss: 0.7814 | Acc: 0.6235 | F1: 0.5152 | AUC: 0.9065
+*** New best model for Fold 2 saved with Val F1: 0.5152 at epoch 10 ***
+EarlyStopping: Validation score improved (0.468864 --> 0.515152). Resetting counter.
+
+Epoch 11/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.6827 | Acc: 0.7831 | F1: 0.8186 | AUC: 0.8996
+Val   | Loss: 0.7194 | Acc: 0.6471 | F1: 0.5312 | AUC: 0.9348
+*** New best model for Fold 2 saved with Val F1: 0.5312 at epoch 11 ***
+EarlyStopping: Validation score improved (0.515152 --> 0.531250). Resetting counter.
+
+Epoch 12/50
+------------------------------
+Current learning rate: 0.000048
+Train | Loss: 0.6145 | Acc: 0.8072 | F1: 0.8353 | AUC: 0.9191
+Val   | Loss: 1.0378 | Acc: 0.5206 | F1: 0.4512 | AUC: 0.9047
+EarlyStopping counter: 1 out of 10
+
+Epoch 13/50
+------------------------------
+Current learning rate: 0.000047
+Train | Loss: 0.6319 | Acc: 0.8026 | F1: 0.8312 | AUC: 0.9181
+Val   | Loss: 0.7703 | Acc: 0.6941 | F1: 0.5630 | AUC: 0.9454
+*** New best model for Fold 2 saved with Val F1: 0.5630 at epoch 13 ***
+EarlyStopping: Validation score improved (0.531250 --> 0.563025). Resetting counter.
+
+Epoch 14/50
+------------------------------
+Current learning rate: 0.000046
+Train | Loss: 0.5448 | Acc: 0.8244 | F1: 0.8476 | AUC: 0.9413
+Val   | Loss: 0.7611 | Acc: 0.6824 | F1: 0.5574 | AUC: 0.9527
+EarlyStopping counter: 1 out of 10
+
+Epoch 15/50
+------------------------------
+Current learning rate: 0.000045
+Train | Loss: 0.5060 | Acc: 0.8438 | F1: 0.8623 | AUC: 0.9462
+Val   | Loss: 0.5099 | Acc: 0.8118 | F1: 0.6768 | AUC: 0.9416
+*** New best model for Fold 2 saved with Val F1: 0.6768 at epoch 15 ***
+EarlyStopping: Validation score improved (0.563025 --> 0.676768). Resetting counter.
+
+Epoch 16/50
+------------------------------
+Current learning rate: 0.000044
+Train | Loss: 0.4932 | Acc: 0.8526 | F1: 0.8683 | AUC: 0.9527
+Val   | Loss: 0.5442 | Acc: 0.7794 | F1: 0.6377 | AUC: 0.9524
+EarlyStopping counter: 1 out of 10
+
+Epoch 17/50
+------------------------------
+Current learning rate: 0.000043
+Train | Loss: 0.4124 | Acc: 0.8738 | F1: 0.8859 | AUC: 0.9651
+Val   | Loss: 0.3794 | Acc: 0.8676 | F1: 0.7486 | AUC: 0.9676
+*** New best model for Fold 2 saved with Val F1: 0.7486 at epoch 17 ***
+EarlyStopping: Validation score improved (0.676768 --> 0.748603). Resetting counter.
+
+Epoch 18/50
+------------------------------
+Current learning rate: 0.000042
+Train | Loss: 0.3770 | Acc: 0.8882 | F1: 0.8978 | AUC: 0.9722
+Val   | Loss: 0.3873 | Acc: 0.8824 | F1: 0.7531 | AUC: 0.9604
+*** New best model for Fold 2 saved with Val F1: 0.7531 at epoch 18 ***
+EarlyStopping: Validation score improved (0.748603 --> 0.753086). Resetting counter.
+
+Epoch 19/50
+------------------------------
+Current learning rate: 0.000041
+Train | Loss: 0.4006 | Acc: 0.8795 | F1: 0.8900 | AUC: 0.9698
+Val   | Loss: 0.4250 | Acc: 0.8559 | F1: 0.7322 | AUC: 0.9678
+EarlyStopping counter: 1 out of 10
+
+Epoch 20/50
+------------------------------
+Current learning rate: 0.000039
+Train | Loss: 0.3269 | Acc: 0.9083 | F1: 0.9145 | AUC: 0.9795
+Val   | Loss: 0.3288 | Acc: 0.8853 | F1: 0.7665 | AUC: 0.9744
+*** New best model for Fold 2 saved with Val F1: 0.7665 at epoch 20 ***
+EarlyStopping: Validation score improved (0.753086 --> 0.766467). Resetting counter.
+
+Epoch 21/50
+------------------------------
+Current learning rate: 0.000038
+Train | Loss: 0.3509 | Acc: 0.9021 | F1: 0.9093 | AUC: 0.9760
+Val   | Loss: 0.2375 | Acc: 0.9118 | F1: 0.8193 | AUC: 0.9917
+*** New best model for Fold 2 saved with Val F1: 0.8193 at epoch 21 ***
+EarlyStopping: Validation score improved (0.766467 --> 0.819277). Resetting counter.
+
+Epoch 22/50
+------------------------------
+Current learning rate: 0.000036
+Train | Loss: 0.2531 | Acc: 0.9301 | F1: 0.9339 | AUC: 0.9880
+Val   | Loss: 0.3658 | Acc: 0.8647 | F1: 0.7473 | AUC: 0.9886
+EarlyStopping counter: 1 out of 10
+
+Epoch 23/50
+------------------------------
+Current learning rate: 0.000035
+Train | Loss: 0.2680 | Acc: 0.9260 | F1: 0.9300 | AUC: 0.9865
+Val   | Loss: 0.2570 | Acc: 0.9088 | F1: 0.8144 | AUC: 0.9893
+EarlyStopping counter: 2 out of 10
+
+Epoch 24/50
+------------------------------
+Current learning rate: 0.000033
+Train | Loss: 0.2480 | Acc: 0.9334 | F1: 0.9365 | AUC: 0.9880
+Val   | Loss: 0.2252 | Acc: 0.9176 | F1: 0.8293 | AUC: 0.9929
+*** New best model for Fold 2 saved with Val F1: 0.8293 at epoch 24 ***
+EarlyStopping: Validation score improved (0.819277 --> 0.829268). Resetting counter.
+
+Epoch 25/50
+------------------------------
+Current learning rate: 0.000031
+Train | Loss: 0.1920 | Acc: 0.9447 | F1: 0.9469 | AUC: 0.9934
+Val   | Loss: 0.1978 | Acc: 0.9382 | F1: 0.8645 | AUC: 0.9911
+*** New best model for Fold 2 saved with Val F1: 0.8645 at epoch 25 ***
+EarlyStopping: Validation score improved (0.829268 --> 0.864516). Resetting counter.
+
+Epoch 26/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 0.1821 | Acc: 0.9509 | F1: 0.9526 | AUC: 0.9944
+Val   | Loss: 0.2419 | Acc: 0.9176 | F1: 0.8250 | AUC: 0.9896
+EarlyStopping counter: 1 out of 10
+
+Epoch 27/50
+------------------------------
+Current learning rate: 0.000028
+Train | Loss: 0.1578 | Acc: 0.9556 | F1: 0.9571 | AUC: 0.9953
+Val   | Loss: 0.1304 | Acc: 0.9618 | F1: 0.9116 | AUC: 0.9963
+*** New best model for Fold 2 saved with Val F1: 0.9116 at epoch 27 ***
+EarlyStopping: Validation score improved (0.864516 --> 0.911565). Resetting counter.
+
+Epoch 28/50
+------------------------------
+Current learning rate: 0.000026
+Train | Loss: 0.1500 | Acc: 0.9599 | F1: 0.9611 | AUC: 0.9957
+Val   | Loss: 0.2225 | Acc: 0.9176 | F1: 0.8272 | AUC: 0.9937
+EarlyStopping counter: 1 out of 10
+
+Epoch 29/50
+------------------------------
+Current learning rate: 0.000025
+Train | Loss: 0.1175 | Acc: 0.9700 | F1: 0.9707 | AUC: 0.9973
+Val   | Loss: 0.1977 | Acc: 0.9176 | F1: 0.8293 | AUC: 0.9962
+EarlyStopping counter: 2 out of 10
+
+Epoch 30/50
+------------------------------
+Current learning rate: 0.000023
+Train | Loss: 0.1580 | Acc: 0.9581 | F1: 0.9593 | AUC: 0.9955
+Val   | Loss: 0.0952 | Acc: 0.9794 | F1: 0.9504 | AUC: 0.9981
+*** New best model for Fold 2 saved with Val F1: 0.9504 at epoch 30 ***
+EarlyStopping: Validation score improved (0.911565 --> 0.950355). Resetting counter.
+
+Epoch 31/50
+------------------------------
+Current learning rate: 0.000021
+Train | Loss: 0.1030 | Acc: 0.9739 | F1: 0.9744 | AUC: 0.9978
+Val   | Loss: 0.1142 | Acc: 0.9500 | F1: 0.8889 | AUC: 0.9986
+EarlyStopping counter: 1 out of 10
+
+Epoch 32/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 0.1043 | Acc: 0.9733 | F1: 0.9738 | AUC: 0.9977
+Val   | Loss: 0.1270 | Acc: 0.9588 | F1: 0.9054 | AUC: 0.9964
+EarlyStopping counter: 2 out of 10
+
+Epoch 33/50
+------------------------------
+Current learning rate: 0.000018
+Train | Loss: 0.0818 | Acc: 0.9792 | F1: 0.9796 | AUC: 0.9983
+Val   | Loss: 0.1215 | Acc: 0.9765 | F1: 0.9437 | AUC: 0.9961
+EarlyStopping counter: 3 out of 10
+
+Epoch 34/50
+------------------------------
+Current learning rate: 0.000016
+Train | Loss: 0.0849 | Acc: 0.9790 | F1: 0.9793 | AUC: 0.9985
+Val   | Loss: 0.1391 | Acc: 0.9441 | F1: 0.8774 | AUC: 0.9991
+EarlyStopping counter: 4 out of 10
+
+Epoch 35/50
+------------------------------
+Current learning rate: 0.000015
+Train | Loss: 0.1192 | Acc: 0.9700 | F1: 0.9706 | AUC: 0.9974
+Val   | Loss: 0.0847 | Acc: 0.9706 | F1: 0.9315 | AUC: 0.9987
+EarlyStopping counter: 5 out of 10
+
+Epoch 36/50
+------------------------------
+Current learning rate: 0.000013
+Train | Loss: 0.0848 | Acc: 0.9770 | F1: 0.9774 | AUC: 0.9989
+Val   | Loss: 0.0558 | Acc: 0.9824 | F1: 0.9571 | AUC: 0.9995
+*** New best model for Fold 2 saved with Val F1: 0.9571 at epoch 36 ***
+EarlyStopping: Validation score improved (0.950355 --> 0.957143). Resetting counter.
+
+Epoch 37/50
+------------------------------
+Current learning rate: 0.000012
+Train | Loss: 0.0733 | Acc: 0.9831 | F1: 0.9833 | AUC: 0.9988
+Val   | Loss: 0.0562 | Acc: 0.9882 | F1: 0.9714 | AUC: 0.9996
+*** New best model for Fold 2 saved with Val F1: 0.9714 at epoch 37 ***
+EarlyStopping: Validation score improved (0.957143 --> 0.971429). Resetting counter.
+
+Epoch 38/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 0.0571 | Acc: 0.9862 | F1: 0.9864 | AUC: 0.9991
+Val   | Loss: 0.0606 | Acc: 0.9853 | F1: 0.9645 | AUC: 0.9996
+EarlyStopping counter: 1 out of 10
+
+Epoch 39/50
+------------------------------
+Current learning rate: 0.000009
+Train | Loss: 0.0583 | Acc: 0.9846 | F1: 0.9848 | AUC: 0.9994
+Val   | Loss: 0.0602 | Acc: 0.9853 | F1: 0.9645 | AUC: 0.9989
+EarlyStopping counter: 2 out of 10
+
+Epoch 40/50
+------------------------------
+Current learning rate: 0.000008
+Train | Loss: 0.0566 | Acc: 0.9858 | F1: 0.9860 | AUC: 0.9991
+Val   | Loss: 0.0616 | Acc: 0.9853 | F1: 0.9640 | AUC: 0.9991
+EarlyStopping counter: 3 out of 10
+
+Epoch 41/50
+------------------------------
+Current learning rate: 0.000007
+Train | Loss: 0.0434 | Acc: 0.9893 | F1: 0.9894 | AUC: 0.9997
+Val   | Loss: 0.0607 | Acc: 0.9853 | F1: 0.9645 | AUC: 0.9992
+EarlyStopping counter: 4 out of 10
+
+Epoch 42/50
+------------------------------
+Current learning rate: 0.000006
+Train | Loss: 0.0534 | Acc: 0.9879 | F1: 0.9880 | AUC: 0.9992
+Val   | Loss: 0.0517 | Acc: 0.9824 | F1: 0.9577 | AUC: 0.9995
+EarlyStopping counter: 5 out of 10
+
+Epoch 43/50
+------------------------------
+Current learning rate: 0.000005
+Train | Loss: 0.0555 | Acc: 0.9852 | F1: 0.9854 | AUC: 0.9994
+Val   | Loss: 0.0417 | Acc: 0.9882 | F1: 0.9714 | AUC: 0.9997
+EarlyStopping counter: 6 out of 10
+
+Epoch 44/50
+------------------------------
+Current learning rate: 0.000004
+Train | Loss: 0.0407 | Acc: 0.9905 | F1: 0.9906 | AUC: 0.9997
+Val   | Loss: 0.0431 | Acc: 0.9853 | F1: 0.9645 | AUC: 0.9998
+EarlyStopping counter: 7 out of 10
+
+Epoch 45/50
+------------------------------
+Current learning rate: 0.000003
+Train | Loss: 0.0521 | Acc: 0.9883 | F1: 0.9884 | AUC: 0.9994
+Val   | Loss: 0.0401 | Acc: 0.9882 | F1: 0.9714 | AUC: 0.9997
+EarlyStopping counter: 8 out of 10
+
+Epoch 46/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0376 | Acc: 0.9905 | F1: 0.9906 | AUC: 0.9998
+Val   | Loss: 0.0354 | Acc: 0.9882 | F1: 0.9714 | AUC: 0.9998
+EarlyStopping counter: 9 out of 10
+
+Epoch 47/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0561 | Acc: 0.9885 | F1: 0.9886 | AUC: 0.9993
+Val   | Loss: 0.0495 | Acc: 0.9853 | F1: 0.9645 | AUC: 0.9998
+EarlyStopping counter: 10 out of 10
+Early stopping triggered at epoch 47 for Fold 2
+Using best standard model state from Fold 2 (Val F1: 0.9714)
+Saved training history plot to D:\Projects\aol-cv-dl\dementia dataset\plots\tuned_v2\training_metrics_fold_2_20251205-131104.png
+--------------------------------------------------
+
+==================================================
+Fold 3/10
+==================================================
+Applying SMOTE to balance the dataset...
+Original class distribution: Counter({0: 2448, 1: 612})
+Resampled class distribution: Counter({0: 2448, 1: 2448})
+
+Epoch 1/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 1.3062 | Acc: 0.5060 | F1: 0.6503 | AUC: 0.6138
+Val   | Loss: 1.3442 | Acc: 0.2382 | F1: 0.3443 | AUC: 0.7450
+*** New best model for Fold 3 saved with Val F1: 0.3443 at epoch 1 ***
+EarlyStopping: Best score set to 0.344304
+
+Epoch 2/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 1.0781 | Acc: 0.5995 | F1: 0.7085 | AUC: 0.7387
+Val   | Loss: 1.5555 | Acc: 0.3059 | F1: 0.3656 | AUC: 0.7725
+*** New best model for Fold 3 saved with Val F1: 0.3656 at epoch 2 ***
+EarlyStopping: Validation score improved (0.344304 --> 0.365591). Resetting counter.
+
+Epoch 3/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 1.0358 | Acc: 0.6277 | F1: 0.7228 | AUC: 0.7556
+Val   | Loss: 1.0297 | Acc: 0.4647 | F1: 0.4277 | AUC: 0.8234
+*** New best model for Fold 3 saved with Val F1: 0.4277 at epoch 3 ***
+EarlyStopping: Validation score improved (0.365591 --> 0.427673). Resetting counter.
+
+Epoch 4/50
+------------------------------
+Current learning rate: 0.000040
+Train | Loss: 0.9692 | Acc: 0.6647 | F1: 0.7442 | AUC: 0.7896
+Val   | Loss: 1.3460 | Acc: 0.3794 | F1: 0.3919 | AUC: 0.8389
+EarlyStopping counter: 1 out of 10
+
+Epoch 5/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.9093 | Acc: 0.6924 | F1: 0.7596 | AUC: 0.8106
+Val   | Loss: 1.2809 | Acc: 0.4206 | F1: 0.4084 | AUC: 0.8539
+EarlyStopping counter: 2 out of 10
+
+Epoch 6/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.8758 | Acc: 0.6994 | F1: 0.7637 | AUC: 0.8273
+Val   | Loss: 1.0171 | Acc: 0.5676 | F1: 0.4806 | AUC: 0.8467
+*** New best model for Fold 3 saved with Val F1: 0.4806 at epoch 6 ***
+EarlyStopping: Validation score improved (0.427673 --> 0.480565). Resetting counter.
+
+Epoch 7/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.7998 | Acc: 0.7319 | F1: 0.7839 | AUC: 0.8595
+Val   | Loss: 0.7956 | Acc: 0.6529 | F1: 0.5317 | AUC: 0.8683
+*** New best model for Fold 3 saved with Val F1: 0.5317 at epoch 7 ***
+EarlyStopping: Validation score improved (0.480565 --> 0.531746). Resetting counter.
+
+Epoch 8/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.7404 | Acc: 0.7568 | F1: 0.8001 | AUC: 0.8801
+Val   | Loss: 0.8302 | Acc: 0.6706 | F1: 0.5372 | AUC: 0.8705
+*** New best model for Fold 3 saved with Val F1: 0.5372 at epoch 8 ***
+EarlyStopping: Validation score improved (0.531746 --> 0.537190). Resetting counter.
+
+Epoch 9/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.7074 | Acc: 0.7677 | F1: 0.8070 | AUC: 0.8960
+Val   | Loss: 0.7012 | Acc: 0.7118 | F1: 0.5739 | AUC: 0.9084
+*** New best model for Fold 3 saved with Val F1: 0.5739 at epoch 9 ***
+EarlyStopping: Validation score improved (0.537190 --> 0.573913). Resetting counter.
+
+Epoch 10/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.6917 | Acc: 0.7796 | F1: 0.8146 | AUC: 0.9041
+Val   | Loss: 0.7768 | Acc: 0.6765 | F1: 0.5455 | AUC: 0.9078
+EarlyStopping counter: 1 out of 10
+
+Epoch 11/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.5767 | Acc: 0.8144 | F1: 0.8398 | AUC: 0.9332
+Val   | Loss: 0.5409 | Acc: 0.7941 | F1: 0.6569 | AUC: 0.9418
+*** New best model for Fold 3 saved with Val F1: 0.6569 at epoch 11 ***
+EarlyStopping: Validation score improved (0.573913 --> 0.656863). Resetting counter.
+
+Epoch 12/50
+------------------------------
+Current learning rate: 0.000048
+Train | Loss: 0.5548 | Acc: 0.8269 | F1: 0.8494 | AUC: 0.9380
+Val   | Loss: 0.5149 | Acc: 0.8088 | F1: 0.6561 | AUC: 0.9317
+EarlyStopping counter: 1 out of 10
+
+Epoch 13/50
+------------------------------
+Current learning rate: 0.000047
+Train | Loss: 0.5317 | Acc: 0.8396 | F1: 0.8588 | AUC: 0.9436
+Val   | Loss: 0.4444 | Acc: 0.8706 | F1: 0.7349 | AUC: 0.9492
+*** New best model for Fold 3 saved with Val F1: 0.7349 at epoch 13 ***
+EarlyStopping: Validation score improved (0.656863 --> 0.734940). Resetting counter.
+
+Epoch 14/50
+------------------------------
+Current learning rate: 0.000046
+Train | Loss: 0.4795 | Acc: 0.8614 | F1: 0.8763 | AUC: 0.9528
+Val   | Loss: 0.4110 | Acc: 0.8676 | F1: 0.7273 | AUC: 0.9546
+EarlyStopping counter: 1 out of 10
+
+Epoch 15/50
+------------------------------
+Current learning rate: 0.000045
+Train | Loss: 0.4148 | Acc: 0.8748 | F1: 0.8863 | AUC: 0.9677
+Val   | Loss: 0.3502 | Acc: 0.8853 | F1: 0.7719 | AUC: 0.9708
+*** New best model for Fold 3 saved with Val F1: 0.7719 at epoch 15 ***
+EarlyStopping: Validation score improved (0.734940 --> 0.771930). Resetting counter.
+
+Epoch 16/50
+------------------------------
+Current learning rate: 0.000044
+Train | Loss: 0.3729 | Acc: 0.8925 | F1: 0.9012 | AUC: 0.9740
+Val   | Loss: 0.4857 | Acc: 0.8176 | F1: 0.6837 | AUC: 0.9659
+EarlyStopping counter: 1 out of 10
+
+Epoch 17/50
+------------------------------
+Current learning rate: 0.000043
+Train | Loss: 0.3558 | Acc: 0.8999 | F1: 0.9073 | AUC: 0.9752
+Val   | Loss: 0.5124 | Acc: 0.8294 | F1: 0.7010 | AUC: 0.9638
+EarlyStopping counter: 2 out of 10
+
+Epoch 18/50
+------------------------------
+Current learning rate: 0.000042
+Train | Loss: 0.3004 | Acc: 0.9137 | F1: 0.9193 | AUC: 0.9835
+Val   | Loss: 0.4855 | Acc: 0.8412 | F1: 0.7097 | AUC: 0.9620
+EarlyStopping counter: 3 out of 10
+
+Epoch 19/50
+------------------------------
+Current learning rate: 0.000041
+Train | Loss: 0.2924 | Acc: 0.9188 | F1: 0.9233 | AUC: 0.9842
+Val   | Loss: 0.2888 | Acc: 0.9059 | F1: 0.8000 | AUC: 0.9791
+*** New best model for Fold 3 saved with Val F1: 0.8000 at epoch 19 ***
+EarlyStopping: Validation score improved (0.771930 --> 0.800000). Resetting counter.
+
+Epoch 20/50
+------------------------------
+Current learning rate: 0.000039
+Train | Loss: 0.2206 | Acc: 0.9420 | F1: 0.9445 | AUC: 0.9912
+Val   | Loss: 0.2783 | Acc: 0.9000 | F1: 0.7927 | AUC: 0.9864
+EarlyStopping counter: 1 out of 10
+
+Epoch 21/50
+------------------------------
+Current learning rate: 0.000038
+Train | Loss: 0.2007 | Acc: 0.9451 | F1: 0.9473 | AUC: 0.9925
+Val   | Loss: 0.2847 | Acc: 0.9088 | F1: 0.8098 | AUC: 0.9846
+*** New best model for Fold 3 saved with Val F1: 0.8098 at epoch 21 ***
+EarlyStopping: Validation score improved (0.800000 --> 0.809816). Resetting counter.
+
+Epoch 22/50
+------------------------------
+Current learning rate: 0.000036
+Train | Loss: 0.2130 | Acc: 0.9455 | F1: 0.9475 | AUC: 0.9911
+Val   | Loss: 0.2449 | Acc: 0.9382 | F1: 0.8627 | AUC: 0.9849
+*** New best model for Fold 3 saved with Val F1: 0.8627 at epoch 22 ***
+EarlyStopping: Validation score improved (0.809816 --> 0.862745). Resetting counter.
+
+Epoch 23/50
+------------------------------
+Current learning rate: 0.000035
+Train | Loss: 0.1957 | Acc: 0.9496 | F1: 0.9515 | AUC: 0.9923
+Val   | Loss: 0.2157 | Acc: 0.9265 | F1: 0.8428 | AUC: 0.9916
+EarlyStopping counter: 1 out of 10
+
+Epoch 24/50
+------------------------------
+Current learning rate: 0.000033
+Train | Loss: 0.1568 | Acc: 0.9589 | F1: 0.9601 | AUC: 0.9951
+Val   | Loss: 0.2577 | Acc: 0.9176 | F1: 0.8293 | AUC: 0.9943
+EarlyStopping counter: 2 out of 10
+
+Epoch 25/50
+------------------------------
+Current learning rate: 0.000031
+Train | Loss: 0.1697 | Acc: 0.9531 | F1: 0.9547 | AUC: 0.9943
+Val   | Loss: 0.1874 | Acc: 0.9412 | F1: 0.8701 | AUC: 0.9929
+*** New best model for Fold 3 saved with Val F1: 0.8701 at epoch 25 ***
+EarlyStopping: Validation score improved (0.862745 --> 0.870130). Resetting counter.
+
+Epoch 26/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 0.1074 | Acc: 0.9731 | F1: 0.9737 | AUC: 0.9975
+Val   | Loss: 0.1613 | Acc: 0.9618 | F1: 0.9103 | AUC: 0.9932
+*** New best model for Fold 3 saved with Val F1: 0.9103 at epoch 26 ***
+EarlyStopping: Validation score improved (0.870130 --> 0.910345). Resetting counter.
+
+Epoch 27/50
+------------------------------
+Current learning rate: 0.000028
+Train | Loss: 0.1122 | Acc: 0.9712 | F1: 0.9718 | AUC: 0.9975
+Val   | Loss: 0.1978 | Acc: 0.9353 | F1: 0.8608 | AUC: 0.9930
+EarlyStopping counter: 1 out of 10
+
+Epoch 28/50
+------------------------------
+Current learning rate: 0.000026
+Train | Loss: 0.1228 | Acc: 0.9718 | F1: 0.9724 | AUC: 0.9971
+Val   | Loss: 0.2506 | Acc: 0.9059 | F1: 0.8072 | AUC: 0.9938
+EarlyStopping counter: 2 out of 10
+
+Epoch 29/50
+------------------------------
+Current learning rate: 0.000025
+Train | Loss: 0.0995 | Acc: 0.9743 | F1: 0.9749 | AUC: 0.9981
+Val   | Loss: 0.1798 | Acc: 0.9529 | F1: 0.8947 | AUC: 0.9943
+EarlyStopping counter: 3 out of 10
+
+Epoch 30/50
+------------------------------
+Current learning rate: 0.000023
+Train | Loss: 0.0885 | Acc: 0.9778 | F1: 0.9781 | AUC: 0.9986
+Val   | Loss: 0.1596 | Acc: 0.9588 | F1: 0.9054 | AUC: 0.9913
+EarlyStopping counter: 4 out of 10
+
+Epoch 31/50
+------------------------------
+Current learning rate: 0.000021
+Train | Loss: 0.1072 | Acc: 0.9757 | F1: 0.9761 | AUC: 0.9980
+Val   | Loss: 0.1094 | Acc: 0.9735 | F1: 0.9362 | AUC: 0.9961
+*** New best model for Fold 3 saved with Val F1: 0.9362 at epoch 31 ***
+EarlyStopping: Validation score improved (0.910345 --> 0.936170). Resetting counter.
+
+Epoch 32/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 0.0625 | Acc: 0.9848 | F1: 0.9850 | AUC: 0.9993
+Val   | Loss: 0.1141 | Acc: 0.9676 | F1: 0.9241 | AUC: 0.9978
+EarlyStopping counter: 1 out of 10
+
+Epoch 33/50
+------------------------------
+Current learning rate: 0.000018
+Train | Loss: 0.0753 | Acc: 0.9801 | F1: 0.9803 | AUC: 0.9991
+Val   | Loss: 0.1144 | Acc: 0.9618 | F1: 0.9116 | AUC: 0.9980
+EarlyStopping counter: 2 out of 10
+
+Epoch 34/50
+------------------------------
+Current learning rate: 0.000016
+Train | Loss: 0.0672 | Acc: 0.9831 | F1: 0.9834 | AUC: 0.9991
+Val   | Loss: 0.2370 | Acc: 0.9265 | F1: 0.8447 | AUC: 0.9949
+EarlyStopping counter: 3 out of 10
+
+Epoch 35/50
+------------------------------
+Current learning rate: 0.000015
+Train | Loss: 0.0754 | Acc: 0.9815 | F1: 0.9817 | AUC: 0.9990
+Val   | Loss: 0.0943 | Acc: 0.9735 | F1: 0.9379 | AUC: 0.9968
+*** New best model for Fold 3 saved with Val F1: 0.9379 at epoch 35 ***
+EarlyStopping: Validation score improved (0.936170 --> 0.937931). Resetting counter.
+
+Epoch 36/50
+------------------------------
+Current learning rate: 0.000013
+Train | Loss: 0.0671 | Acc: 0.9848 | F1: 0.9850 | AUC: 0.9992
+Val   | Loss: 0.1115 | Acc: 0.9735 | F1: 0.9379 | AUC: 0.9983
+EarlyStopping counter: 1 out of 10
+
+Epoch 37/50
+------------------------------
+Current learning rate: 0.000012
+Train | Loss: 0.0538 | Acc: 0.9866 | F1: 0.9868 | AUC: 0.9996
+Val   | Loss: 0.0960 | Acc: 0.9735 | F1: 0.9371 | AUC: 0.9984
+EarlyStopping counter: 2 out of 10
+
+Epoch 38/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 0.0420 | Acc: 0.9897 | F1: 0.9898 | AUC: 0.9997
+Val   | Loss: 0.1127 | Acc: 0.9706 | F1: 0.9315 | AUC: 0.9983
+EarlyStopping counter: 3 out of 10
+
+Epoch 39/50
+------------------------------
+Current learning rate: 0.000009
+Train | Loss: 0.0449 | Acc: 0.9885 | F1: 0.9886 | AUC: 0.9996
+Val   | Loss: 0.1078 | Acc: 0.9676 | F1: 0.9252 | AUC: 0.9978
+EarlyStopping counter: 4 out of 10
+
+Epoch 40/50
+------------------------------
+Current learning rate: 0.000008
+Train | Loss: 0.0428 | Acc: 0.9901 | F1: 0.9902 | AUC: 0.9997
+Val   | Loss: 0.0749 | Acc: 0.9735 | F1: 0.9371 | AUC: 0.9990
+EarlyStopping counter: 5 out of 10
+
+Epoch 41/50
+------------------------------
+Current learning rate: 0.000007
+Train | Loss: 0.0347 | Acc: 0.9920 | F1: 0.9920 | AUC: 0.9997
+Val   | Loss: 0.0713 | Acc: 0.9824 | F1: 0.9571 | AUC: 0.9990
+*** New best model for Fold 3 saved with Val F1: 0.9571 at epoch 41 ***
+EarlyStopping: Validation score improved (0.937931 --> 0.957143). Resetting counter.
+
+Epoch 42/50
+------------------------------
+Current learning rate: 0.000006
+Train | Loss: 0.0376 | Acc: 0.9912 | F1: 0.9912 | AUC: 0.9998
+Val   | Loss: 0.0812 | Acc: 0.9794 | F1: 0.9504 | AUC: 0.9990
+EarlyStopping counter: 1 out of 10
+
+Epoch 43/50
+------------------------------
+Current learning rate: 0.000005
+Train | Loss: 0.0405 | Acc: 0.9918 | F1: 0.9918 | AUC: 0.9995
+Val   | Loss: 0.0686 | Acc: 0.9824 | F1: 0.9577 | AUC: 0.9991
+*** New best model for Fold 3 saved with Val F1: 0.9577 at epoch 43 ***
+EarlyStopping: Validation score improved (0.957143 --> 0.957746). Resetting counter.
+
+Epoch 44/50
+------------------------------
+Current learning rate: 0.000004
+Train | Loss: 0.0337 | Acc: 0.9942 | F1: 0.9943 | AUC: 0.9997
+Val   | Loss: 0.0906 | Acc: 0.9794 | F1: 0.9510 | AUC: 0.9988
+EarlyStopping counter: 1 out of 10
+
+Epoch 45/50
+------------------------------
+Current learning rate: 0.000003
+Train | Loss: 0.0392 | Acc: 0.9910 | F1: 0.9910 | AUC: 0.9997
+Val   | Loss: 0.0760 | Acc: 0.9794 | F1: 0.9504 | AUC: 0.9989
+EarlyStopping counter: 2 out of 10
+
+Epoch 46/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0240 | Acc: 0.9942 | F1: 0.9943 | AUC: 0.9999
+Val   | Loss: 0.0666 | Acc: 0.9824 | F1: 0.9577 | AUC: 0.9990
+EarlyStopping counter: 3 out of 10
+
+Epoch 47/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0356 | Acc: 0.9928 | F1: 0.9928 | AUC: 0.9998
+Val   | Loss: 0.0788 | Acc: 0.9794 | F1: 0.9510 | AUC: 0.9989
+EarlyStopping counter: 4 out of 10
+
+Epoch 48/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0410 | Acc: 0.9903 | F1: 0.9904 | AUC: 0.9997
+Val   | Loss: 0.0871 | Acc: 0.9824 | F1: 0.9577 | AUC: 0.9989
+EarlyStopping counter: 5 out of 10
+
+Epoch 49/50
+------------------------------
+Current learning rate: 0.000001
+Train | Loss: 0.0260 | Acc: 0.9936 | F1: 0.9937 | AUC: 0.9999
+Val   | Loss: 0.0853 | Acc: 0.9794 | F1: 0.9504 | AUC: 0.9989
+EarlyStopping counter: 6 out of 10
+
+Epoch 50/50
+------------------------------
+Current learning rate: 0.000001
+Train | Loss: 0.0263 | Acc: 0.9924 | F1: 0.9924 | AUC: 0.9999
+Val   | Loss: 0.0811 | Acc: 0.9765 | F1: 0.9429 | AUC: 0.9989
+EarlyStopping counter: 7 out of 10
+Using best standard model state from Fold 3 (Val F1: 0.9577)
+Saved training history plot to D:\Projects\aol-cv-dl\dementia dataset\plots\tuned_v2\training_metrics_fold_3_20251205-132356.png
+--------------------------------------------------
+
+==================================================
+Fold 4/10
+==================================================
+Applying SMOTE to balance the dataset...
+Original class distribution: Counter({0: 2448, 1: 612})
+Resampled class distribution: Counter({0: 2448, 1: 2448})
+
+Epoch 1/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 1.2246 | Acc: 0.5193 | F1: 0.6667 | AUC: 0.6382
+Val   | Loss: 1.4279 | Acc: 0.2412 | F1: 0.3452 | AUC: 0.7268
+*** New best model for Fold 4 saved with Val F1: 0.3452 at epoch 1 ***
+EarlyStopping: Best score set to 0.345178
+
+Epoch 2/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 1.0768 | Acc: 0.6077 | F1: 0.7115 | AUC: 0.7291
+Val   | Loss: 1.2800 | Acc: 0.3647 | F1: 0.3829 | AUC: 0.7732
+*** New best model for Fold 4 saved with Val F1: 0.3829 at epoch 2 ***
+EarlyStopping: Validation score improved (0.345178 --> 0.382857). Resetting counter.
+
+Epoch 3/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 1.0356 | Acc: 0.6303 | F1: 0.7249 | AUC: 0.7496
+Val   | Loss: 1.1143 | Acc: 0.4706 | F1: 0.4156 | AUC: 0.7910
+*** New best model for Fold 4 saved with Val F1: 0.4156 at epoch 3 ***
+EarlyStopping: Validation score improved (0.382857 --> 0.415584). Resetting counter.
+
+Epoch 4/50
+------------------------------
+Current learning rate: 0.000040
+Train | Loss: 0.9939 | Acc: 0.6546 | F1: 0.7377 | AUC: 0.7733
+Val   | Loss: 1.4290 | Acc: 0.3588 | F1: 0.3842 | AUC: 0.8037
+EarlyStopping counter: 1 out of 10
+
+Epoch 5/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.9398 | Acc: 0.6731 | F1: 0.7486 | AUC: 0.7987
+Val   | Loss: 0.9153 | Acc: 0.5765 | F1: 0.4419 | AUC: 0.8084
+*** New best model for Fold 4 saved with Val F1: 0.4419 at epoch 5 ***
+EarlyStopping: Validation score improved (0.415584 --> 0.441860). Resetting counter.
+
+Epoch 6/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.9538 | Acc: 0.6766 | F1: 0.7505 | AUC: 0.7904
+Val   | Loss: 0.7838 | Acc: 0.6912 | F1: 0.5249 | AUC: 0.8419
+*** New best model for Fold 4 saved with Val F1: 0.5249 at epoch 6 ***
+EarlyStopping: Validation score improved (0.441860 --> 0.524887). Resetting counter.
+
+Epoch 7/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.8787 | Acc: 0.7009 | F1: 0.7637 | AUC: 0.8301
+Val   | Loss: 0.9432 | Acc: 0.5676 | F1: 0.4731 | AUC: 0.8451
+EarlyStopping counter: 1 out of 10
+
+Epoch 8/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.8071 | Acc: 0.7286 | F1: 0.7812 | AUC: 0.8608
+Val   | Loss: 0.8029 | Acc: 0.6353 | F1: 0.5156 | AUC: 0.8972
+EarlyStopping counter: 2 out of 10
+
+Epoch 9/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.8156 | Acc: 0.7292 | F1: 0.7820 | AUC: 0.8543
+Val   | Loss: 0.9476 | Acc: 0.5853 | F1: 0.4873 | AUC: 0.8716
+EarlyStopping counter: 3 out of 10
+
+Epoch 10/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.7031 | Acc: 0.7697 | F1: 0.8095 | AUC: 0.8963
+Val   | Loss: 0.8410 | Acc: 0.6353 | F1: 0.5194 | AUC: 0.8922
+EarlyStopping counter: 4 out of 10
+
+Epoch 11/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.6757 | Acc: 0.7829 | F1: 0.8179 | AUC: 0.9038
+Val   | Loss: 0.7582 | Acc: 0.6676 | F1: 0.5425 | AUC: 0.9360
+*** New best model for Fold 4 saved with Val F1: 0.5425 at epoch 11 ***
+EarlyStopping: Validation score improved (0.524887 --> 0.542510). Resetting counter.
+
+Epoch 12/50
+------------------------------
+Current learning rate: 0.000048
+Train | Loss: 0.6114 | Acc: 0.8014 | F1: 0.8309 | AUC: 0.9227
+Val   | Loss: 0.6113 | Acc: 0.7794 | F1: 0.6341 | AUC: 0.9261
+*** New best model for Fold 4 saved with Val F1: 0.6341 at epoch 12 ***
+EarlyStopping: Validation score improved (0.542510 --> 0.634146). Resetting counter.
+
+Epoch 13/50
+------------------------------
+Current learning rate: 0.000047
+Train | Loss: 0.5408 | Acc: 0.8267 | F1: 0.8491 | AUC: 0.9389
+Val   | Loss: 0.5005 | Acc: 0.8529 | F1: 0.7024 | AUC: 0.9384
+*** New best model for Fold 4 saved with Val F1: 0.7024 at epoch 13 ***
+EarlyStopping: Validation score improved (0.634146 --> 0.702381). Resetting counter.
+
+Epoch 14/50
+------------------------------
+Current learning rate: 0.000046
+Train | Loss: 0.5088 | Acc: 0.8409 | F1: 0.8599 | AUC: 0.9482
+Val   | Loss: 0.4730 | Acc: 0.7941 | F1: 0.6569 | AUC: 0.9625
+EarlyStopping counter: 1 out of 10
+
+Epoch 15/50
+------------------------------
+Current learning rate: 0.000045
+Train | Loss: 0.4335 | Acc: 0.8678 | F1: 0.8814 | AUC: 0.9631
+Val   | Loss: 0.3196 | Acc: 0.9088 | F1: 0.8050 | AUC: 0.9744
+*** New best model for Fold 4 saved with Val F1: 0.8050 at epoch 15 ***
+EarlyStopping: Validation score improved (0.702381 --> 0.805031). Resetting counter.
+
+Epoch 16/50
+------------------------------
+Current learning rate: 0.000044
+Train | Loss: 0.4892 | Acc: 0.8528 | F1: 0.8683 | AUC: 0.9542
+Val   | Loss: 0.6240 | Acc: 0.7324 | F1: 0.5956 | AUC: 0.9576
+EarlyStopping counter: 1 out of 10
+
+Epoch 17/50
+------------------------------
+Current learning rate: 0.000043
+Train | Loss: 0.4063 | Acc: 0.8806 | F1: 0.8914 | AUC: 0.9677
+Val   | Loss: 0.2784 | Acc: 0.9147 | F1: 0.8221 | AUC: 0.9813
+*** New best model for Fold 4 saved with Val F1: 0.8221 at epoch 17 ***
+EarlyStopping: Validation score improved (0.805031 --> 0.822086). Resetting counter.
+
+Epoch 18/50
+------------------------------
+Current learning rate: 0.000042
+Train | Loss: 0.4152 | Acc: 0.8812 | F1: 0.8914 | AUC: 0.9661
+Val   | Loss: 0.2495 | Acc: 0.9324 | F1: 0.8497 | AUC: 0.9857
+*** New best model for Fold 4 saved with Val F1: 0.8497 at epoch 18 ***
+EarlyStopping: Validation score improved (0.822086 --> 0.849673). Resetting counter.
+
+Epoch 19/50
+------------------------------
+Current learning rate: 0.000041
+Train | Loss: 0.3372 | Acc: 0.9021 | F1: 0.9094 | AUC: 0.9792
+Val   | Loss: 0.2318 | Acc: 0.9176 | F1: 0.8272 | AUC: 0.9899
+EarlyStopping counter: 1 out of 10
+
+Epoch 20/50
+------------------------------
+Current learning rate: 0.000039
+Train | Loss: 0.3113 | Acc: 0.9149 | F1: 0.9204 | AUC: 0.9810
+Val   | Loss: 0.3037 | Acc: 0.8882 | F1: 0.7791 | AUC: 0.9878
+EarlyStopping counter: 2 out of 10
+
+Epoch 21/50
+------------------------------
+Current learning rate: 0.000038
+Train | Loss: 0.2660 | Acc: 0.9252 | F1: 0.9293 | AUC: 0.9870
+Val   | Loss: 0.2156 | Acc: 0.9382 | F1: 0.8627 | AUC: 0.9908
+*** New best model for Fold 4 saved with Val F1: 0.8627 at epoch 21 ***
+EarlyStopping: Validation score improved (0.849673 --> 0.862745). Resetting counter.
+
+Epoch 22/50
+------------------------------
+Current learning rate: 0.000036
+Train | Loss: 0.2100 | Acc: 0.9441 | F1: 0.9466 | AUC: 0.9919
+Val   | Loss: 0.3844 | Acc: 0.8735 | F1: 0.7571 | AUC: 0.9863
+EarlyStopping counter: 1 out of 10
+
+Epoch 23/50
+------------------------------
+Current learning rate: 0.000035
+Train | Loss: 0.2505 | Acc: 0.9328 | F1: 0.9359 | AUC: 0.9891
+Val   | Loss: 0.1713 | Acc: 0.9647 | F1: 0.9155 | AUC: 0.9943
+*** New best model for Fold 4 saved with Val F1: 0.9155 at epoch 23 ***
+EarlyStopping: Validation score improved (0.862745 --> 0.915493). Resetting counter.
+
+Epoch 24/50
+------------------------------
+Current learning rate: 0.000033
+Train | Loss: 0.1980 | Acc: 0.9474 | F1: 0.9495 | AUC: 0.9923
+Val   | Loss: 0.1371 | Acc: 0.9588 | F1: 0.9041 | AUC: 0.9952
+EarlyStopping counter: 1 out of 10
+
+Epoch 25/50
+------------------------------
+Current learning rate: 0.000031
+Train | Loss: 0.1649 | Acc: 0.9589 | F1: 0.9602 | AUC: 0.9946
+Val   | Loss: 0.1659 | Acc: 0.9471 | F1: 0.8800 | AUC: 0.9947
+EarlyStopping counter: 2 out of 10
+
+Epoch 26/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 0.1530 | Acc: 0.9620 | F1: 0.9630 | AUC: 0.9954
+Val   | Loss: 0.1524 | Acc: 0.9529 | F1: 0.8947 | AUC: 0.9971
+EarlyStopping counter: 3 out of 10
+
+Epoch 27/50
+------------------------------
+Current learning rate: 0.000028
+Train | Loss: 0.1354 | Acc: 0.9650 | F1: 0.9660 | AUC: 0.9964
+Val   | Loss: 0.1343 | Acc: 0.9647 | F1: 0.9178 | AUC: 0.9954
+*** New best model for Fold 4 saved with Val F1: 0.9178 at epoch 27 ***
+EarlyStopping: Validation score improved (0.915493 --> 0.917808). Resetting counter.
+
+Epoch 28/50
+------------------------------
+Current learning rate: 0.000026
+Train | Loss: 0.1183 | Acc: 0.9706 | F1: 0.9712 | AUC: 0.9974
+Val   | Loss: 0.1248 | Acc: 0.9559 | F1: 0.8993 | AUC: 0.9970
+EarlyStopping counter: 1 out of 10
+
+Epoch 29/50
+------------------------------
+Current learning rate: 0.000025
+Train | Loss: 0.1011 | Acc: 0.9745 | F1: 0.9750 | AUC: 0.9983
+Val   | Loss: 0.0856 | Acc: 0.9735 | F1: 0.9379 | AUC: 0.9985
+*** New best model for Fold 4 saved with Val F1: 0.9379 at epoch 29 ***
+EarlyStopping: Validation score improved (0.917808 --> 0.937931). Resetting counter.
+
+Epoch 30/50
+------------------------------
+Current learning rate: 0.000023
+Train | Loss: 0.1295 | Acc: 0.9702 | F1: 0.9708 | AUC: 0.9967
+Val   | Loss: 0.1047 | Acc: 0.9647 | F1: 0.9189 | AUC: 0.9982
+EarlyStopping counter: 1 out of 10
+
+Epoch 31/50
+------------------------------
+Current learning rate: 0.000021
+Train | Loss: 0.1028 | Acc: 0.9743 | F1: 0.9747 | AUC: 0.9980
+Val   | Loss: 0.0780 | Acc: 0.9853 | F1: 0.9630 | AUC: 0.9989
+*** New best model for Fold 4 saved with Val F1: 0.9630 at epoch 31 ***
+EarlyStopping: Validation score improved (0.937931 --> 0.962963). Resetting counter.
+
+Epoch 32/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 0.1039 | Acc: 0.9729 | F1: 0.9734 | AUC: 0.9979
+Val   | Loss: 0.1580 | Acc: 0.9471 | F1: 0.8831 | AUC: 0.9964
+EarlyStopping counter: 1 out of 10
+
+Epoch 33/50
+------------------------------
+Current learning rate: 0.000018
+Train | Loss: 0.0695 | Acc: 0.9836 | F1: 0.9837 | AUC: 0.9991
+Val   | Loss: 0.1612 | Acc: 0.9471 | F1: 0.8831 | AUC: 0.9981
+EarlyStopping counter: 2 out of 10
+
+Epoch 34/50
+------------------------------
+Current learning rate: 0.000016
+Train | Loss: 0.0784 | Acc: 0.9811 | F1: 0.9813 | AUC: 0.9988
+Val   | Loss: 0.0932 | Acc: 0.9765 | F1: 0.9437 | AUC: 0.9979
+EarlyStopping counter: 3 out of 10
+
+Epoch 35/50
+------------------------------
+Current learning rate: 0.000015
+Train | Loss: 0.0692 | Acc: 0.9815 | F1: 0.9818 | AUC: 0.9993
+Val   | Loss: 0.1098 | Acc: 0.9588 | F1: 0.9067 | AUC: 0.9986
+EarlyStopping counter: 4 out of 10
+
+Epoch 36/50
+------------------------------
+Current learning rate: 0.000013
+Train | Loss: 0.0811 | Acc: 0.9805 | F1: 0.9807 | AUC: 0.9989
+Val   | Loss: 0.1022 | Acc: 0.9676 | F1: 0.9241 | AUC: 0.9979
+EarlyStopping counter: 5 out of 10
+
+Epoch 37/50
+------------------------------
+Current learning rate: 0.000012
+Train | Loss: 0.0677 | Acc: 0.9842 | F1: 0.9843 | AUC: 0.9992
+Val   | Loss: 0.0635 | Acc: 0.9794 | F1: 0.9504 | AUC: 0.9992
+EarlyStopping counter: 6 out of 10
+
+Epoch 38/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 0.0533 | Acc: 0.9870 | F1: 0.9872 | AUC: 0.9995
+Val   | Loss: 0.1213 | Acc: 0.9824 | F1: 0.9571 | AUC: 0.9955
+EarlyStopping counter: 7 out of 10
+
+Epoch 39/50
+------------------------------
+Current learning rate: 0.000009
+Train | Loss: 0.0525 | Acc: 0.9883 | F1: 0.9883 | AUC: 0.9995
+Val   | Loss: 0.0618 | Acc: 0.9853 | F1: 0.9640 | AUC: 0.9989
+*** New best model for Fold 4 saved with Val F1: 0.9640 at epoch 39 ***
+EarlyStopping: Validation score improved (0.962963 --> 0.964029). Resetting counter.
+
+Epoch 40/50
+------------------------------
+Current learning rate: 0.000008
+Train | Loss: 0.0512 | Acc: 0.9868 | F1: 0.9869 | AUC: 0.9996
+Val   | Loss: 0.0731 | Acc: 0.9824 | F1: 0.9577 | AUC: 0.9986
+EarlyStopping counter: 1 out of 10
+
+Epoch 41/50
+------------------------------
+Current learning rate: 0.000007
+Train | Loss: 0.0643 | Acc: 0.9842 | F1: 0.9843 | AUC: 0.9993
+Val   | Loss: 0.0959 | Acc: 0.9706 | F1: 0.9306 | AUC: 0.9983
+EarlyStopping counter: 2 out of 10
+
+Epoch 42/50
+------------------------------
+Current learning rate: 0.000006
+Train | Loss: 0.0509 | Acc: 0.9893 | F1: 0.9894 | AUC: 0.9995
+Val   | Loss: 0.0718 | Acc: 0.9824 | F1: 0.9571 | AUC: 0.9988
+EarlyStopping counter: 3 out of 10
+
+Epoch 43/50
+------------------------------
+Current learning rate: 0.000005
+Train | Loss: 0.0350 | Acc: 0.9907 | F1: 0.9908 | AUC: 0.9998
+Val   | Loss: 0.0655 | Acc: 0.9882 | F1: 0.9714 | AUC: 0.9989
+*** New best model for Fold 4 saved with Val F1: 0.9714 at epoch 43 ***
+EarlyStopping: Validation score improved (0.964029 --> 0.971429). Resetting counter.
+
+Epoch 44/50
+------------------------------
+Current learning rate: 0.000004
+Train | Loss: 0.0364 | Acc: 0.9916 | F1: 0.9916 | AUC: 0.9998
+Val   | Loss: 0.0675 | Acc: 0.9853 | F1: 0.9645 | AUC: 0.9989
+EarlyStopping counter: 1 out of 10
+
+Epoch 45/50
+------------------------------
+Current learning rate: 0.000003
+Train | Loss: 0.0398 | Acc: 0.9907 | F1: 0.9908 | AUC: 0.9995
+Val   | Loss: 0.0607 | Acc: 0.9882 | F1: 0.9714 | AUC: 0.9991
+EarlyStopping counter: 2 out of 10
+
+Epoch 46/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0357 | Acc: 0.9920 | F1: 0.9920 | AUC: 0.9997
+Val   | Loss: 0.0596 | Acc: 0.9824 | F1: 0.9571 | AUC: 0.9990
+EarlyStopping counter: 3 out of 10
+
+Epoch 47/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0341 | Acc: 0.9920 | F1: 0.9920 | AUC: 0.9998
+Val   | Loss: 0.0576 | Acc: 0.9882 | F1: 0.9710 | AUC: 0.9991
+EarlyStopping counter: 4 out of 10
+
+Epoch 48/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0305 | Acc: 0.9924 | F1: 0.9924 | AUC: 0.9999
+Val   | Loss: 0.0548 | Acc: 0.9882 | F1: 0.9710 | AUC: 0.9992
+EarlyStopping counter: 5 out of 10
+
+Epoch 49/50
+------------------------------
+Current learning rate: 0.000001
+Train | Loss: 0.0348 | Acc: 0.9914 | F1: 0.9914 | AUC: 0.9998
+Val   | Loss: 0.0619 | Acc: 0.9853 | F1: 0.9640 | AUC: 0.9990
+EarlyStopping counter: 6 out of 10
+
+Epoch 50/50
+------------------------------
+Current learning rate: 0.000001
+Train | Loss: 0.0342 | Acc: 0.9922 | F1: 0.9922 | AUC: 0.9998
+Val   | Loss: 0.0614 | Acc: 0.9853 | F1: 0.9640 | AUC: 0.9990
+EarlyStopping counter: 7 out of 10
+Using best standard model state from Fold 4 (Val F1: 0.9714)
+Saved training history plot to D:\Projects\aol-cv-dl\dementia dataset\plots\tuned_v2\training_metrics_fold_4_20251205-133621.png
+--------------------------------------------------
+
+==================================================
+Fold 5/10
+==================================================
+Applying SMOTE to balance the dataset...
+Original class distribution: Counter({0: 2448, 1: 612})
+Resampled class distribution: Counter({0: 2448, 1: 2448})
+
+Epoch 1/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 1.1732 | Acc: 0.5428 | F1: 0.6829 | AUC: 0.6699
+Val   | Loss: 1.2350 | Acc: 0.3735 | F1: 0.3862 | AUC: 0.7298
+*** New best model for Fold 5 saved with Val F1: 0.3862 at epoch 1 ***
+EarlyStopping: Best score set to 0.386167
+
+Epoch 2/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 1.0645 | Acc: 0.6123 | F1: 0.7154 | AUC: 0.7350
+Val   | Loss: 1.1968 | Acc: 0.4353 | F1: 0.4110 | AUC: 0.7936
+*** New best model for Fold 5 saved with Val F1: 0.4110 at epoch 2 ***
+EarlyStopping: Validation score improved (0.386167 --> 0.411043). Resetting counter.
+
+Epoch 3/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 0.9925 | Acc: 0.6536 | F1: 0.7366 | AUC: 0.7791
+Val   | Loss: 1.1897 | Acc: 0.4353 | F1: 0.4146 | AUC: 0.8422
+*** New best model for Fold 5 saved with Val F1: 0.4146 at epoch 3 ***
+EarlyStopping: Validation score improved (0.411043 --> 0.414634). Resetting counter.
+
+Epoch 4/50
+------------------------------
+Current learning rate: 0.000040
+Train | Loss: 0.9323 | Acc: 0.6824 | F1: 0.7529 | AUC: 0.8107
+Val   | Loss: 1.0767 | Acc: 0.5059 | F1: 0.4474 | AUC: 0.8636
+*** New best model for Fold 5 saved with Val F1: 0.4474 at epoch 4 ***
+EarlyStopping: Validation score improved (0.414634 --> 0.447368). Resetting counter.
+
+Epoch 5/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.9029 | Acc: 0.6933 | F1: 0.7599 | AUC: 0.8208
+Val   | Loss: 1.2219 | Acc: 0.4529 | F1: 0.4224 | AUC: 0.8628
+EarlyStopping counter: 1 out of 10
+
+Epoch 6/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.8388 | Acc: 0.7181 | F1: 0.7755 | AUC: 0.8428
+Val   | Loss: 0.7953 | Acc: 0.7088 | F1: 0.5639 | AUC: 0.8559
+*** New best model for Fold 5 saved with Val F1: 0.5639 at epoch 6 ***
+EarlyStopping: Validation score improved (0.447368 --> 0.563877). Resetting counter.
+
+Epoch 7/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.7697 | Acc: 0.7442 | F1: 0.7916 | AUC: 0.8732
+Val   | Loss: 1.2475 | Acc: 0.4324 | F1: 0.4134 | AUC: 0.8755
+EarlyStopping counter: 1 out of 10
+
+Epoch 8/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.7615 | Acc: 0.7543 | F1: 0.7978 | AUC: 0.8738
+Val   | Loss: 1.4081 | Acc: 0.3500 | F1: 0.3810 | AUC: 0.8746
+EarlyStopping counter: 2 out of 10
+
+Epoch 9/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.6884 | Acc: 0.7778 | F1: 0.8149 | AUC: 0.8982
+Val   | Loss: 0.9158 | Acc: 0.6559 | F1: 0.5301 | AUC: 0.9050
+EarlyStopping counter: 3 out of 10
+
+Epoch 10/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.6829 | Acc: 0.7819 | F1: 0.8163 | AUC: 0.9048
+Val   | Loss: 0.6561 | Acc: 0.7853 | F1: 0.6368 | AUC: 0.8963
+*** New best model for Fold 5 saved with Val F1: 0.6368 at epoch 10 ***
+EarlyStopping: Validation score improved (0.563877 --> 0.636816). Resetting counter.
+
+Epoch 11/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.6225 | Acc: 0.8039 | F1: 0.8319 | AUC: 0.9213
+Val   | Loss: 0.5711 | Acc: 0.7765 | F1: 0.6275 | AUC: 0.9266
+EarlyStopping counter: 1 out of 10
+
+Epoch 12/50
+------------------------------
+Current learning rate: 0.000048
+Train | Loss: 0.5676 | Acc: 0.8201 | F1: 0.8439 | AUC: 0.9353
+Val   | Loss: 0.8073 | Acc: 0.6794 | F1: 0.5514 | AUC: 0.9449
+EarlyStopping counter: 2 out of 10
+
+Epoch 13/50
+------------------------------
+Current learning rate: 0.000047
+Train | Loss: 0.4733 | Acc: 0.8549 | F1: 0.8713 | AUC: 0.9563
+Val   | Loss: 0.4863 | Acc: 0.7971 | F1: 0.6601 | AUC: 0.9595
+*** New best model for Fold 5 saved with Val F1: 0.6601 at epoch 13 ***
+EarlyStopping: Validation score improved (0.636816 --> 0.660099). Resetting counter.
+
+Epoch 14/50
+------------------------------
+Current learning rate: 0.000046
+Train | Loss: 0.4674 | Acc: 0.8637 | F1: 0.8774 | AUC: 0.9578
+Val   | Loss: 0.5044 | Acc: 0.7941 | F1: 0.6569 | AUC: 0.9615
+EarlyStopping counter: 1 out of 10
+
+Epoch 15/50
+------------------------------
+Current learning rate: 0.000045
+Train | Loss: 0.3539 | Acc: 0.8960 | F1: 0.9040 | AUC: 0.9763
+Val   | Loss: 0.3455 | Acc: 0.8618 | F1: 0.7374 | AUC: 0.9784
+*** New best model for Fold 5 saved with Val F1: 0.7374 at epoch 15 ***
+EarlyStopping: Validation score improved (0.660099 --> 0.737430). Resetting counter.
+
+Epoch 16/50
+------------------------------
+Current learning rate: 0.000044
+Train | Loss: 0.4258 | Acc: 0.8750 | F1: 0.8859 | AUC: 0.9670
+Val   | Loss: 0.4221 | Acc: 0.8853 | F1: 0.7636 | AUC: 0.9592
+*** New best model for Fold 5 saved with Val F1: 0.7636 at epoch 16 ***
+EarlyStopping: Validation score improved (0.737430 --> 0.763636). Resetting counter.
+
+Epoch 17/50
+------------------------------
+Current learning rate: 0.000043
+Train | Loss: 0.3123 | Acc: 0.9120 | F1: 0.9179 | AUC: 0.9817
+Val   | Loss: 0.3469 | Acc: 0.8794 | F1: 0.7602 | AUC: 0.9770
+EarlyStopping counter: 1 out of 10
+
+Epoch 18/50
+------------------------------
+Current learning rate: 0.000042
+Train | Loss: 0.3165 | Acc: 0.9132 | F1: 0.9189 | AUC: 0.9797
+Val   | Loss: 0.2844 | Acc: 0.9147 | F1: 0.8153 | AUC: 0.9809
+*** New best model for Fold 5 saved with Val F1: 0.8153 at epoch 18 ***
+EarlyStopping: Validation score improved (0.763636 --> 0.815287). Resetting counter.
+
+Epoch 19/50
+------------------------------
+Current learning rate: 0.000041
+Train | Loss: 0.2510 | Acc: 0.9322 | F1: 0.9356 | AUC: 0.9872
+Val   | Loss: 0.4451 | Acc: 0.8265 | F1: 0.6974 | AUC: 0.9896
+EarlyStopping counter: 1 out of 10
+
+Epoch 20/50
+------------------------------
+Current learning rate: 0.000039
+Train | Loss: 0.2230 | Acc: 0.9426 | F1: 0.9452 | AUC: 0.9887
+Val   | Loss: 0.2746 | Acc: 0.9000 | F1: 0.8000 | AUC: 0.9915
+EarlyStopping counter: 2 out of 10
+
+Epoch 21/50
+------------------------------
+Current learning rate: 0.000038
+Train | Loss: 0.2081 | Acc: 0.9441 | F1: 0.9464 | AUC: 0.9922
+Val   | Loss: 0.1806 | Acc: 0.9706 | F1: 0.9296 | AUC: 0.9919
+*** New best model for Fold 5 saved with Val F1: 0.9296 at epoch 21 ***
+EarlyStopping: Validation score improved (0.815287 --> 0.929577). Resetting counter.
+
+Epoch 22/50
+------------------------------
+Current learning rate: 0.000036
+Train | Loss: 0.2183 | Acc: 0.9422 | F1: 0.9447 | AUC: 0.9907
+Val   | Loss: 0.2127 | Acc: 0.9353 | F1: 0.8533 | AUC: 0.9895
+EarlyStopping counter: 1 out of 10
+
+Epoch 23/50
+------------------------------
+Current learning rate: 0.000035
+Train | Loss: 0.1621 | Acc: 0.9583 | F1: 0.9596 | AUC: 0.9953
+Val   | Loss: 0.2825 | Acc: 0.8971 | F1: 0.7929 | AUC: 0.9882
+EarlyStopping counter: 2 out of 10
+
+Epoch 24/50
+------------------------------
+Current learning rate: 0.000033
+Train | Loss: 0.1585 | Acc: 0.9572 | F1: 0.9584 | AUC: 0.9956
+Val   | Loss: 0.2650 | Acc: 0.9088 | F1: 0.8144 | AUC: 0.9916
+EarlyStopping counter: 3 out of 10
+
+Epoch 25/50
+------------------------------
+Current learning rate: 0.000031
+Train | Loss: 0.1542 | Acc: 0.9597 | F1: 0.9609 | AUC: 0.9951
+Val   | Loss: 0.1396 | Acc: 0.9676 | F1: 0.9241 | AUC: 0.9956
+EarlyStopping counter: 4 out of 10
+
+Epoch 26/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 0.1279 | Acc: 0.9692 | F1: 0.9699 | AUC: 0.9969
+Val   | Loss: 0.2264 | Acc: 0.9235 | F1: 0.8395 | AUC: 0.9957
+EarlyStopping counter: 5 out of 10
+
+Epoch 27/50
+------------------------------
+Current learning rate: 0.000028
+Train | Loss: 0.1261 | Acc: 0.9677 | F1: 0.9685 | AUC: 0.9973
+Val   | Loss: 0.1870 | Acc: 0.9324 | F1: 0.8553 | AUC: 0.9964
+EarlyStopping counter: 6 out of 10
+
+Epoch 28/50
+------------------------------
+Current learning rate: 0.000026
+Train | Loss: 0.0945 | Acc: 0.9772 | F1: 0.9776 | AUC: 0.9978
+Val   | Loss: 0.1575 | Acc: 0.9500 | F1: 0.8889 | AUC: 0.9971
+EarlyStopping counter: 7 out of 10
+
+Epoch 29/50
+------------------------------
+Current learning rate: 0.000025
+Train | Loss: 0.1148 | Acc: 0.9704 | F1: 0.9710 | AUC: 0.9978
+Val   | Loss: 0.0955 | Acc: 0.9765 | F1: 0.9429 | AUC: 0.9981
+*** New best model for Fold 5 saved with Val F1: 0.9429 at epoch 29 ***
+EarlyStopping: Validation score improved (0.929577 --> 0.942857). Resetting counter.
+
+Epoch 30/50
+------------------------------
+Current learning rate: 0.000023
+Train | Loss: 0.0999 | Acc: 0.9739 | F1: 0.9744 | AUC: 0.9983
+Val   | Loss: 0.0806 | Acc: 0.9735 | F1: 0.9379 | AUC: 0.9984
+EarlyStopping counter: 1 out of 10
+
+Epoch 31/50
+------------------------------
+Current learning rate: 0.000021
+Train | Loss: 0.0828 | Acc: 0.9792 | F1: 0.9795 | AUC: 0.9986
+Val   | Loss: 0.1045 | Acc: 0.9735 | F1: 0.9379 | AUC: 0.9985
+EarlyStopping counter: 2 out of 10
+
+Epoch 32/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 0.0819 | Acc: 0.9778 | F1: 0.9782 | AUC: 0.9988
+Val   | Loss: 0.0962 | Acc: 0.9735 | F1: 0.9379 | AUC: 0.9980
+EarlyStopping counter: 3 out of 10
+
+Epoch 33/50
+------------------------------
+Current learning rate: 0.000018
+Train | Loss: 0.0688 | Acc: 0.9829 | F1: 0.9831 | AUC: 0.9992
+Val   | Loss: 0.1212 | Acc: 0.9676 | F1: 0.9252 | AUC: 0.9985
+EarlyStopping counter: 4 out of 10
+
+Epoch 34/50
+------------------------------
+Current learning rate: 0.000016
+Train | Loss: 0.0549 | Acc: 0.9860 | F1: 0.9862 | AUC: 0.9994
+Val   | Loss: 0.0951 | Acc: 0.9676 | F1: 0.9252 | AUC: 0.9990
+EarlyStopping counter: 5 out of 10
+
+Epoch 35/50
+------------------------------
+Current learning rate: 0.000015
+Train | Loss: 0.0626 | Acc: 0.9860 | F1: 0.9861 | AUC: 0.9993
+Val   | Loss: 0.1156 | Acc: 0.9588 | F1: 0.9067 | AUC: 0.9986
+EarlyStopping counter: 6 out of 10
+
+Epoch 36/50
+------------------------------
+Current learning rate: 0.000013
+Train | Loss: 0.0433 | Acc: 0.9891 | F1: 0.9892 | AUC: 0.9997
+Val   | Loss: 0.0672 | Acc: 0.9765 | F1: 0.9444 | AUC: 0.9989
+*** New best model for Fold 5 saved with Val F1: 0.9444 at epoch 36 ***
+EarlyStopping: Validation score improved (0.942857 --> 0.944444). Resetting counter.
+
+Epoch 37/50
+------------------------------
+Current learning rate: 0.000012
+Train | Loss: 0.0500 | Acc: 0.9875 | F1: 0.9876 | AUC: 0.9995
+Val   | Loss: 0.1044 | Acc: 0.9676 | F1: 0.9241 | AUC: 0.9984
+EarlyStopping counter: 1 out of 10
+
+Epoch 38/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 0.0387 | Acc: 0.9907 | F1: 0.9908 | AUC: 0.9996
+Val   | Loss: 0.0840 | Acc: 0.9765 | F1: 0.9444 | AUC: 0.9985
+EarlyStopping counter: 2 out of 10
+
+Epoch 39/50
+------------------------------
+Current learning rate: 0.000009
+Train | Loss: 0.0325 | Acc: 0.9922 | F1: 0.9922 | AUC: 0.9998
+Val   | Loss: 0.1025 | Acc: 0.9676 | F1: 0.9252 | AUC: 0.9992
+EarlyStopping counter: 3 out of 10
+
+Epoch 40/50
+------------------------------
+Current learning rate: 0.000008
+Train | Loss: 0.0420 | Acc: 0.9916 | F1: 0.9916 | AUC: 0.9997
+Val   | Loss: 0.1495 | Acc: 0.9471 | F1: 0.8831 | AUC: 0.9991
+EarlyStopping counter: 4 out of 10
+
+Epoch 41/50
+------------------------------
+Current learning rate: 0.000007
+Train | Loss: 0.0500 | Acc: 0.9875 | F1: 0.9875 | AUC: 0.9996
+Val   | Loss: 0.0947 | Acc: 0.9706 | F1: 0.9315 | AUC: 0.9992
+EarlyStopping counter: 5 out of 10
+
+Epoch 42/50
+------------------------------
+Current learning rate: 0.000006
+Train | Loss: 0.0298 | Acc: 0.9928 | F1: 0.9928 | AUC: 0.9999
+Val   | Loss: 0.0888 | Acc: 0.9647 | F1: 0.9189 | AUC: 0.9995
+EarlyStopping counter: 6 out of 10
+
+Epoch 43/50
+------------------------------
+Current learning rate: 0.000005
+Train | Loss: 0.0256 | Acc: 0.9936 | F1: 0.9937 | AUC: 0.9999
+Val   | Loss: 0.0632 | Acc: 0.9794 | F1: 0.9510 | AUC: 0.9994
+*** New best model for Fold 5 saved with Val F1: 0.9510 at epoch 43 ***
+EarlyStopping: Validation score improved (0.944444 --> 0.951049). Resetting counter.
+
+Epoch 44/50
+------------------------------
+Current learning rate: 0.000004
+Train | Loss: 0.0231 | Acc: 0.9951 | F1: 0.9951 | AUC: 0.9998
+Val   | Loss: 0.0594 | Acc: 0.9853 | F1: 0.9645 | AUC: 0.9994
+*** New best model for Fold 5 saved with Val F1: 0.9645 at epoch 44 ***
+EarlyStopping: Validation score improved (0.951049 --> 0.964539). Resetting counter.
+
+Epoch 45/50
+------------------------------
+Current learning rate: 0.000003
+Train | Loss: 0.0256 | Acc: 0.9959 | F1: 0.9959 | AUC: 0.9999
+Val   | Loss: 0.0700 | Acc: 0.9794 | F1: 0.9510 | AUC: 0.9994
+EarlyStopping counter: 1 out of 10
+
+Epoch 46/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0214 | Acc: 0.9953 | F1: 0.9953 | AUC: 0.9999
+Val   | Loss: 0.0532 | Acc: 0.9853 | F1: 0.9645 | AUC: 0.9997
+EarlyStopping counter: 2 out of 10
+
+Epoch 47/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0220 | Acc: 0.9942 | F1: 0.9943 | AUC: 0.9999
+Val   | Loss: 0.0511 | Acc: 0.9853 | F1: 0.9645 | AUC: 0.9996
+EarlyStopping counter: 3 out of 10
+
+Epoch 48/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0219 | Acc: 0.9953 | F1: 0.9953 | AUC: 0.9999
+Val   | Loss: 0.0574 | Acc: 0.9824 | F1: 0.9577 | AUC: 0.9996
+EarlyStopping counter: 4 out of 10
+
+Epoch 49/50
+------------------------------
+Current learning rate: 0.000001
+Train | Loss: 0.0322 | Acc: 0.9928 | F1: 0.9928 | AUC: 0.9998
+Val   | Loss: 0.0641 | Acc: 0.9824 | F1: 0.9577 | AUC: 0.9995
+EarlyStopping counter: 5 out of 10
+
+Epoch 50/50
+------------------------------
+Current learning rate: 0.000001
+Train | Loss: 0.0311 | Acc: 0.9924 | F1: 0.9924 | AUC: 0.9997
+Val   | Loss: 0.0567 | Acc: 0.9824 | F1: 0.9577 | AUC: 0.9996
+EarlyStopping counter: 6 out of 10
+Using best standard model state from Fold 5 (Val F1: 0.9645)
+Saved training history plot to D:\Projects\aol-cv-dl\dementia dataset\plots\tuned_v2\training_metrics_fold_5_20251205-134859.png
+--------------------------------------------------
+
+==================================================
+Fold 6/10
+==================================================
+Applying SMOTE to balance the dataset...
+Original class distribution: Counter({0: 2448, 1: 612})
+Resampled class distribution: Counter({0: 2448, 1: 2448})
+
+Epoch 1/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 1.3302 | Acc: 0.5084 | F1: 0.6498 | AUC: 0.6055
+Val   | Loss: 1.1939 | Acc: 0.2735 | F1: 0.3551 | AUC: 0.7456
+*** New best model for Fold 6 saved with Val F1: 0.3551 at epoch 1 ***
+EarlyStopping: Best score set to 0.355091
+
+Epoch 2/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 1.1235 | Acc: 0.5703 | F1: 0.6942 | AUC: 0.7095
+Val   | Loss: 0.9975 | Acc: 0.5559 | F1: 0.4549 | AUC: 0.7843
+*** New best model for Fold 6 saved with Val F1: 0.4549 at epoch 2 ***
+EarlyStopping: Validation score improved (0.355091 --> 0.454874). Resetting counter.
+
+Epoch 3/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 1.0361 | Acc: 0.6353 | F1: 0.7271 | AUC: 0.7528
+Val   | Loss: 1.1996 | Acc: 0.4294 | F1: 0.4121 | AUC: 0.8055
+EarlyStopping counter: 1 out of 10
+
+Epoch 4/50
+------------------------------
+Current learning rate: 0.000040
+Train | Loss: 0.9721 | Acc: 0.6614 | F1: 0.7408 | AUC: 0.7889
+Val   | Loss: 0.9033 | Acc: 0.5882 | F1: 0.4853 | AUC: 0.8259
+*** New best model for Fold 6 saved with Val F1: 0.4853 at epoch 4 ***
+EarlyStopping: Validation score improved (0.454874 --> 0.485294). Resetting counter.
+
+Epoch 5/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.9500 | Acc: 0.6641 | F1: 0.7428 | AUC: 0.8032
+Val   | Loss: 0.7289 | Acc: 0.7500 | F1: 0.5596 | AUC: 0.8649
+*** New best model for Fold 6 saved with Val F1: 0.5596 at epoch 5 ***
+EarlyStopping: Validation score improved (0.485294 --> 0.559585). Resetting counter.
+
+Epoch 6/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.9007 | Acc: 0.6918 | F1: 0.7581 | AUC: 0.8218
+Val   | Loss: 0.8447 | Acc: 0.6294 | F1: 0.5039 | AUC: 0.8393
+EarlyStopping counter: 1 out of 10
+
+Epoch 7/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.8067 | Acc: 0.7327 | F1: 0.7841 | AUC: 0.8582
+Val   | Loss: 0.9412 | Acc: 0.6000 | F1: 0.4963 | AUC: 0.8642
+EarlyStopping counter: 2 out of 10
+
+Epoch 8/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.8164 | Acc: 0.7311 | F1: 0.7829 | AUC: 0.8538
+Val   | Loss: 0.8115 | Acc: 0.6059 | F1: 0.4962 | AUC: 0.8621
+EarlyStopping counter: 3 out of 10
+
+Epoch 9/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.7177 | Acc: 0.7728 | F1: 0.8111 | AUC: 0.8911
+Val   | Loss: 1.0081 | Acc: 0.5559 | F1: 0.4664 | AUC: 0.8829
+EarlyStopping counter: 4 out of 10
+
+Epoch 10/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.6526 | Acc: 0.7878 | F1: 0.8210 | AUC: 0.9118
+Val   | Loss: 0.6403 | Acc: 0.7676 | F1: 0.6184 | AUC: 0.9098
+*** New best model for Fold 6 saved with Val F1: 0.6184 at epoch 10 ***
+EarlyStopping: Validation score improved (0.559585 --> 0.618357). Resetting counter.
+
+Epoch 11/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.6342 | Acc: 0.8018 | F1: 0.8312 | AUC: 0.9173
+Val   | Loss: 0.6794 | Acc: 0.7265 | F1: 0.5903 | AUC: 0.9265
+EarlyStopping counter: 1 out of 10
+
+Epoch 12/50
+------------------------------
+Current learning rate: 0.000048
+Train | Loss: 0.5837 | Acc: 0.8164 | F1: 0.8414 | AUC: 0.9320
+Val   | Loss: 0.7946 | Acc: 0.6853 | F1: 0.5485 | AUC: 0.9269
+EarlyStopping counter: 2 out of 10
+
+Epoch 13/50
+------------------------------
+Current learning rate: 0.000047
+Train | Loss: 0.4903 | Acc: 0.8512 | F1: 0.8680 | AUC: 0.9520
+Val   | Loss: 0.6406 | Acc: 0.7235 | F1: 0.5804 | AUC: 0.9407
+EarlyStopping counter: 3 out of 10
+
+Epoch 14/50
+------------------------------
+Current learning rate: 0.000046
+Train | Loss: 0.4887 | Acc: 0.8553 | F1: 0.8709 | AUC: 0.9536
+Val   | Loss: 0.5328 | Acc: 0.8029 | F1: 0.6599 | AUC: 0.9530
+*** New best model for Fold 6 saved with Val F1: 0.6599 at epoch 14 ***
+EarlyStopping: Validation score improved (0.618357 --> 0.659898). Resetting counter.
+
+Epoch 15/50
+------------------------------
+Current learning rate: 0.000045
+Train | Loss: 0.4410 | Acc: 0.8674 | F1: 0.8804 | AUC: 0.9646
+Val   | Loss: 0.5651 | Acc: 0.7882 | F1: 0.6400 | AUC: 0.9499
+EarlyStopping counter: 1 out of 10
+
+Epoch 16/50
+------------------------------
+Current learning rate: 0.000044
+Train | Loss: 0.4115 | Acc: 0.8806 | F1: 0.8910 | AUC: 0.9675
+Val   | Loss: 0.5664 | Acc: 0.8029 | F1: 0.6633 | AUC: 0.9605
+*** New best model for Fold 6 saved with Val F1: 0.6633 at epoch 16 ***
+EarlyStopping: Validation score improved (0.659898 --> 0.663317). Resetting counter.
+
+Epoch 17/50
+------------------------------
+Current learning rate: 0.000043
+Train | Loss: 0.3683 | Acc: 0.8962 | F1: 0.9039 | AUC: 0.9757
+Val   | Loss: 0.3838 | Acc: 0.8941 | F1: 0.7831 | AUC: 0.9637
+*** New best model for Fold 6 saved with Val F1: 0.7831 at epoch 17 ***
+EarlyStopping: Validation score improved (0.663317 --> 0.783133). Resetting counter.
+
+Epoch 18/50
+------------------------------
+Current learning rate: 0.000042
+Train | Loss: 0.3076 | Acc: 0.9095 | F1: 0.9155 | AUC: 0.9831
+Val   | Loss: 0.4178 | Acc: 0.8559 | F1: 0.7263 | AUC: 0.9675
+EarlyStopping counter: 1 out of 10
+
+Epoch 19/50
+------------------------------
+Current learning rate: 0.000041
+Train | Loss: 0.3662 | Acc: 0.9030 | F1: 0.9097 | AUC: 0.9740
+Val   | Loss: 0.4819 | Acc: 0.8206 | F1: 0.6872 | AUC: 0.9733
+EarlyStopping counter: 2 out of 10
+
+Epoch 20/50
+------------------------------
+Current learning rate: 0.000039
+Train | Loss: 0.2705 | Acc: 0.9274 | F1: 0.9315 | AUC: 0.9863
+Val   | Loss: 0.4371 | Acc: 0.8353 | F1: 0.7083 | AUC: 0.9833
+EarlyStopping counter: 3 out of 10
+
+Epoch 21/50
+------------------------------
+Current learning rate: 0.000038
+Train | Loss: 0.2201 | Acc: 0.9406 | F1: 0.9431 | AUC: 0.9910
+Val   | Loss: 0.4858 | Acc: 0.8294 | F1: 0.6947 | AUC: 0.9771
+EarlyStopping counter: 4 out of 10
+
+Epoch 22/50
+------------------------------
+Current learning rate: 0.000036
+Train | Loss: 0.2088 | Acc: 0.9445 | F1: 0.9468 | AUC: 0.9912
+Val   | Loss: 0.2778 | Acc: 0.9382 | F1: 0.8591 | AUC: 0.9836
+*** New best model for Fold 6 saved with Val F1: 0.8591 at epoch 22 ***
+EarlyStopping: Validation score improved (0.783133 --> 0.859060). Resetting counter.
+
+Epoch 23/50
+------------------------------
+Current learning rate: 0.000035
+Train | Loss: 0.1745 | Acc: 0.9523 | F1: 0.9540 | AUC: 0.9936
+Val   | Loss: 0.3348 | Acc: 0.8735 | F1: 0.7543 | AUC: 0.9874
+EarlyStopping counter: 1 out of 10
+
+Epoch 24/50
+------------------------------
+Current learning rate: 0.000033
+Train | Loss: 0.1648 | Acc: 0.9572 | F1: 0.9587 | AUC: 0.9946
+Val   | Loss: 0.2490 | Acc: 0.9294 | F1: 0.8462 | AUC: 0.9860
+EarlyStopping counter: 2 out of 10
+
+Epoch 25/50
+------------------------------
+Current learning rate: 0.000031
+Train | Loss: 0.1444 | Acc: 0.9657 | F1: 0.9666 | AUC: 0.9957
+Val   | Loss: 0.2544 | Acc: 0.9294 | F1: 0.8421 | AUC: 0.9884
+EarlyStopping counter: 3 out of 10
+
+Epoch 26/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 0.1515 | Acc: 0.9642 | F1: 0.9651 | AUC: 0.9956
+Val   | Loss: 0.2238 | Acc: 0.9294 | F1: 0.8442 | AUC: 0.9893
+EarlyStopping counter: 4 out of 10
+
+Epoch 27/50
+------------------------------
+Current learning rate: 0.000028
+Train | Loss: 0.1247 | Acc: 0.9679 | F1: 0.9687 | AUC: 0.9972
+Val   | Loss: 0.1171 | Acc: 0.9618 | F1: 0.9091 | AUC: 0.9967
+*** New best model for Fold 6 saved with Val F1: 0.9091 at epoch 27 ***
+EarlyStopping: Validation score improved (0.859060 --> 0.909091). Resetting counter.
+
+Epoch 28/50
+------------------------------
+Current learning rate: 0.000026
+Train | Loss: 0.1238 | Acc: 0.9683 | F1: 0.9690 | AUC: 0.9971
+Val   | Loss: 0.3085 | Acc: 0.9353 | F1: 0.8553 | AUC: 0.9824
+EarlyStopping counter: 1 out of 10
+
+Epoch 29/50
+------------------------------
+Current learning rate: 0.000025
+Train | Loss: 0.1129 | Acc: 0.9749 | F1: 0.9754 | AUC: 0.9971
+Val   | Loss: 0.1721 | Acc: 0.9500 | F1: 0.8844 | AUC: 0.9940
+EarlyStopping counter: 2 out of 10
+
+Epoch 30/50
+------------------------------
+Current learning rate: 0.000023
+Train | Loss: 0.0972 | Acc: 0.9749 | F1: 0.9755 | AUC: 0.9981
+Val   | Loss: 0.3264 | Acc: 0.8971 | F1: 0.7929 | AUC: 0.9902
+EarlyStopping counter: 3 out of 10
+
+Epoch 31/50
+------------------------------
+Current learning rate: 0.000021
+Train | Loss: 0.0942 | Acc: 0.9751 | F1: 0.9756 | AUC: 0.9982
+Val   | Loss: 0.2775 | Acc: 0.9441 | F1: 0.8725 | AUC: 0.9851
+EarlyStopping counter: 4 out of 10
+
+Epoch 32/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 0.0772 | Acc: 0.9803 | F1: 0.9805 | AUC: 0.9989
+Val   | Loss: 0.3046 | Acc: 0.8971 | F1: 0.7929 | AUC: 0.9925
+EarlyStopping counter: 5 out of 10
+
+Epoch 33/50
+------------------------------
+Current learning rate: 0.000018
+Train | Loss: 0.0914 | Acc: 0.9762 | F1: 0.9765 | AUC: 0.9985
+Val   | Loss: 0.2431 | Acc: 0.9500 | F1: 0.8844 | AUC: 0.9878
+EarlyStopping counter: 6 out of 10
+
+Epoch 34/50
+------------------------------
+Current learning rate: 0.000016
+Train | Loss: 0.0646 | Acc: 0.9831 | F1: 0.9833 | AUC: 0.9993
+Val   | Loss: 0.1656 | Acc: 0.9647 | F1: 0.9167 | AUC: 0.9944
+*** New best model for Fold 6 saved with Val F1: 0.9167 at epoch 34 ***
+EarlyStopping: Validation score improved (0.909091 --> 0.916667). Resetting counter.
+
+Epoch 35/50
+------------------------------
+Current learning rate: 0.000015
+Train | Loss: 0.0542 | Acc: 0.9877 | F1: 0.9878 | AUC: 0.9993
+Val   | Loss: 0.2350 | Acc: 0.9706 | F1: 0.9286 | AUC: 0.9889
+*** New best model for Fold 6 saved with Val F1: 0.9286 at epoch 35 ***
+EarlyStopping: Validation score improved (0.916667 --> 0.928571). Resetting counter.
+
+Epoch 36/50
+------------------------------
+Current learning rate: 0.000013
+Train | Loss: 0.0593 | Acc: 0.9846 | F1: 0.9847 | AUC: 0.9995
+Val   | Loss: 0.1595 | Acc: 0.9706 | F1: 0.9275 | AUC: 0.9949
+EarlyStopping counter: 1 out of 10
+
+Epoch 37/50
+------------------------------
+Current learning rate: 0.000012
+Train | Loss: 0.0548 | Acc: 0.9877 | F1: 0.9878 | AUC: 0.9993
+Val   | Loss: 0.2250 | Acc: 0.9676 | F1: 0.9220 | AUC: 0.9913
+EarlyStopping counter: 2 out of 10
+
+Epoch 38/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 0.0566 | Acc: 0.9864 | F1: 0.9866 | AUC: 0.9995
+Val   | Loss: 0.2023 | Acc: 0.9324 | F1: 0.8516 | AUC: 0.9949
+EarlyStopping counter: 3 out of 10
+
+Epoch 39/50
+------------------------------
+Current learning rate: 0.000009
+Train | Loss: 0.0524 | Acc: 0.9879 | F1: 0.9880 | AUC: 0.9995
+Val   | Loss: 0.1610 | Acc: 0.9588 | F1: 0.9041 | AUC: 0.9948
+EarlyStopping counter: 4 out of 10
+
+Epoch 40/50
+------------------------------
+Current learning rate: 0.000008
+Train | Loss: 0.0506 | Acc: 0.9870 | F1: 0.9872 | AUC: 0.9995
+Val   | Loss: 0.1369 | Acc: 0.9794 | F1: 0.9504 | AUC: 0.9954
+*** New best model for Fold 6 saved with Val F1: 0.9504 at epoch 40 ***
+EarlyStopping: Validation score improved (0.928571 --> 0.950355). Resetting counter.
+
+Epoch 41/50
+------------------------------
+Current learning rate: 0.000007
+Train | Loss: 0.0491 | Acc: 0.9895 | F1: 0.9896 | AUC: 0.9992
+Val   | Loss: 0.2179 | Acc: 0.9735 | F1: 0.9323 | AUC: 0.9923
+EarlyStopping counter: 1 out of 10
+
+Epoch 42/50
+------------------------------
+Current learning rate: 0.000006
+Train | Loss: 0.0582 | Acc: 0.9879 | F1: 0.9880 | AUC: 0.9995
+Val   | Loss: 0.1370 | Acc: 0.9735 | F1: 0.9362 | AUC: 0.9955
+EarlyStopping counter: 2 out of 10
+
+Epoch 43/50
+------------------------------
+Current learning rate: 0.000005
+Train | Loss: 0.0432 | Acc: 0.9897 | F1: 0.9898 | AUC: 0.9997
+Val   | Loss: 0.1221 | Acc: 0.9765 | F1: 0.9437 | AUC: 0.9962
+EarlyStopping counter: 3 out of 10
+
+Epoch 44/50
+------------------------------
+Current learning rate: 0.000004
+Train | Loss: 0.0336 | Acc: 0.9932 | F1: 0.9933 | AUC: 0.9997
+Val   | Loss: 0.1258 | Acc: 0.9735 | F1: 0.9362 | AUC: 0.9964
+EarlyStopping counter: 4 out of 10
+
+Epoch 45/50
+------------------------------
+Current learning rate: 0.000003
+Train | Loss: 0.0360 | Acc: 0.9922 | F1: 0.9922 | AUC: 0.9996
+Val   | Loss: 0.1148 | Acc: 0.9824 | F1: 0.9571 | AUC: 0.9966
+*** New best model for Fold 6 saved with Val F1: 0.9571 at epoch 45 ***
+EarlyStopping: Validation score improved (0.950355 --> 0.957143). Resetting counter.
+
+Epoch 46/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0343 | Acc: 0.9916 | F1: 0.9916 | AUC: 0.9998
+Val   | Loss: 0.1067 | Acc: 0.9794 | F1: 0.9496 | AUC: 0.9973
+EarlyStopping counter: 1 out of 10
+
+Epoch 47/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0279 | Acc: 0.9940 | F1: 0.9941 | AUC: 0.9999
+Val   | Loss: 0.1207 | Acc: 0.9794 | F1: 0.9496 | AUC: 0.9965
+EarlyStopping counter: 2 out of 10
+
+Epoch 48/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0362 | Acc: 0.9922 | F1: 0.9922 | AUC: 0.9998
+Val   | Loss: 0.1062 | Acc: 0.9794 | F1: 0.9496 | AUC: 0.9973
+EarlyStopping counter: 3 out of 10
+
+Epoch 49/50
+------------------------------
+Current learning rate: 0.000001
+Train | Loss: 0.0236 | Acc: 0.9944 | F1: 0.9945 | AUC: 0.9999
+Val   | Loss: 0.1111 | Acc: 0.9824 | F1: 0.9565 | AUC: 0.9971
+EarlyStopping counter: 4 out of 10
+
+Epoch 50/50
+------------------------------
+Current learning rate: 0.000001
+Train | Loss: 0.0315 | Acc: 0.9934 | F1: 0.9934 | AUC: 0.9999
+Val   | Loss: 0.1082 | Acc: 0.9853 | F1: 0.9640 | AUC: 0.9972
+*** New best model for Fold 6 saved with Val F1: 0.9640 at epoch 50 ***
+EarlyStopping: Validation score improved (0.957143 --> 0.964029). Resetting counter.
+Using best standard model state from Fold 6 (Val F1: 0.9640)
+Saved training history plot to D:\Projects\aol-cv-dl\dementia dataset\plots\tuned_v2\training_metrics_fold_6_20251205-140144.png
+--------------------------------------------------
+
+==================================================
+Fold 7/10
+==================================================
+Applying SMOTE to balance the dataset...
+Original class distribution: Counter({0: 2448, 1: 612})
+Resampled class distribution: Counter({0: 2448, 1: 2448})
+
+Epoch 1/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 1.1920 | Acc: 0.5164 | F1: 0.6710 | AUC: 0.6540
+Val   | Loss: 1.3488 | Acc: 0.3441 | F1: 0.3754 | AUC: 0.7262
+*** New best model for Fold 7 saved with Val F1: 0.3754 at epoch 1 ***
+EarlyStopping: Best score set to 0.375350
+
+Epoch 2/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 1.0933 | Acc: 0.5960 | F1: 0.7061 | AUC: 0.7233
+Val   | Loss: 1.1355 | Acc: 0.4529 | F1: 0.4076 | AUC: 0.7744
+*** New best model for Fold 7 saved with Val F1: 0.4076 at epoch 2 ***
+EarlyStopping: Validation score improved (0.375350 --> 0.407643). Resetting counter.
+
+Epoch 3/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 1.0216 | Acc: 0.6349 | F1: 0.7267 | AUC: 0.7643
+Val   | Loss: 1.0031 | Acc: 0.5294 | F1: 0.4366 | AUC: 0.7928
+*** New best model for Fold 7 saved with Val F1: 0.4366 at epoch 3 ***
+EarlyStopping: Validation score improved (0.407643 --> 0.436620). Resetting counter.
+
+Epoch 4/50
+------------------------------
+Current learning rate: 0.000040
+Train | Loss: 0.9509 | Acc: 0.6704 | F1: 0.7471 | AUC: 0.8011
+Val   | Loss: 0.8993 | Acc: 0.5500 | F1: 0.4594 | AUC: 0.8320
+*** New best model for Fold 7 saved with Val F1: 0.4594 at epoch 4 ***
+EarlyStopping: Validation score improved (0.436620 --> 0.459364). Resetting counter.
+
+Epoch 5/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.9400 | Acc: 0.6828 | F1: 0.7542 | AUC: 0.7992
+Val   | Loss: 1.0575 | Acc: 0.5059 | F1: 0.4324 | AUC: 0.8164
+EarlyStopping counter: 1 out of 10
+
+Epoch 6/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.8582 | Acc: 0.7064 | F1: 0.7675 | AUC: 0.8385
+Val   | Loss: 0.8271 | Acc: 0.6618 | F1: 0.5306 | AUC: 0.8531
+*** New best model for Fold 7 saved with Val F1: 0.5306 at epoch 6 ***
+EarlyStopping: Validation score improved (0.459364 --> 0.530612). Resetting counter.
+
+Epoch 7/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.8127 | Acc: 0.7313 | F1: 0.7830 | AUC: 0.8606
+Val   | Loss: 0.8192 | Acc: 0.6324 | F1: 0.5059 | AUC: 0.8309
+EarlyStopping counter: 1 out of 10
+
+Epoch 8/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.7374 | Acc: 0.7607 | F1: 0.8032 | AUC: 0.8834
+Val   | Loss: 0.8346 | Acc: 0.6559 | F1: 0.5105 | AUC: 0.8727
+EarlyStopping counter: 2 out of 10
+
+Epoch 9/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.6787 | Acc: 0.7808 | F1: 0.8162 | AUC: 0.9020
+Val   | Loss: 0.7741 | Acc: 0.6882 | F1: 0.5546 | AUC: 0.8868
+*** New best model for Fold 7 saved with Val F1: 0.5546 at epoch 9 ***
+EarlyStopping: Validation score improved (0.530612 --> 0.554622). Resetting counter.
+
+Epoch 10/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.6293 | Acc: 0.8045 | F1: 0.8331 | AUC: 0.9181
+Val   | Loss: 0.7048 | Acc: 0.6853 | F1: 0.5368 | AUC: 0.9022
+EarlyStopping counter: 1 out of 10
+
+Epoch 11/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.5864 | Acc: 0.8158 | F1: 0.8409 | AUC: 0.9313
+Val   | Loss: 0.7586 | Acc: 0.7088 | F1: 0.5714 | AUC: 0.9301
+*** New best model for Fold 7 saved with Val F1: 0.5714 at epoch 11 ***
+EarlyStopping: Validation score improved (0.554622 --> 0.571429). Resetting counter.
+
+Epoch 12/50
+------------------------------
+Current learning rate: 0.000048
+Train | Loss: 0.5157 | Acc: 0.8440 | F1: 0.8619 | AUC: 0.9460
+Val   | Loss: 0.6392 | Acc: 0.7471 | F1: 0.5981 | AUC: 0.9380
+*** New best model for Fold 7 saved with Val F1: 0.5981 at epoch 12 ***
+EarlyStopping: Validation score improved (0.571429 --> 0.598131). Resetting counter.
+
+Epoch 13/50
+------------------------------
+Current learning rate: 0.000047
+Train | Loss: 0.4767 | Acc: 0.8559 | F1: 0.8714 | AUC: 0.9555
+Val   | Loss: 0.4923 | Acc: 0.8941 | F1: 0.7600 | AUC: 0.9474
+*** New best model for Fold 7 saved with Val F1: 0.7600 at epoch 13 ***
+EarlyStopping: Validation score improved (0.598131 --> 0.760000). Resetting counter.
+
+Epoch 14/50
+------------------------------
+Current learning rate: 0.000046
+Train | Loss: 0.4541 | Acc: 0.8625 | F1: 0.8761 | AUC: 0.9601
+Val   | Loss: 0.5622 | Acc: 0.7647 | F1: 0.6190 | AUC: 0.9555
+EarlyStopping counter: 1 out of 10
+
+Epoch 15/50
+------------------------------
+Current learning rate: 0.000045
+Train | Loss: 0.4094 | Acc: 0.8785 | F1: 0.8894 | AUC: 0.9677
+Val   | Loss: 0.4532 | Acc: 0.8324 | F1: 0.6885 | AUC: 0.9576
+EarlyStopping counter: 2 out of 10
+
+Epoch 16/50
+------------------------------
+Current learning rate: 0.000044
+Train | Loss: 0.3478 | Acc: 0.9011 | F1: 0.9087 | AUC: 0.9768
+Val   | Loss: 0.3981 | Acc: 0.8853 | F1: 0.7692 | AUC: 0.9626
+*** New best model for Fold 7 saved with Val F1: 0.7692 at epoch 16 ***
+EarlyStopping: Validation score improved (0.760000 --> 0.769231). Resetting counter.
+
+Epoch 17/50
+------------------------------
+Current learning rate: 0.000043
+Train | Loss: 0.3717 | Acc: 0.8993 | F1: 0.9067 | AUC: 0.9731
+Val   | Loss: 0.4400 | Acc: 0.8324 | F1: 0.6952 | AUC: 0.9645
+EarlyStopping counter: 1 out of 10
+
+Epoch 18/50
+------------------------------
+Current learning rate: 0.000042
+Train | Loss: 0.2821 | Acc: 0.9213 | F1: 0.9260 | AUC: 0.9850
+Val   | Loss: 0.3861 | Acc: 0.8588 | F1: 0.7303 | AUC: 0.9743
+EarlyStopping counter: 2 out of 10
+
+Epoch 19/50
+------------------------------
+Current learning rate: 0.000041
+Train | Loss: 0.2639 | Acc: 0.9264 | F1: 0.9303 | AUC: 0.9870
+Val   | Loss: 0.4179 | Acc: 0.8441 | F1: 0.7166 | AUC: 0.9794
+EarlyStopping counter: 3 out of 10
+
+Epoch 20/50
+------------------------------
+Current learning rate: 0.000039
+Train | Loss: 0.2297 | Acc: 0.9371 | F1: 0.9401 | AUC: 0.9902
+Val   | Loss: 0.3973 | Acc: 0.8647 | F1: 0.7444 | AUC: 0.9801
+EarlyStopping counter: 4 out of 10
+
+Epoch 21/50
+------------------------------
+Current learning rate: 0.000038
+Train | Loss: 0.2371 | Acc: 0.9340 | F1: 0.9370 | AUC: 0.9892
+Val   | Loss: 0.2442 | Acc: 0.9059 | F1: 0.8049 | AUC: 0.9903
+*** New best model for Fold 7 saved with Val F1: 0.8049 at epoch 21 ***
+EarlyStopping: Validation score improved (0.769231 --> 0.804878). Resetting counter.
+
+Epoch 22/50
+------------------------------
+Current learning rate: 0.000036
+Train | Loss: 0.2053 | Acc: 0.9443 | F1: 0.9466 | AUC: 0.9927
+Val   | Loss: 0.1597 | Acc: 0.9588 | F1: 0.9054 | AUC: 0.9943
+*** New best model for Fold 7 saved with Val F1: 0.9054 at epoch 22 ***
+EarlyStopping: Validation score improved (0.804878 --> 0.905405). Resetting counter.
+
+Epoch 23/50
+------------------------------
+Current learning rate: 0.000035
+Train | Loss: 0.2166 | Acc: 0.9435 | F1: 0.9457 | AUC: 0.9909
+Val   | Loss: 0.2676 | Acc: 0.9206 | F1: 0.8302 | AUC: 0.9839
+EarlyStopping counter: 1 out of 10
+
+Epoch 24/50
+------------------------------
+Current learning rate: 0.000033
+Train | Loss: 0.1466 | Acc: 0.9607 | F1: 0.9620 | AUC: 0.9961
+Val   | Loss: 0.2531 | Acc: 0.9118 | F1: 0.8148 | AUC: 0.9862
+EarlyStopping counter: 2 out of 10
+
+Epoch 25/50
+------------------------------
+Current learning rate: 0.000031
+Train | Loss: 0.1876 | Acc: 0.9535 | F1: 0.9552 | AUC: 0.9925
+Val   | Loss: 0.4337 | Acc: 0.8412 | F1: 0.7128 | AUC: 0.9890
+EarlyStopping counter: 3 out of 10
+
+Epoch 26/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 0.1495 | Acc: 0.9642 | F1: 0.9652 | AUC: 0.9959
+Val   | Loss: 0.1407 | Acc: 0.9618 | F1: 0.9116 | AUC: 0.9967
+*** New best model for Fold 7 saved with Val F1: 0.9116 at epoch 26 ***
+EarlyStopping: Validation score improved (0.905405 --> 0.911565). Resetting counter.
+
+Epoch 27/50
+------------------------------
+Current learning rate: 0.000028
+Train | Loss: 0.1197 | Acc: 0.9679 | F1: 0.9686 | AUC: 0.9977
+Val   | Loss: 0.1229 | Acc: 0.9794 | F1: 0.9496 | AUC: 0.9964
+*** New best model for Fold 7 saved with Val F1: 0.9496 at epoch 27 ***
+EarlyStopping: Validation score improved (0.911565 --> 0.949640). Resetting counter.
+
+Epoch 28/50
+------------------------------
+Current learning rate: 0.000026
+Train | Loss: 0.1224 | Acc: 0.9698 | F1: 0.9704 | AUC: 0.9973
+Val   | Loss: 0.1312 | Acc: 0.9676 | F1: 0.9241 | AUC: 0.9962
+EarlyStopping counter: 1 out of 10
+
+Epoch 29/50
+------------------------------
+Current learning rate: 0.000025
+Train | Loss: 0.0919 | Acc: 0.9772 | F1: 0.9776 | AUC: 0.9985
+Val   | Loss: 0.1094 | Acc: 0.9588 | F1: 0.9054 | AUC: 0.9974
+EarlyStopping counter: 2 out of 10
+
+Epoch 30/50
+------------------------------
+Current learning rate: 0.000023
+Train | Loss: 0.0808 | Acc: 0.9772 | F1: 0.9776 | AUC: 0.9989
+Val   | Loss: 0.1570 | Acc: 0.9676 | F1: 0.9209 | AUC: 0.9944
+EarlyStopping counter: 3 out of 10
+
+Epoch 31/50
+------------------------------
+Current learning rate: 0.000021
+Train | Loss: 0.0800 | Acc: 0.9805 | F1: 0.9807 | AUC: 0.9987
+Val   | Loss: 0.1308 | Acc: 0.9647 | F1: 0.9167 | AUC: 0.9961
+EarlyStopping counter: 4 out of 10
+
+Epoch 32/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 0.0708 | Acc: 0.9821 | F1: 0.9823 | AUC: 0.9991
+Val   | Loss: 0.1541 | Acc: 0.9853 | F1: 0.9624 | AUC: 0.9935
+*** New best model for Fold 7 saved with Val F1: 0.9624 at epoch 32 ***
+EarlyStopping: Validation score improved (0.949640 --> 0.962406). Resetting counter.
+
+Epoch 33/50
+------------------------------
+Current learning rate: 0.000018
+Train | Loss: 0.0792 | Acc: 0.9823 | F1: 0.9825 | AUC: 0.9989
+Val   | Loss: 0.1139 | Acc: 0.9618 | F1: 0.9091 | AUC: 0.9970
+EarlyStopping counter: 1 out of 10
+
+Epoch 34/50
+------------------------------
+Current learning rate: 0.000016
+Train | Loss: 0.0499 | Acc: 0.9883 | F1: 0.9884 | AUC: 0.9995
+Val   | Loss: 0.1455 | Acc: 0.9853 | F1: 0.9635 | AUC: 0.9945
+*** New best model for Fold 7 saved with Val F1: 0.9635 at epoch 34 ***
+EarlyStopping: Validation score improved (0.962406 --> 0.963504). Resetting counter.
+
+Epoch 35/50
+------------------------------
+Current learning rate: 0.000015
+Train | Loss: 0.0496 | Acc: 0.9870 | F1: 0.9872 | AUC: 0.9996
+Val   | Loss: 0.1282 | Acc: 0.9676 | F1: 0.9241 | AUC: 0.9974
+EarlyStopping counter: 1 out of 10
+
+Epoch 36/50
+------------------------------
+Current learning rate: 0.000013
+Train | Loss: 0.0494 | Acc: 0.9891 | F1: 0.9892 | AUC: 0.9996
+Val   | Loss: 0.1384 | Acc: 0.9794 | F1: 0.9489 | AUC: 0.9957
+EarlyStopping counter: 2 out of 10
+
+Epoch 37/50
+------------------------------
+Current learning rate: 0.000012
+Train | Loss: 0.0624 | Acc: 0.9848 | F1: 0.9850 | AUC: 0.9992
+Val   | Loss: 0.1251 | Acc: 0.9794 | F1: 0.9496 | AUC: 0.9962
+EarlyStopping counter: 3 out of 10
+
+Epoch 38/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 0.0543 | Acc: 0.9864 | F1: 0.9866 | AUC: 0.9994
+Val   | Loss: 0.1127 | Acc: 0.9824 | F1: 0.9565 | AUC: 0.9966
+EarlyStopping counter: 4 out of 10
+
+Epoch 39/50
+------------------------------
+Current learning rate: 0.000009
+Train | Loss: 0.0373 | Acc: 0.9928 | F1: 0.9929 | AUC: 0.9997
+Val   | Loss: 0.1072 | Acc: 0.9853 | F1: 0.9630 | AUC: 0.9976
+EarlyStopping counter: 5 out of 10
+
+Epoch 40/50
+------------------------------
+Current learning rate: 0.000008
+Train | Loss: 0.0406 | Acc: 0.9893 | F1: 0.9894 | AUC: 0.9996
+Val   | Loss: 0.1133 | Acc: 0.9853 | F1: 0.9630 | AUC: 0.9980
+EarlyStopping counter: 6 out of 10
+
+Epoch 41/50
+------------------------------
+Current learning rate: 0.000007
+Train | Loss: 0.0327 | Acc: 0.9914 | F1: 0.9914 | AUC: 0.9998
+Val   | Loss: 0.1113 | Acc: 0.9941 | F1: 0.9851 | AUC: 0.9972
+*** New best model for Fold 7 saved with Val F1: 0.9851 at epoch 41 ***
+EarlyStopping: Validation score improved (0.963504 --> 0.985075). Resetting counter.
+
+Epoch 42/50
+------------------------------
+Current learning rate: 0.000006
+Train | Loss: 0.0313 | Acc: 0.9930 | F1: 0.9931 | AUC: 0.9997
+Val   | Loss: 0.0868 | Acc: 0.9912 | F1: 0.9778 | AUC: 0.9985
+EarlyStopping counter: 1 out of 10
+
+Epoch 43/50
+------------------------------
+Current learning rate: 0.000005
+Train | Loss: 0.0366 | Acc: 0.9920 | F1: 0.9920 | AUC: 0.9997
+Val   | Loss: 0.0837 | Acc: 0.9882 | F1: 0.9706 | AUC: 0.9984
+EarlyStopping counter: 2 out of 10
+
+Epoch 44/50
+------------------------------
+Current learning rate: 0.000004
+Train | Loss: 0.0325 | Acc: 0.9912 | F1: 0.9912 | AUC: 0.9998
+Val   | Loss: 0.0792 | Acc: 0.9941 | F1: 0.9851 | AUC: 0.9990
+EarlyStopping counter: 3 out of 10
+
+Epoch 45/50
+------------------------------
+Current learning rate: 0.000003
+Train | Loss: 0.0319 | Acc: 0.9940 | F1: 0.9941 | AUC: 0.9997
+Val   | Loss: 0.0949 | Acc: 0.9853 | F1: 0.9630 | AUC: 0.9981
+EarlyStopping counter: 4 out of 10
+
+Epoch 46/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0229 | Acc: 0.9938 | F1: 0.9939 | AUC: 0.9999
+Val   | Loss: 0.0924 | Acc: 0.9941 | F1: 0.9853 | AUC: 0.9981
+*** New best model for Fold 7 saved with Val F1: 0.9853 at epoch 46 ***
+EarlyStopping: Validation score improved (0.985075 --> 0.985294). Resetting counter.
+
+Epoch 47/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0311 | Acc: 0.9916 | F1: 0.9916 | AUC: 0.9998
+Val   | Loss: 0.1122 | Acc: 0.9882 | F1: 0.9697 | AUC: 0.9984
+EarlyStopping counter: 1 out of 10
+
+Epoch 48/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0339 | Acc: 0.9914 | F1: 0.9914 | AUC: 0.9998
+Val   | Loss: 0.0999 | Acc: 0.9912 | F1: 0.9778 | AUC: 0.9979
+EarlyStopping counter: 2 out of 10
+
+Epoch 49/50
+------------------------------
+Current learning rate: 0.000001
+Train | Loss: 0.0231 | Acc: 0.9944 | F1: 0.9945 | AUC: 0.9998
+Val   | Loss: 0.1025 | Acc: 0.9912 | F1: 0.9778 | AUC: 0.9977
+EarlyStopping counter: 3 out of 10
+
+Epoch 50/50
+------------------------------
+Current learning rate: 0.000001
+Train | Loss: 0.0267 | Acc: 0.9936 | F1: 0.9936 | AUC: 0.9999
+Val   | Loss: 0.0962 | Acc: 0.9941 | F1: 0.9851 | AUC: 0.9980
+EarlyStopping counter: 4 out of 10
+Using best standard model state from Fold 7 (Val F1: 0.9853)
+Saved training history plot to D:\Projects\aol-cv-dl\dementia dataset\plots\tuned_v2\training_metrics_fold_7_20251205-141428.png
+--------------------------------------------------
+
+==================================================
+Fold 8/10
+==================================================
+Applying SMOTE to balance the dataset...
+Original class distribution: Counter({0: 2448, 1: 612})
+Resampled class distribution: Counter({0: 2448, 1: 2448})
+
+Epoch 1/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 1.1671 | Acc: 0.5300 | F1: 0.6784 | AUC: 0.6746
+Val   | Loss: 1.0522 | Acc: 0.4382 | F1: 0.3975 | AUC: 0.7723
+*** New best model for Fold 8 saved with Val F1: 0.3975 at epoch 1 ***
+EarlyStopping: Best score set to 0.397476
+
+Epoch 2/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 1.0697 | Acc: 0.6046 | F1: 0.7110 | AUC: 0.7415
+Val   | Loss: 1.0632 | Acc: 0.4235 | F1: 0.4024 | AUC: 0.7880
+*** New best model for Fold 8 saved with Val F1: 0.4024 at epoch 2 ***
+EarlyStopping: Validation score improved (0.397476 --> 0.402439). Resetting counter.
+
+Epoch 3/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 1.0126 | Acc: 0.6375 | F1: 0.7266 | AUC: 0.7728
+Val   | Loss: 1.2253 | Acc: 0.3882 | F1: 0.3918 | AUC: 0.8326
+EarlyStopping counter: 1 out of 10
+
+Epoch 4/50
+------------------------------
+Current learning rate: 0.000040
+Train | Loss: 1.0026 | Acc: 0.6560 | F1: 0.7372 | AUC: 0.7701
+Val   | Loss: 1.1537 | Acc: 0.3971 | F1: 0.3953 | AUC: 0.8388
+EarlyStopping counter: 2 out of 10
+
+Epoch 5/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.9196 | Acc: 0.6811 | F1: 0.7524 | AUC: 0.8151
+Val   | Loss: 1.1101 | Acc: 0.4588 | F1: 0.4214 | AUC: 0.8638
+*** New best model for Fold 8 saved with Val F1: 0.4214 at epoch 5 ***
+EarlyStopping: Validation score improved (0.402439 --> 0.421384). Resetting counter.
+
+Epoch 6/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.8688 | Acc: 0.7046 | F1: 0.7659 | AUC: 0.8362
+Val   | Loss: 0.9277 | Acc: 0.5971 | F1: 0.4907 | AUC: 0.8647
+*** New best model for Fold 8 saved with Val F1: 0.4907 at epoch 6 ***
+EarlyStopping: Validation score improved (0.421384 --> 0.490706). Resetting counter.
+
+Epoch 7/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.8024 | Acc: 0.7290 | F1: 0.7818 | AUC: 0.8612
+Val   | Loss: 0.9877 | Acc: 0.5647 | F1: 0.4789 | AUC: 0.8883
+EarlyStopping counter: 1 out of 10
+
+Epoch 8/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.7472 | Acc: 0.7527 | F1: 0.7973 | AUC: 0.8818
+Val   | Loss: 0.9490 | Acc: 0.5529 | F1: 0.4722 | AUC: 0.8700
+EarlyStopping counter: 2 out of 10
+
+Epoch 9/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.7578 | Acc: 0.7541 | F1: 0.7990 | AUC: 0.8762
+Val   | Loss: 1.3611 | Acc: 0.4412 | F1: 0.4172 | AUC: 0.8908
+EarlyStopping counter: 3 out of 10
+
+Epoch 10/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.6880 | Acc: 0.7701 | F1: 0.8087 | AUC: 0.9032
+Val   | Loss: 0.9389 | Acc: 0.6000 | F1: 0.5000 | AUC: 0.9038
+*** New best model for Fold 8 saved with Val F1: 0.5000 at epoch 10 ***
+EarlyStopping: Validation score improved (0.490706 --> 0.500000). Resetting counter.
+
+Epoch 11/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.6418 | Acc: 0.7940 | F1: 0.8253 | AUC: 0.9151
+Val   | Loss: 0.7906 | Acc: 0.6559 | F1: 0.5339 | AUC: 0.9326
+*** New best model for Fold 8 saved with Val F1: 0.5339 at epoch 11 ***
+EarlyStopping: Validation score improved (0.500000 --> 0.533865). Resetting counter.
+
+Epoch 12/50
+------------------------------
+Current learning rate: 0.000048
+Train | Loss: 0.5498 | Acc: 0.8343 | F1: 0.8552 | AUC: 0.9366
+Val   | Loss: 0.6298 | Acc: 0.7206 | F1: 0.5852 | AUC: 0.9494
+*** New best model for Fold 8 saved with Val F1: 0.5852 at epoch 12 ***
+EarlyStopping: Validation score improved (0.533865 --> 0.585153). Resetting counter.
+
+Epoch 13/50
+------------------------------
+Current learning rate: 0.000047
+Train | Loss: 0.5084 | Acc: 0.8390 | F1: 0.8584 | AUC: 0.9497
+Val   | Loss: 0.6592 | Acc: 0.7000 | F1: 0.5714 | AUC: 0.9658
+EarlyStopping counter: 1 out of 10
+
+Epoch 14/50
+------------------------------
+Current learning rate: 0.000046
+Train | Loss: 0.5178 | Acc: 0.8359 | F1: 0.8556 | AUC: 0.9487
+Val   | Loss: 0.4040 | Acc: 0.8794 | F1: 0.7545 | AUC: 0.9599
+*** New best model for Fold 8 saved with Val F1: 0.7545 at epoch 14 ***
+EarlyStopping: Validation score improved (0.585153 --> 0.754491). Resetting counter.
+
+Epoch 15/50
+------------------------------
+Current learning rate: 0.000045
+Train | Loss: 0.3887 | Acc: 0.8857 | F1: 0.8959 | AUC: 0.9690
+Val   | Loss: 0.4640 | Acc: 0.8235 | F1: 0.6907 | AUC: 0.9746
+EarlyStopping counter: 1 out of 10
+
+Epoch 16/50
+------------------------------
+Current learning rate: 0.000044
+Train | Loss: 0.4010 | Acc: 0.8853 | F1: 0.8950 | AUC: 0.9706
+Val   | Loss: 0.6676 | Acc: 0.7088 | F1: 0.5787 | AUC: 0.9758
+EarlyStopping counter: 2 out of 10
+
+Epoch 17/50
+------------------------------
+Current learning rate: 0.000043
+Train | Loss: 0.3388 | Acc: 0.8997 | F1: 0.9074 | AUC: 0.9771
+Val   | Loss: 0.3507 | Acc: 0.8912 | F1: 0.7784 | AUC: 0.9720
+*** New best model for Fold 8 saved with Val F1: 0.7784 at epoch 17 ***
+EarlyStopping: Validation score improved (0.754491 --> 0.778443). Resetting counter.
+
+Epoch 18/50
+------------------------------
+Current learning rate: 0.000042
+Train | Loss: 0.3337 | Acc: 0.9038 | F1: 0.9107 | AUC: 0.9799
+Val   | Loss: 0.2955 | Acc: 0.8882 | F1: 0.7791 | AUC: 0.9848
+*** New best model for Fold 8 saved with Val F1: 0.7791 at epoch 18 ***
+EarlyStopping: Validation score improved (0.778443 --> 0.779070). Resetting counter.
+
+Epoch 19/50
+------------------------------
+Current learning rate: 0.000041
+Train | Loss: 0.2778 | Acc: 0.9233 | F1: 0.9277 | AUC: 0.9845
+Val   | Loss: 0.2330 | Acc: 0.9206 | F1: 0.8302 | AUC: 0.9886
+*** New best model for Fold 8 saved with Val F1: 0.8302 at epoch 19 ***
+EarlyStopping: Validation score improved (0.779070 --> 0.830189). Resetting counter.
+
+Epoch 20/50
+------------------------------
+Current learning rate: 0.000039
+Train | Loss: 0.2735 | Acc: 0.9278 | F1: 0.9316 | AUC: 0.9855
+Val   | Loss: 0.3472 | Acc: 0.8676 | F1: 0.7429 | AUC: 0.9758
+EarlyStopping counter: 1 out of 10
+
+Epoch 21/50
+------------------------------
+Current learning rate: 0.000038
+Train | Loss: 0.2254 | Acc: 0.9350 | F1: 0.9383 | AUC: 0.9896
+Val   | Loss: 0.2967 | Acc: 0.9176 | F1: 0.8228 | AUC: 0.9809
+EarlyStopping counter: 2 out of 10
+
+Epoch 22/50
+------------------------------
+Current learning rate: 0.000036
+Train | Loss: 0.1786 | Acc: 0.9542 | F1: 0.9559 | AUC: 0.9938
+Val   | Loss: 0.5424 | Acc: 0.8147 | F1: 0.6834 | AUC: 0.9797
+EarlyStopping counter: 3 out of 10
+
+Epoch 23/50
+------------------------------
+Current learning rate: 0.000035
+Train | Loss: 0.1944 | Acc: 0.9484 | F1: 0.9504 | AUC: 0.9927
+Val   | Loss: 0.3055 | Acc: 0.9088 | F1: 0.8098 | AUC: 0.9855
+EarlyStopping counter: 4 out of 10
+
+Epoch 24/50
+------------------------------
+Current learning rate: 0.000033
+Train | Loss: 0.1492 | Acc: 0.9611 | F1: 0.9623 | AUC: 0.9952
+Val   | Loss: 0.2807 | Acc: 0.9412 | F1: 0.8667 | AUC: 0.9853
+*** New best model for Fold 8 saved with Val F1: 0.8667 at epoch 24 ***
+EarlyStopping: Validation score improved (0.830189 --> 0.866667). Resetting counter.
+
+Epoch 25/50
+------------------------------
+Current learning rate: 0.000031
+Train | Loss: 0.1867 | Acc: 0.9535 | F1: 0.9551 | AUC: 0.9934
+Val   | Loss: 0.3821 | Acc: 0.8912 | F1: 0.7811 | AUC: 0.9784
+EarlyStopping counter: 1 out of 10
+
+Epoch 26/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 0.1302 | Acc: 0.9638 | F1: 0.9648 | AUC: 0.9972
+Val   | Loss: 0.1278 | Acc: 0.9706 | F1: 0.9275 | AUC: 0.9968
+*** New best model for Fold 8 saved with Val F1: 0.9275 at epoch 26 ***
+EarlyStopping: Validation score improved (0.866667 --> 0.927536). Resetting counter.
+
+Epoch 27/50
+------------------------------
+Current learning rate: 0.000028
+Train | Loss: 0.1392 | Acc: 0.9646 | F1: 0.9655 | AUC: 0.9963
+Val   | Loss: 0.1638 | Acc: 0.9559 | F1: 0.8980 | AUC: 0.9940
+EarlyStopping counter: 1 out of 10
+
+Epoch 28/50
+------------------------------
+Current learning rate: 0.000026
+Train | Loss: 0.1104 | Acc: 0.9708 | F1: 0.9714 | AUC: 0.9978
+Val   | Loss: 0.1860 | Acc: 0.9382 | F1: 0.8645 | AUC: 0.9956
+EarlyStopping counter: 2 out of 10
+
+Epoch 29/50
+------------------------------
+Current learning rate: 0.000025
+Train | Loss: 0.0830 | Acc: 0.9805 | F1: 0.9807 | AUC: 0.9989
+Val   | Loss: 0.1879 | Acc: 0.9382 | F1: 0.8645 | AUC: 0.9954
+EarlyStopping counter: 3 out of 10
+
+Epoch 30/50
+------------------------------
+Current learning rate: 0.000023
+Train | Loss: 0.0991 | Acc: 0.9747 | F1: 0.9752 | AUC: 0.9980
+Val   | Loss: 0.2165 | Acc: 0.9412 | F1: 0.8684 | AUC: 0.9910
+EarlyStopping counter: 4 out of 10
+
+Epoch 31/50
+------------------------------
+Current learning rate: 0.000021
+Train | Loss: 0.1016 | Acc: 0.9770 | F1: 0.9773 | AUC: 0.9980
+Val   | Loss: 0.1410 | Acc: 0.9618 | F1: 0.9116 | AUC: 0.9963
+EarlyStopping counter: 5 out of 10
+
+Epoch 32/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 0.0831 | Acc: 0.9803 | F1: 0.9805 | AUC: 0.9984
+Val   | Loss: 0.2543 | Acc: 0.9412 | F1: 0.8701 | AUC: 0.9905
+EarlyStopping counter: 6 out of 10
+
+Epoch 33/50
+------------------------------
+Current learning rate: 0.000018
+Train | Loss: 0.0845 | Acc: 0.9790 | F1: 0.9793 | AUC: 0.9987
+Val   | Loss: 0.1464 | Acc: 0.9824 | F1: 0.9565 | AUC: 0.9954
+*** New best model for Fold 8 saved with Val F1: 0.9565 at epoch 33 ***
+EarlyStopping: Validation score improved (0.927536 --> 0.956522). Resetting counter.
+
+Epoch 34/50
+------------------------------
+Current learning rate: 0.000016
+Train | Loss: 0.0569 | Acc: 0.9870 | F1: 0.9872 | AUC: 0.9992
+Val   | Loss: 0.0879 | Acc: 0.9824 | F1: 0.9565 | AUC: 0.9984
+EarlyStopping counter: 1 out of 10
+
+Epoch 35/50
+------------------------------
+Current learning rate: 0.000015
+Train | Loss: 0.0509 | Acc: 0.9885 | F1: 0.9886 | AUC: 0.9995
+Val   | Loss: 0.1202 | Acc: 0.9706 | F1: 0.9286 | AUC: 0.9967
+EarlyStopping counter: 2 out of 10
+
+Epoch 36/50
+------------------------------
+Current learning rate: 0.000013
+Train | Loss: 0.0504 | Acc: 0.9877 | F1: 0.9878 | AUC: 0.9994
+Val   | Loss: 0.0902 | Acc: 0.9765 | F1: 0.9437 | AUC: 0.9981
+EarlyStopping counter: 3 out of 10
+
+Epoch 37/50
+------------------------------
+Current learning rate: 0.000012
+Train | Loss: 0.0480 | Acc: 0.9901 | F1: 0.9902 | AUC: 0.9996
+Val   | Loss: 0.1288 | Acc: 0.9706 | F1: 0.9306 | AUC: 0.9961
+EarlyStopping counter: 4 out of 10
+
+Epoch 38/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 0.0522 | Acc: 0.9868 | F1: 0.9869 | AUC: 0.9996
+Val   | Loss: 0.0740 | Acc: 0.9912 | F1: 0.9781 | AUC: 0.9986
+*** New best model for Fold 8 saved with Val F1: 0.9781 at epoch 38 ***
+EarlyStopping: Validation score improved (0.956522 --> 0.978102). Resetting counter.
+
+Epoch 39/50
+------------------------------
+Current learning rate: 0.000009
+Train | Loss: 0.0434 | Acc: 0.9903 | F1: 0.9904 | AUC: 0.9997
+Val   | Loss: 0.0690 | Acc: 0.9794 | F1: 0.9504 | AUC: 0.9990
+EarlyStopping counter: 1 out of 10
+
+Epoch 40/50
+------------------------------
+Current learning rate: 0.000008
+Train | Loss: 0.0403 | Acc: 0.9903 | F1: 0.9904 | AUC: 0.9996
+Val   | Loss: 0.0629 | Acc: 0.9882 | F1: 0.9710 | AUC: 0.9992
+EarlyStopping counter: 2 out of 10
+
+Epoch 41/50
+------------------------------
+Current learning rate: 0.000007
+Train | Loss: 0.0382 | Acc: 0.9926 | F1: 0.9926 | AUC: 0.9998
+Val   | Loss: 0.0605 | Acc: 0.9824 | F1: 0.9571 | AUC: 0.9993
+EarlyStopping counter: 3 out of 10
+
+Epoch 42/50
+------------------------------
+Current learning rate: 0.000006
+Train | Loss: 0.0405 | Acc: 0.9899 | F1: 0.9900 | AUC: 0.9997
+Val   | Loss: 0.0565 | Acc: 0.9765 | F1: 0.9437 | AUC: 0.9995
+EarlyStopping counter: 4 out of 10
+
+Epoch 43/50
+------------------------------
+Current learning rate: 0.000005
+Train | Loss: 0.0364 | Acc: 0.9936 | F1: 0.9937 | AUC: 0.9997
+Val   | Loss: 0.0767 | Acc: 0.9735 | F1: 0.9371 | AUC: 0.9991
+EarlyStopping counter: 5 out of 10
+
+Epoch 44/50
+------------------------------
+Current learning rate: 0.000004
+Train | Loss: 0.0385 | Acc: 0.9910 | F1: 0.9910 | AUC: 0.9994
+Val   | Loss: 0.0814 | Acc: 0.9794 | F1: 0.9504 | AUC: 0.9990
+EarlyStopping counter: 6 out of 10
+
+Epoch 45/50
+------------------------------
+Current learning rate: 0.000003
+Train | Loss: 0.0292 | Acc: 0.9940 | F1: 0.9941 | AUC: 0.9997
+Val   | Loss: 0.0743 | Acc: 0.9706 | F1: 0.9306 | AUC: 0.9994
+EarlyStopping counter: 7 out of 10
+
+Epoch 46/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0210 | Acc: 0.9957 | F1: 0.9957 | AUC: 0.9999
+Val   | Loss: 0.0753 | Acc: 0.9735 | F1: 0.9362 | AUC: 0.9990
+EarlyStopping counter: 8 out of 10
+
+Epoch 47/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0279 | Acc: 0.9932 | F1: 0.9932 | AUC: 0.9998
+Val   | Loss: 0.0639 | Acc: 0.9824 | F1: 0.9571 | AUC: 0.9993
+EarlyStopping counter: 9 out of 10
+
+Epoch 48/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0257 | Acc: 0.9951 | F1: 0.9951 | AUC: 0.9996
+Val   | Loss: 0.0589 | Acc: 0.9765 | F1: 0.9437 | AUC: 0.9994
+EarlyStopping counter: 10 out of 10
+Early stopping triggered at epoch 48 for Fold 8
+Using best standard model state from Fold 8 (Val F1: 0.9781)
+Saved training history plot to D:\Projects\aol-cv-dl\dementia dataset\plots\tuned_v2\training_metrics_fold_8_20251205-142645.png
+--------------------------------------------------
+
+==================================================
+Fold 9/10
+==================================================
+Applying SMOTE to balance the dataset...
+Original class distribution: Counter({0: 2448, 1: 612})
+Resampled class distribution: Counter({0: 2448, 1: 2448})
+
+Epoch 1/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 1.1705 | Acc: 0.5500 | F1: 0.6834 | AUC: 0.6715
+Val   | Loss: 1.1353 | Acc: 0.4294 | F1: 0.3861 | AUC: 0.7041
+*** New best model for Fold 9 saved with Val F1: 0.3861 at epoch 1 ***
+EarlyStopping: Best score set to 0.386076
+
+Epoch 2/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 1.0554 | Acc: 0.6197 | F1: 0.7182 | AUC: 0.7477
+Val   | Loss: 1.2299 | Acc: 0.3618 | F1: 0.3818 | AUC: 0.7672
+EarlyStopping counter: 1 out of 10
+
+Epoch 3/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 0.9949 | Acc: 0.6501 | F1: 0.7339 | AUC: 0.7773
+Val   | Loss: 1.2993 | Acc: 0.3853 | F1: 0.3942 | AUC: 0.8004
+*** New best model for Fold 9 saved with Val F1: 0.3942 at epoch 3 ***
+EarlyStopping: Validation score improved (0.386076 --> 0.394203). Resetting counter.
+
+Epoch 4/50
+------------------------------
+Current learning rate: 0.000040
+Train | Loss: 0.9341 | Acc: 0.6766 | F1: 0.7493 | AUC: 0.8065
+Val   | Loss: 1.1210 | Acc: 0.4912 | F1: 0.4401 | AUC: 0.8078
+*** New best model for Fold 9 saved with Val F1: 0.4401 at epoch 4 ***
+EarlyStopping: Validation score improved (0.394203 --> 0.440129). Resetting counter.
+
+Epoch 5/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.8939 | Acc: 0.7027 | F1: 0.7646 | AUC: 0.8269
+Val   | Loss: 1.2646 | Acc: 0.4000 | F1: 0.4000 | AUC: 0.8245
+EarlyStopping counter: 1 out of 10
+
+Epoch 6/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.8342 | Acc: 0.7177 | F1: 0.7744 | AUC: 0.8491
+Val   | Loss: 1.1702 | Acc: 0.4088 | F1: 0.4036 | AUC: 0.8545
+EarlyStopping counter: 2 out of 10
+
+Epoch 7/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.7665 | Acc: 0.7492 | F1: 0.7951 | AUC: 0.8707
+Val   | Loss: 1.0211 | Acc: 0.5235 | F1: 0.4564 | AUC: 0.8913
+*** New best model for Fold 9 saved with Val F1: 0.4564 at epoch 7 ***
+EarlyStopping: Validation score improved (0.440129 --> 0.456376). Resetting counter.
+
+Epoch 8/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.7234 | Acc: 0.7646 | F1: 0.8052 | AUC: 0.8917
+Val   | Loss: 0.8599 | Acc: 0.6324 | F1: 0.5174 | AUC: 0.9016
+*** New best model for Fold 9 saved with Val F1: 0.5174 at epoch 8 ***
+EarlyStopping: Validation score improved (0.456376 --> 0.517375). Resetting counter.
+
+Epoch 9/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.6974 | Acc: 0.7796 | F1: 0.8148 | AUC: 0.8969
+Val   | Loss: 1.2695 | Acc: 0.4324 | F1: 0.4134 | AUC: 0.9093
+EarlyStopping counter: 1 out of 10
+
+Epoch 10/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.6132 | Acc: 0.8026 | F1: 0.8318 | AUC: 0.9254
+Val   | Loss: 0.8820 | Acc: 0.6471 | F1: 0.5312 | AUC: 0.9281
+*** New best model for Fold 9 saved with Val F1: 0.5312 at epoch 10 ***
+EarlyStopping: Validation score improved (0.517375 --> 0.531250). Resetting counter.
+
+Epoch 11/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.5781 | Acc: 0.8193 | F1: 0.8428 | AUC: 0.9329
+Val   | Loss: 0.8263 | Acc: 0.6000 | F1: 0.5000 | AUC: 0.9509
+EarlyStopping counter: 1 out of 10
+
+Epoch 12/50
+------------------------------
+Current learning rate: 0.000048
+Train | Loss: 0.4838 | Acc: 0.8493 | F1: 0.8666 | AUC: 0.9532
+Val   | Loss: 0.6588 | Acc: 0.7147 | F1: 0.5801 | AUC: 0.9471
+*** New best model for Fold 9 saved with Val F1: 0.5801 at epoch 12 ***
+EarlyStopping: Validation score improved (0.531250 --> 0.580087). Resetting counter.
+
+Epoch 13/50
+------------------------------
+Current learning rate: 0.000047
+Train | Loss: 0.4519 | Acc: 0.8637 | F1: 0.8774 | AUC: 0.9602
+Val   | Loss: 0.4596 | Acc: 0.8147 | F1: 0.6667 | AUC: 0.9550
+*** New best model for Fold 9 saved with Val F1: 0.6667 at epoch 13 ***
+EarlyStopping: Validation score improved (0.580087 --> 0.666667). Resetting counter.
+
+Epoch 14/50
+------------------------------
+Current learning rate: 0.000046
+Train | Loss: 0.3741 | Acc: 0.8929 | F1: 0.9015 | AUC: 0.9732
+Val   | Loss: 0.4201 | Acc: 0.8235 | F1: 0.6842 | AUC: 0.9715
+*** New best model for Fold 9 saved with Val F1: 0.6842 at epoch 14 ***
+EarlyStopping: Validation score improved (0.666667 --> 0.684211). Resetting counter.
+
+Epoch 15/50
+------------------------------
+Current learning rate: 0.000045
+Train | Loss: 0.3664 | Acc: 0.8956 | F1: 0.9039 | AUC: 0.9749
+Val   | Loss: 0.3562 | Acc: 0.9088 | F1: 0.8075 | AUC: 0.9709
+*** New best model for Fold 9 saved with Val F1: 0.8075 at epoch 15 ***
+EarlyStopping: Validation score improved (0.684211 --> 0.807453). Resetting counter.
+
+Epoch 16/50
+------------------------------
+Current learning rate: 0.000044
+Train | Loss: 0.3364 | Acc: 0.9048 | F1: 0.9112 | AUC: 0.9780
+Val   | Loss: 0.3283 | Acc: 0.8765 | F1: 0.7586 | AUC: 0.9797
+EarlyStopping counter: 1 out of 10
+
+Epoch 17/50
+------------------------------
+Current learning rate: 0.000043
+Train | Loss: 0.2621 | Acc: 0.9272 | F1: 0.9311 | AUC: 0.9864
+Val   | Loss: 0.3228 | Acc: 0.9412 | F1: 0.8571 | AUC: 0.9763
+*** New best model for Fold 9 saved with Val F1: 0.8571 at epoch 17 ***
+EarlyStopping: Validation score improved (0.807453 --> 0.857143). Resetting counter.
+
+Epoch 18/50
+------------------------------
+Current learning rate: 0.000042
+Train | Loss: 0.2646 | Acc: 0.9287 | F1: 0.9324 | AUC: 0.9863
+Val   | Loss: 0.3184 | Acc: 0.9471 | F1: 0.8696 | AUC: 0.9786
+*** New best model for Fold 9 saved with Val F1: 0.8696 at epoch 18 ***
+EarlyStopping: Validation score improved (0.857143 --> 0.869565). Resetting counter.
+
+Epoch 19/50
+------------------------------
+Current learning rate: 0.000041
+Train | Loss: 0.2628 | Acc: 0.9319 | F1: 0.9350 | AUC: 0.9871
+Val   | Loss: 0.3980 | Acc: 0.8559 | F1: 0.7322 | AUC: 0.9881
+EarlyStopping counter: 1 out of 10
+
+Epoch 20/50
+------------------------------
+Current learning rate: 0.000039
+Train | Loss: 0.2498 | Acc: 0.9313 | F1: 0.9348 | AUC: 0.9880
+Val   | Loss: 0.3027 | Acc: 0.9147 | F1: 0.8105 | AUC: 0.9784
+EarlyStopping counter: 2 out of 10
+
+Epoch 21/50
+------------------------------
+Current learning rate: 0.000038
+Train | Loss: 0.1658 | Acc: 0.9579 | F1: 0.9590 | AUC: 0.9954
+Val   | Loss: 0.2372 | Acc: 0.9324 | F1: 0.8497 | AUC: 0.9869
+EarlyStopping counter: 3 out of 10
+
+Epoch 22/50
+------------------------------
+Current learning rate: 0.000036
+Train | Loss: 0.1446 | Acc: 0.9616 | F1: 0.9628 | AUC: 0.9960
+Val   | Loss: 0.2482 | Acc: 0.9265 | F1: 0.8366 | AUC: 0.9865
+EarlyStopping counter: 4 out of 10
+
+Epoch 23/50
+------------------------------
+Current learning rate: 0.000035
+Train | Loss: 0.1615 | Acc: 0.9574 | F1: 0.9588 | AUC: 0.9953
+Val   | Loss: 0.2324 | Acc: 0.9500 | F1: 0.8811 | AUC: 0.9873
+*** New best model for Fold 9 saved with Val F1: 0.8811 at epoch 23 ***
+EarlyStopping: Validation score improved (0.869565 --> 0.881119). Resetting counter.
+
+Epoch 24/50
+------------------------------
+Current learning rate: 0.000033
+Train | Loss: 0.1229 | Acc: 0.9665 | F1: 0.9673 | AUC: 0.9974
+Val   | Loss: 0.1733 | Acc: 0.9676 | F1: 0.9220 | AUC: 0.9925
+*** New best model for Fold 9 saved with Val F1: 0.9220 at epoch 24 ***
+EarlyStopping: Validation score improved (0.881119 --> 0.921986). Resetting counter.
+
+Epoch 25/50
+------------------------------
+Current learning rate: 0.000031
+Train | Loss: 0.1029 | Acc: 0.9759 | F1: 0.9764 | AUC: 0.9977
+Val   | Loss: 0.2768 | Acc: 0.9588 | F1: 0.8986 | AUC: 0.9872
+EarlyStopping counter: 1 out of 10
+
+Epoch 26/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 0.1029 | Acc: 0.9749 | F1: 0.9754 | AUC: 0.9978
+Val   | Loss: 0.2468 | Acc: 0.9324 | F1: 0.8435 | AUC: 0.9891
+EarlyStopping counter: 2 out of 10
+
+Epoch 27/50
+------------------------------
+Current learning rate: 0.000028
+Train | Loss: 0.1041 | Acc: 0.9729 | F1: 0.9734 | AUC: 0.9982
+Val   | Loss: 0.1605 | Acc: 0.9618 | F1: 0.9091 | AUC: 0.9944
+EarlyStopping counter: 3 out of 10
+
+Epoch 28/50
+------------------------------
+Current learning rate: 0.000026
+Train | Loss: 0.0873 | Acc: 0.9790 | F1: 0.9793 | AUC: 0.9987
+Val   | Loss: 0.1760 | Acc: 0.9647 | F1: 0.9143 | AUC: 0.9932
+EarlyStopping counter: 4 out of 10
+
+Epoch 29/50
+------------------------------
+Current learning rate: 0.000025
+Train | Loss: 0.0854 | Acc: 0.9796 | F1: 0.9800 | AUC: 0.9984
+Val   | Loss: 0.2549 | Acc: 0.9765 | F1: 0.9394 | AUC: 0.9920
+*** New best model for Fold 9 saved with Val F1: 0.9394 at epoch 29 ***
+EarlyStopping: Validation score improved (0.921986 --> 0.939394). Resetting counter.
+
+Epoch 30/50
+------------------------------
+Current learning rate: 0.000023
+Train | Loss: 0.0728 | Acc: 0.9842 | F1: 0.9844 | AUC: 0.9990
+Val   | Loss: 0.1768 | Acc: 0.9794 | F1: 0.9481 | AUC: 0.9949
+*** New best model for Fold 9 saved with Val F1: 0.9481 at epoch 30 ***
+EarlyStopping: Validation score improved (0.939394 --> 0.948148). Resetting counter.
+
+Epoch 31/50
+------------------------------
+Current learning rate: 0.000021
+Train | Loss: 0.0551 | Acc: 0.9887 | F1: 0.9888 | AUC: 0.9992
+Val   | Loss: 0.1786 | Acc: 0.9647 | F1: 0.9155 | AUC: 0.9937
+EarlyStopping counter: 1 out of 10
+
+Epoch 32/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 0.0569 | Acc: 0.9866 | F1: 0.9868 | AUC: 0.9995
+Val   | Loss: 0.1434 | Acc: 0.9765 | F1: 0.9412 | AUC: 0.9963
+EarlyStopping counter: 2 out of 10
+
+Epoch 33/50
+------------------------------
+Current learning rate: 0.000018
+Train | Loss: 0.0601 | Acc: 0.9877 | F1: 0.9878 | AUC: 0.9992
+Val   | Loss: 0.1419 | Acc: 0.9706 | F1: 0.9286 | AUC: 0.9952
+EarlyStopping counter: 3 out of 10
+
+Epoch 34/50
+------------------------------
+Current learning rate: 0.000016
+Train | Loss: 0.0475 | Acc: 0.9897 | F1: 0.9898 | AUC: 0.9996
+Val   | Loss: 0.2537 | Acc: 0.9735 | F1: 0.9323 | AUC: 0.9947
+EarlyStopping counter: 4 out of 10
+
+Epoch 35/50
+------------------------------
+Current learning rate: 0.000015
+Train | Loss: 0.0514 | Acc: 0.9881 | F1: 0.9882 | AUC: 0.9992
+Val   | Loss: 0.2146 | Acc: 0.9735 | F1: 0.9323 | AUC: 0.9952
+EarlyStopping counter: 5 out of 10
+
+Epoch 36/50
+------------------------------
+Current learning rate: 0.000013
+Train | Loss: 0.0422 | Acc: 0.9893 | F1: 0.9894 | AUC: 0.9996
+Val   | Loss: 0.1340 | Acc: 0.9794 | F1: 0.9489 | AUC: 0.9975
+*** New best model for Fold 9 saved with Val F1: 0.9489 at epoch 36 ***
+EarlyStopping: Validation score improved (0.948148 --> 0.948905). Resetting counter.
+
+Epoch 37/50
+------------------------------
+Current learning rate: 0.000012
+Train | Loss: 0.0411 | Acc: 0.9899 | F1: 0.9900 | AUC: 0.9996
+Val   | Loss: 0.1420 | Acc: 0.9735 | F1: 0.9362 | AUC: 0.9962
+EarlyStopping counter: 1 out of 10
+
+Epoch 38/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 0.0392 | Acc: 0.9912 | F1: 0.9912 | AUC: 0.9998
+Val   | Loss: 0.1222 | Acc: 0.9735 | F1: 0.9362 | AUC: 0.9969
+EarlyStopping counter: 2 out of 10
+
+Epoch 39/50
+------------------------------
+Current learning rate: 0.000009
+Train | Loss: 0.0449 | Acc: 0.9895 | F1: 0.9896 | AUC: 0.9996
+Val   | Loss: 0.1271 | Acc: 0.9824 | F1: 0.9565 | AUC: 0.9976
+*** New best model for Fold 9 saved with Val F1: 0.9565 at epoch 39 ***
+EarlyStopping: Validation score improved (0.948905 --> 0.956522). Resetting counter.
+
+Epoch 40/50
+------------------------------
+Current learning rate: 0.000008
+Train | Loss: 0.0312 | Acc: 0.9930 | F1: 0.9930 | AUC: 0.9999
+Val   | Loss: 0.1157 | Acc: 0.9853 | F1: 0.9635 | AUC: 0.9976
+*** New best model for Fold 9 saved with Val F1: 0.9635 at epoch 40 ***
+EarlyStopping: Validation score improved (0.956522 --> 0.963504). Resetting counter.
+
+Epoch 41/50
+------------------------------
+Current learning rate: 0.000007
+Train | Loss: 0.0327 | Acc: 0.9920 | F1: 0.9920 | AUC: 0.9998
+Val   | Loss: 0.1240 | Acc: 0.9824 | F1: 0.9559 | AUC: 0.9977
+EarlyStopping counter: 1 out of 10
+
+Epoch 42/50
+------------------------------
+Current learning rate: 0.000006
+Train | Loss: 0.0273 | Acc: 0.9940 | F1: 0.9941 | AUC: 0.9997
+Val   | Loss: 0.1468 | Acc: 0.9824 | F1: 0.9552 | AUC: 0.9979
+EarlyStopping counter: 2 out of 10
+
+Epoch 43/50
+------------------------------
+Current learning rate: 0.000005
+Train | Loss: 0.0319 | Acc: 0.9924 | F1: 0.9924 | AUC: 0.9998
+Val   | Loss: 0.1598 | Acc: 0.9824 | F1: 0.9552 | AUC: 0.9979
+EarlyStopping counter: 3 out of 10
+
+Epoch 44/50
+------------------------------
+Current learning rate: 0.000004
+Train | Loss: 0.0299 | Acc: 0.9926 | F1: 0.9926 | AUC: 0.9998
+Val   | Loss: 0.1466 | Acc: 0.9853 | F1: 0.9630 | AUC: 0.9981
+EarlyStopping counter: 4 out of 10
+
+Epoch 45/50
+------------------------------
+Current learning rate: 0.000003
+Train | Loss: 0.0283 | Acc: 0.9942 | F1: 0.9943 | AUC: 0.9999
+Val   | Loss: 0.1420 | Acc: 0.9853 | F1: 0.9630 | AUC: 0.9978
+EarlyStopping counter: 5 out of 10
+
+Epoch 46/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0176 | Acc: 0.9967 | F1: 0.9967 | AUC: 0.9999
+Val   | Loss: 0.1711 | Acc: 0.9765 | F1: 0.9394 | AUC: 0.9981
+EarlyStopping counter: 6 out of 10
+
+Epoch 47/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0209 | Acc: 0.9957 | F1: 0.9957 | AUC: 0.9999
+Val   | Loss: 0.1453 | Acc: 0.9794 | F1: 0.9474 | AUC: 0.9983
+EarlyStopping counter: 7 out of 10
+
+Epoch 48/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0235 | Acc: 0.9949 | F1: 0.9949 | AUC: 0.9999
+Val   | Loss: 0.1495 | Acc: 0.9853 | F1: 0.9630 | AUC: 0.9982
+EarlyStopping counter: 8 out of 10
+
+Epoch 49/50
+------------------------------
+Current learning rate: 0.000001
+Train | Loss: 0.0246 | Acc: 0.9940 | F1: 0.9941 | AUC: 0.9999
+Val   | Loss: 0.1618 | Acc: 0.9824 | F1: 0.9552 | AUC: 0.9982
+EarlyStopping counter: 9 out of 10
+
+Epoch 50/50
+------------------------------
+Current learning rate: 0.000001
+Train | Loss: 0.0213 | Acc: 0.9957 | F1: 0.9957 | AUC: 0.9999
+Val   | Loss: 0.1403 | Acc: 0.9794 | F1: 0.9481 | AUC: 0.9980
+EarlyStopping counter: 10 out of 10
+Early stopping triggered at epoch 50 for Fold 9
+Using best standard model state from Fold 9 (Val F1: 0.9635)
+Saved training history plot to D:\Projects\aol-cv-dl\dementia dataset\plots\tuned_v2\training_metrics_fold_9_20251205-143913.png
+--------------------------------------------------
+
+==================================================
+Fold 10/10
+==================================================
+Applying SMOTE to balance the dataset...
+Original class distribution: Counter({0: 2448, 1: 612})
+Resampled class distribution: Counter({0: 2448, 1: 2448})
+
+Epoch 1/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 1.3429 | Acc: 0.4942 | F1: 0.6435 | AUC: 0.5821
+Val   | Loss: 1.3866 | Acc: 0.2029 | F1: 0.3342 | AUC: 0.6504
+*** New best model for Fold 10 saved with Val F1: 0.3342 at epoch 1 ***
+EarlyStopping: Best score set to 0.334152
+
+Epoch 2/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 1.1071 | Acc: 0.5777 | F1: 0.6989 | AUC: 0.7162
+Val   | Loss: 1.2096 | Acc: 0.3735 | F1: 0.3826 | AUC: 0.7201
+*** New best model for Fold 10 saved with Val F1: 0.3826 at epoch 2 ***
+EarlyStopping: Validation score improved (0.334152 --> 0.382609). Resetting counter.
+
+Epoch 3/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 1.0479 | Acc: 0.6248 | F1: 0.7219 | AUC: 0.7454
+Val   | Loss: 1.4662 | Acc: 0.3382 | F1: 0.3767 | AUC: 0.7561
+EarlyStopping counter: 1 out of 10
+
+Epoch 4/50
+------------------------------
+Current learning rate: 0.000040
+Train | Loss: 1.0043 | Acc: 0.6478 | F1: 0.7338 | AUC: 0.7621
+Val   | Loss: 1.1780 | Acc: 0.4559 | F1: 0.4237 | AUC: 0.7543
+*** New best model for Fold 10 saved with Val F1: 0.4237 at epoch 4 ***
+EarlyStopping: Validation score improved (0.382609 --> 0.423676). Resetting counter.
+
+Epoch 5/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.9512 | Acc: 0.6735 | F1: 0.7475 | AUC: 0.7974
+Val   | Loss: 0.9564 | Acc: 0.6206 | F1: 0.4819 | AUC: 0.8008
+*** New best model for Fold 10 saved with Val F1: 0.4819 at epoch 5 ***
+EarlyStopping: Validation score improved (0.423676 --> 0.481928). Resetting counter.
+
+Epoch 6/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.9086 | Acc: 0.6928 | F1: 0.7594 | AUC: 0.8113
+Val   | Loss: 1.4572 | Acc: 0.3559 | F1: 0.3831 | AUC: 0.8095
+EarlyStopping counter: 1 out of 10
+
+Epoch 7/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.8342 | Acc: 0.7155 | F1: 0.7740 | AUC: 0.8478
+Val   | Loss: 1.0055 | Acc: 0.6588 | F1: 0.4727 | AUC: 0.8064
+EarlyStopping counter: 2 out of 10
+
+Epoch 8/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.8138 | Acc: 0.7286 | F1: 0.7809 | AUC: 0.8562
+Val   | Loss: 1.3973 | Acc: 0.3618 | F1: 0.3853 | AUC: 0.8693
+EarlyStopping counter: 3 out of 10
+
+Epoch 9/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.7173 | Acc: 0.7615 | F1: 0.8040 | AUC: 0.8896
+Val   | Loss: 0.8169 | Acc: 0.6647 | F1: 0.5328 | AUC: 0.8826
+*** New best model for Fold 10 saved with Val F1: 0.5328 at epoch 9 ***
+EarlyStopping: Validation score improved (0.481928 --> 0.532787). Resetting counter.
+
+Epoch 10/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.7344 | Acc: 0.7597 | F1: 0.8020 | AUC: 0.8853
+Val   | Loss: 1.2230 | Acc: 0.4853 | F1: 0.4373 | AUC: 0.8794
+EarlyStopping counter: 1 out of 10
+
+Epoch 11/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.6743 | Acc: 0.7878 | F1: 0.8213 | AUC: 0.9052
+Val   | Loss: 0.8859 | Acc: 0.6647 | F1: 0.5169 | AUC: 0.8846
+EarlyStopping counter: 2 out of 10
+
+Epoch 12/50
+------------------------------
+Current learning rate: 0.000048
+Train | Loss: 0.6137 | Acc: 0.8010 | F1: 0.8298 | AUC: 0.9232
+Val   | Loss: 0.6634 | Acc: 0.7588 | F1: 0.6058 | AUC: 0.9040
+*** New best model for Fold 10 saved with Val F1: 0.6058 at epoch 12 ***
+EarlyStopping: Validation score improved (0.532787 --> 0.605769). Resetting counter.
+
+Epoch 13/50
+------------------------------
+Current learning rate: 0.000047
+Train | Loss: 0.5499 | Acc: 0.8255 | F1: 0.8480 | AUC: 0.9398
+Val   | Loss: 1.1439 | Acc: 0.5765 | F1: 0.4857 | AUC: 0.9128
+EarlyStopping counter: 1 out of 10
+
+Epoch 14/50
+------------------------------
+Current learning rate: 0.000046
+Train | Loss: 0.4845 | Acc: 0.8526 | F1: 0.8689 | AUC: 0.9541
+Val   | Loss: 0.5610 | Acc: 0.8324 | F1: 0.6743 | AUC: 0.9281
+*** New best model for Fold 10 saved with Val F1: 0.6743 at epoch 14 ***
+EarlyStopping: Validation score improved (0.605769 --> 0.674286). Resetting counter.
+
+Epoch 15/50
+------------------------------
+Current learning rate: 0.000045
+Train | Loss: 0.4369 | Acc: 0.8705 | F1: 0.8828 | AUC: 0.9626
+Val   | Loss: 0.5387 | Acc: 0.8059 | F1: 0.6489 | AUC: 0.9441
+EarlyStopping counter: 1 out of 10
+
+Epoch 16/50
+------------------------------
+Current learning rate: 0.000044
+Train | Loss: 0.3746 | Acc: 0.8933 | F1: 0.9017 | AUC: 0.9727
+Val   | Loss: 0.6233 | Acc: 0.7647 | F1: 0.6262 | AUC: 0.9538
+EarlyStopping counter: 2 out of 10
+
+Epoch 17/50
+------------------------------
+Current learning rate: 0.000043
+Train | Loss: 0.3674 | Acc: 0.8902 | F1: 0.8994 | AUC: 0.9734
+Val   | Loss: 0.4549 | Acc: 0.8794 | F1: 0.7453 | AUC: 0.9532
+*** New best model for Fold 10 saved with Val F1: 0.7453 at epoch 17 ***
+EarlyStopping: Validation score improved (0.674286 --> 0.745342). Resetting counter.
+
+Epoch 18/50
+------------------------------
+Current learning rate: 0.000042
+Train | Loss: 0.3200 | Acc: 0.9075 | F1: 0.9141 | AUC: 0.9802
+Val   | Loss: 0.5131 | Acc: 0.8353 | F1: 0.6989 | AUC: 0.9554
+EarlyStopping counter: 1 out of 10
+
+Epoch 19/50
+------------------------------
+Current learning rate: 0.000041
+Train | Loss: 0.2693 | Acc: 0.9252 | F1: 0.9293 | AUC: 0.9861
+Val   | Loss: 0.3904 | Acc: 0.9000 | F1: 0.7875 | AUC: 0.9640
+*** New best model for Fold 10 saved with Val F1: 0.7875 at epoch 19 ***
+EarlyStopping: Validation score improved (0.745342 --> 0.787500). Resetting counter.
+
+Epoch 20/50
+------------------------------
+Current learning rate: 0.000039
+Train | Loss: 0.2609 | Acc: 0.9299 | F1: 0.9337 | AUC: 0.9865
+Val   | Loss: 0.4948 | Acc: 0.8500 | F1: 0.7151 | AUC: 0.9610
+EarlyStopping counter: 1 out of 10
+
+Epoch 21/50
+------------------------------
+Current learning rate: 0.000038
+Train | Loss: 0.2472 | Acc: 0.9346 | F1: 0.9376 | AUC: 0.9878
+Val   | Loss: 0.2953 | Acc: 0.9176 | F1: 0.8205 | AUC: 0.9784
+*** New best model for Fold 10 saved with Val F1: 0.8205 at epoch 21 ***
+EarlyStopping: Validation score improved (0.787500 --> 0.820513). Resetting counter.
+
+Epoch 22/50
+------------------------------
+Current learning rate: 0.000036
+Train | Loss: 0.2771 | Acc: 0.9301 | F1: 0.9336 | AUC: 0.9852
+Val   | Loss: 0.4952 | Acc: 0.8441 | F1: 0.7072 | AUC: 0.9560
+EarlyStopping counter: 1 out of 10
+
+Epoch 23/50
+------------------------------
+Current learning rate: 0.000035
+Train | Loss: 0.2294 | Acc: 0.9365 | F1: 0.9396 | AUC: 0.9897
+Val   | Loss: 0.3147 | Acc: 0.8912 | F1: 0.7784 | AUC: 0.9810
+EarlyStopping counter: 2 out of 10
+
+Epoch 24/50
+------------------------------
+Current learning rate: 0.000033
+Train | Loss: 0.1544 | Acc: 0.9593 | F1: 0.9605 | AUC: 0.9953
+Val   | Loss: 0.3342 | Acc: 0.9206 | F1: 0.8163 | AUC: 0.9776
+EarlyStopping counter: 3 out of 10
+
+Epoch 25/50
+------------------------------
+Current learning rate: 0.000031
+Train | Loss: 0.1616 | Acc: 0.9605 | F1: 0.9617 | AUC: 0.9953
+Val   | Loss: 0.3288 | Acc: 0.8941 | F1: 0.7882 | AUC: 0.9837
+EarlyStopping counter: 4 out of 10
+
+Epoch 26/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 0.1645 | Acc: 0.9537 | F1: 0.9553 | AUC: 0.9948
+Val   | Loss: 0.3374 | Acc: 0.8941 | F1: 0.7857 | AUC: 0.9771
+EarlyStopping counter: 5 out of 10
+
+Epoch 27/50
+------------------------------
+Current learning rate: 0.000028
+Train | Loss: 0.1500 | Acc: 0.9632 | F1: 0.9641 | AUC: 0.9961
+Val   | Loss: 0.2849 | Acc: 0.9441 | F1: 0.8690 | AUC: 0.9828
+*** New best model for Fold 10 saved with Val F1: 0.8690 at epoch 27 ***
+EarlyStopping: Validation score improved (0.820513 --> 0.868966). Resetting counter.
+
+Epoch 28/50
+------------------------------
+Current learning rate: 0.000026
+Train | Loss: 0.1006 | Acc: 0.9749 | F1: 0.9754 | AUC: 0.9979
+Val   | Loss: 0.3429 | Acc: 0.9647 | F1: 0.9091 | AUC: 0.9858
+*** New best model for Fold 10 saved with Val F1: 0.9091 at epoch 28 ***
+EarlyStopping: Validation score improved (0.868966 --> 0.909091). Resetting counter.
+
+Epoch 29/50
+------------------------------
+Current learning rate: 0.000025
+Train | Loss: 0.1057 | Acc: 0.9749 | F1: 0.9753 | AUC: 0.9982
+Val   | Loss: 0.2483 | Acc: 0.9294 | F1: 0.8421 | AUC: 0.9871
+EarlyStopping counter: 1 out of 10
+
+Epoch 30/50
+------------------------------
+Current learning rate: 0.000023
+Train | Loss: 0.1093 | Acc: 0.9745 | F1: 0.9750 | AUC: 0.9975
+Val   | Loss: 0.2947 | Acc: 0.9382 | F1: 0.8511 | AUC: 0.9852
+EarlyStopping counter: 2 out of 10
+
+Epoch 31/50
+------------------------------
+Current learning rate: 0.000021
+Train | Loss: 0.0850 | Acc: 0.9784 | F1: 0.9787 | AUC: 0.9986
+Val   | Loss: 0.3020 | Acc: 0.9176 | F1: 0.8228 | AUC: 0.9856
+EarlyStopping counter: 3 out of 10
+
+Epoch 32/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 0.0872 | Acc: 0.9778 | F1: 0.9781 | AUC: 0.9985
+Val   | Loss: 0.2746 | Acc: 0.9588 | F1: 0.9000 | AUC: 0.9878
+EarlyStopping counter: 4 out of 10
+
+Epoch 33/50
+------------------------------
+Current learning rate: 0.000018
+Train | Loss: 0.0727 | Acc: 0.9827 | F1: 0.9829 | AUC: 0.9991
+Val   | Loss: 0.1905 | Acc: 0.9500 | F1: 0.8844 | AUC: 0.9925
+EarlyStopping counter: 5 out of 10
+
+Epoch 34/50
+------------------------------
+Current learning rate: 0.000016
+Train | Loss: 0.0563 | Acc: 0.9864 | F1: 0.9866 | AUC: 0.9993
+Val   | Loss: 0.2273 | Acc: 0.9676 | F1: 0.9209 | AUC: 0.9927
+*** New best model for Fold 10 saved with Val F1: 0.9209 at epoch 34 ***
+EarlyStopping: Validation score improved (0.909091 --> 0.920863). Resetting counter.
+
+Epoch 35/50
+------------------------------
+Current learning rate: 0.000015
+Train | Loss: 0.0607 | Acc: 0.9856 | F1: 0.9858 | AUC: 0.9992
+Val   | Loss: 0.2390 | Acc: 0.9441 | F1: 0.8742 | AUC: 0.9896
+EarlyStopping counter: 1 out of 10
+
+Epoch 36/50
+------------------------------
+Current learning rate: 0.000013
+Train | Loss: 0.0519 | Acc: 0.9870 | F1: 0.9871 | AUC: 0.9996
+Val   | Loss: 0.3214 | Acc: 0.9618 | F1: 0.9051 | AUC: 0.9874
+EarlyStopping counter: 2 out of 10
+
+Epoch 37/50
+------------------------------
+Current learning rate: 0.000012
+Train | Loss: 0.0580 | Acc: 0.9852 | F1: 0.9853 | AUC: 0.9994
+Val   | Loss: 0.1947 | Acc: 0.9647 | F1: 0.9143 | AUC: 0.9929
+EarlyStopping counter: 3 out of 10
+
+Epoch 38/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 0.0574 | Acc: 0.9864 | F1: 0.9866 | AUC: 0.9994
+Val   | Loss: 0.2273 | Acc: 0.9706 | F1: 0.9265 | AUC: 0.9935
+*** New best model for Fold 10 saved with Val F1: 0.9265 at epoch 38 ***
+EarlyStopping: Validation score improved (0.920863 --> 0.926471). Resetting counter.
+
+Epoch 39/50
+------------------------------
+Current learning rate: 0.000009
+Train | Loss: 0.0396 | Acc: 0.9918 | F1: 0.9918 | AUC: 0.9998
+Val   | Loss: 0.1707 | Acc: 0.9676 | F1: 0.9220 | AUC: 0.9950
+EarlyStopping counter: 1 out of 10
+
+Epoch 40/50
+------------------------------
+Current learning rate: 0.000008
+Train | Loss: 0.0381 | Acc: 0.9914 | F1: 0.9914 | AUC: 0.9995
+Val   | Loss: 0.1779 | Acc: 0.9618 | F1: 0.9091 | AUC: 0.9948
+EarlyStopping counter: 2 out of 10
+
+Epoch 41/50
+------------------------------
+Current learning rate: 0.000007
+Train | Loss: 0.0340 | Acc: 0.9920 | F1: 0.9920 | AUC: 0.9995
+Val   | Loss: 0.2358 | Acc: 0.9706 | F1: 0.9265 | AUC: 0.9934
+EarlyStopping counter: 3 out of 10
+
+Epoch 42/50
+------------------------------
+Current learning rate: 0.000006
+Train | Loss: 0.0358 | Acc: 0.9924 | F1: 0.9924 | AUC: 0.9998
+Val   | Loss: 0.2992 | Acc: 0.9647 | F1: 0.9118 | AUC: 0.9919
+EarlyStopping counter: 4 out of 10
+
+Epoch 43/50
+------------------------------
+Current learning rate: 0.000005
+Train | Loss: 0.0347 | Acc: 0.9912 | F1: 0.9912 | AUC: 0.9997
+Val   | Loss: 0.2047 | Acc: 0.9706 | F1: 0.9275 | AUC: 0.9949
+*** New best model for Fold 10 saved with Val F1: 0.9275 at epoch 43 ***
+EarlyStopping: Validation score improved (0.926471 --> 0.927536). Resetting counter.
+
+Epoch 44/50
+------------------------------
+Current learning rate: 0.000004
+Train | Loss: 0.0430 | Acc: 0.9901 | F1: 0.9902 | AUC: 0.9997
+Val   | Loss: 0.2432 | Acc: 0.9676 | F1: 0.9197 | AUC: 0.9938
+EarlyStopping counter: 1 out of 10
+
+Epoch 45/50
+------------------------------
+Current learning rate: 0.000003
+Train | Loss: 0.0370 | Acc: 0.9920 | F1: 0.9920 | AUC: 0.9995
+Val   | Loss: 0.1794 | Acc: 0.9676 | F1: 0.9220 | AUC: 0.9952
+EarlyStopping counter: 2 out of 10
+
+Epoch 46/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0294 | Acc: 0.9930 | F1: 0.9930 | AUC: 0.9997
+Val   | Loss: 0.1890 | Acc: 0.9676 | F1: 0.9209 | AUC: 0.9952
+EarlyStopping counter: 3 out of 10
+
+Epoch 47/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0299 | Acc: 0.9926 | F1: 0.9926 | AUC: 0.9999
+Val   | Loss: 0.2109 | Acc: 0.9647 | F1: 0.9130 | AUC: 0.9951
+EarlyStopping counter: 4 out of 10
+
+Epoch 48/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0462 | Acc: 0.9907 | F1: 0.9908 | AUC: 0.9996
+Val   | Loss: 0.2083 | Acc: 0.9647 | F1: 0.9130 | AUC: 0.9945
+EarlyStopping counter: 5 out of 10
+
+Epoch 49/50
+------------------------------
+Current learning rate: 0.000001
+Train | Loss: 0.0268 | Acc: 0.9936 | F1: 0.9937 | AUC: 0.9998
+Val   | Loss: 0.2173 | Acc: 0.9618 | F1: 0.9051 | AUC: 0.9950
+EarlyStopping counter: 6 out of 10
+
+Epoch 50/50
+------------------------------
+Current learning rate: 0.000001
+Train | Loss: 0.0324 | Acc: 0.9932 | F1: 0.9933 | AUC: 0.9998
+Val   | Loss: 0.2120 | Acc: 0.9676 | F1: 0.9197 | AUC: 0.9952
+EarlyStopping counter: 7 out of 10
+Using best standard model state from Fold 10 (Val F1: 0.9275)
+Saved training history plot to D:\Projects\aol-cv-dl\dementia dataset\plots\tuned_v2\training_metrics_fold_10_20251205-145156.png
+--------------------------------------------------
+Saved fold metrics plot to D:\Projects\aol-cv-dl\dementia dataset\plots\tuned_v2\fold_metrics_20251205-145156.png
+
+Average Validation metrics across completed folds:
+Accuracy:  0.9856
+Precision: 0.9467
+Recall:    0.9838
+F1 Score:  0.9647
+AUC-ROC:   0.9977
+
+Best model overall from Fold 7 with Validation F1: 0.9853
+Saved best k-fold model state from Fold 7 to D:\Projects\aol-cv-dl\dementia dataset\models\tuned_v2\vit_ti_best_kfold_model.pth
+
+==================================================
+Step 2: Testing Best Model from K-Fold
+==================================================
+
+Loading model state for final testing...
+Model loaded successfully for testing.
+Evaluating on the test set...
+
+--- Test Set Results ---
+Loss:      0.0574
+Accuracy:  0.9767
+Precision: 0.9649
+Recall:    0.9167
+F1 Score:  0.9402
+AUC-ROC:   0.9954
+
+Classification Report:
+               precision    recall  f1-score   support
+
+Non_Fractured       0.98      0.99      0.99       480
+    Fractured       0.96      0.92      0.94       120
+
+     accuracy                           0.98       600
+    macro avg       0.97      0.95      0.96       600
+ weighted avg       0.98      0.98      0.98       600
+
+Saved ROC curve plot to D:\Projects\aol-cv-dl\dementia dataset\plots\tuned_v2\test_roc_curve_20251205-145200.png
+Saved Precision-Recall curve plot to D:\Projects\aol-cv-dl\dementia dataset\plots\tuned_v2\test_pr_curve_20251205-145200.png
+
+Testing of the best k-fold model completed.
+
+==================================================
+Step 3: (Optional) Training Final Model on Full Dataset
+==================================================
+
+Starting Final Training on Full Dataset (Optional Step)...
+Original Train samples: 3400
+Final Train split samples: 3060
+Final Validation split samples: 340
+Applying SMOTE to balance the dataset...
+Original class distribution: Counter({0: 2448, 1: 612})
+Resampled class distribution: Counter({0: 2448, 1: 2448})
+Using positive weight of 4.0000 for weighted loss
+
+Starting Final Training Loop...
+
+Epoch 1/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 1.1952 | Acc: 0.5391 | F1: 0.6763 | AUC: 0.6627
+Valid | Loss: 1.3917 | Acc: 0.3265 | F1: 0.3726 | AUC: 0.7255
+*** New best model for Final Training saved with Val F1: 0.3726 at epoch 1 ***
+EarlyStopping: Best score set to 0.372603
+
+Epoch 2/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 1.0392 | Acc: 0.6291 | F1: 0.7236 | AUC: 0.7548
+Valid | Loss: 1.3147 | Acc: 0.4471 | F1: 0.4161 | AUC: 0.7632
+*** New best model for Final Training saved with Val F1: 0.4161 at epoch 2 ***
+EarlyStopping: Validation score improved (0.372603 --> 0.416149). Resetting counter.
+
+Epoch 3/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 1.0219 | Acc: 0.6414 | F1: 0.7288 | AUC: 0.7659
+Valid | Loss: 0.9481 | Acc: 0.5912 | F1: 0.4755 | AUC: 0.7869
+*** New best model for Final Training saved with Val F1: 0.4755 at epoch 3 ***
+EarlyStopping: Validation score improved (0.416149 --> 0.475472). Resetting counter.
+
+Epoch 4/50
+------------------------------
+Current learning rate: 0.000040
+Train | Loss: 0.9608 | Acc: 0.6676 | F1: 0.7441 | AUC: 0.7984
+Valid | Loss: 0.9247 | Acc: 0.5765 | F1: 0.4706 | AUC: 0.7857
+EarlyStopping counter: 1 out of 10
+
+Epoch 5/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.8864 | Acc: 0.6924 | F1: 0.7593 | AUC: 0.8280
+Valid | Loss: 0.9557 | Acc: 0.5882 | F1: 0.4853 | AUC: 0.7953
+*** New best model for Final Training saved with Val F1: 0.4853 at epoch 5 ***
+EarlyStopping: Validation score improved (0.475472 --> 0.485294). Resetting counter.
+
+Epoch 6/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.8738 | Acc: 0.7025 | F1: 0.7644 | AUC: 0.8379
+Valid | Loss: 0.9831 | Acc: 0.5324 | F1: 0.4610 | AUC: 0.8407
+EarlyStopping counter: 1 out of 10
+
+Epoch 7/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.7679 | Acc: 0.7459 | F1: 0.7922 | AUC: 0.8767
+Valid | Loss: 0.7924 | Acc: 0.6676 | F1: 0.5388 | AUC: 0.8556
+*** New best model for Final Training saved with Val F1: 0.5388 at epoch 7 ***
+EarlyStopping: Validation score improved (0.485294 --> 0.538776). Resetting counter.
+
+Epoch 8/50
+------------------------------
+Current learning rate: 0.000050
+Train | Loss: 0.7343 | Acc: 0.7595 | F1: 0.8013 | AUC: 0.8896
+Valid | Loss: 0.7651 | Acc: 0.6618 | F1: 0.5344 | AUC: 0.8881
+EarlyStopping counter: 1 out of 10
+
+Epoch 9/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.6565 | Acc: 0.7833 | F1: 0.8172 | AUC: 0.9118
+Valid | Loss: 0.6293 | Acc: 0.8029 | F1: 0.6339 | AUC: 0.8991
+*** New best model for Final Training saved with Val F1: 0.6339 at epoch 9 ***
+EarlyStopping: Validation score improved (0.538776 --> 0.633880). Resetting counter.
+
+Epoch 10/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.6082 | Acc: 0.8080 | F1: 0.8343 | AUC: 0.9266
+Valid | Loss: 0.9018 | Acc: 0.6000 | F1: 0.4963 | AUC: 0.9155
+EarlyStopping counter: 1 out of 10
+
+Epoch 11/50
+------------------------------
+Current learning rate: 0.000049
+Train | Loss: 0.5834 | Acc: 0.8088 | F1: 0.8360 | AUC: 0.9319
+Valid | Loss: 0.5822 | Acc: 0.8088 | F1: 0.6597 | AUC: 0.9231
+*** New best model for Final Training saved with Val F1: 0.6597 at epoch 11 ***
+EarlyStopping: Validation score improved (0.633880 --> 0.659686). Resetting counter.
+
+Epoch 12/50
+------------------------------
+Current learning rate: 0.000048
+Train | Loss: 0.5409 | Acc: 0.8300 | F1: 0.8510 | AUC: 0.9436
+Valid | Loss: 0.5764 | Acc: 0.7941 | F1: 0.6392 | AUC: 0.9290
+EarlyStopping counter: 1 out of 10
+
+Epoch 13/50
+------------------------------
+Current learning rate: 0.000047
+Train | Loss: 0.5169 | Acc: 0.8470 | F1: 0.8642 | AUC: 0.9479
+Valid | Loss: 0.5721 | Acc: 0.7735 | F1: 0.6280 | AUC: 0.9321
+EarlyStopping counter: 2 out of 10
+
+Epoch 14/50
+------------------------------
+Current learning rate: 0.000046
+Train | Loss: 0.4243 | Acc: 0.8727 | F1: 0.8845 | AUC: 0.9659
+Valid | Loss: 0.6627 | Acc: 0.7559 | F1: 0.5951 | AUC: 0.9139
+EarlyStopping counter: 3 out of 10
+
+Epoch 15/50
+------------------------------
+Current learning rate: 0.000045
+Train | Loss: 0.3653 | Acc: 0.8929 | F1: 0.9014 | AUC: 0.9750
+Valid | Loss: 0.3823 | Acc: 0.8794 | F1: 0.7630 | AUC: 0.9640
+*** New best model for Final Training saved with Val F1: 0.7630 at epoch 15 ***
+EarlyStopping: Validation score improved (0.659686 --> 0.763006). Resetting counter.
+
+Epoch 16/50
+------------------------------
+Current learning rate: 0.000044
+Train | Loss: 0.3610 | Acc: 0.9003 | F1: 0.9076 | AUC: 0.9759
+Valid | Loss: 0.7027 | Acc: 0.7382 | F1: 0.5973 | AUC: 0.9491
+EarlyStopping counter: 1 out of 10
+
+Epoch 17/50
+------------------------------
+Current learning rate: 0.000043
+Train | Loss: 0.2973 | Acc: 0.9188 | F1: 0.9235 | AUC: 0.9826
+Valid | Loss: 0.5762 | Acc: 0.7794 | F1: 0.6341 | AUC: 0.9472
+EarlyStopping counter: 2 out of 10
+
+Epoch 18/50
+------------------------------
+Current learning rate: 0.000042
+Train | Loss: 0.2740 | Acc: 0.9297 | F1: 0.9334 | AUC: 0.9860
+Valid | Loss: 0.4294 | Acc: 0.8618 | F1: 0.7403 | AUC: 0.9694
+EarlyStopping counter: 3 out of 10
+
+Epoch 19/50
+------------------------------
+Current learning rate: 0.000041
+Train | Loss: 0.2811 | Acc: 0.9204 | F1: 0.9250 | AUC: 0.9855
+Valid | Loss: 0.4030 | Acc: 0.8647 | F1: 0.7386 | AUC: 0.9719
+EarlyStopping counter: 4 out of 10
+
+Epoch 20/50
+------------------------------
+Current learning rate: 0.000039
+Train | Loss: 0.2647 | Acc: 0.9299 | F1: 0.9335 | AUC: 0.9864
+Valid | Loss: 0.4503 | Acc: 0.8588 | F1: 0.7209 | AUC: 0.9584
+EarlyStopping counter: 5 out of 10
+
+Epoch 21/50
+------------------------------
+Current learning rate: 0.000038
+Train | Loss: 0.2148 | Acc: 0.9447 | F1: 0.9470 | AUC: 0.9914
+Valid | Loss: 0.3406 | Acc: 0.9059 | F1: 0.8000 | AUC: 0.9774
+*** New best model for Final Training saved with Val F1: 0.8000 at epoch 21 ***
+EarlyStopping: Validation score improved (0.763006 --> 0.800000). Resetting counter.
+
+Epoch 22/50
+------------------------------
+Current learning rate: 0.000036
+Train | Loss: 0.1941 | Acc: 0.9490 | F1: 0.9508 | AUC: 0.9935
+Valid | Loss: 0.3786 | Acc: 0.9471 | F1: 0.8615 | AUC: 0.9823
+*** New best model for Final Training saved with Val F1: 0.8615 at epoch 22 ***
+EarlyStopping: Validation score improved (0.800000 --> 0.861538). Resetting counter.
+
+Epoch 23/50
+------------------------------
+Current learning rate: 0.000035
+Train | Loss: 0.1541 | Acc: 0.9593 | F1: 0.9606 | AUC: 0.9956
+Valid | Loss: 0.2365 | Acc: 0.9441 | F1: 0.8725 | AUC: 0.9868
+*** New best model for Final Training saved with Val F1: 0.8725 at epoch 23 ***
+EarlyStopping: Validation score improved (0.861538 --> 0.872483). Resetting counter.
+
+Epoch 24/50
+------------------------------
+Current learning rate: 0.000033
+Train | Loss: 0.1827 | Acc: 0.9531 | F1: 0.9546 | AUC: 0.9938
+Valid | Loss: 0.2706 | Acc: 0.9088 | F1: 0.8098 | AUC: 0.9886
+EarlyStopping counter: 1 out of 10
+
+Epoch 25/50
+------------------------------
+Current learning rate: 0.000031
+Train | Loss: 0.1380 | Acc: 0.9673 | F1: 0.9681 | AUC: 0.9963
+Valid | Loss: 0.3241 | Acc: 0.9176 | F1: 0.8205 | AUC: 0.9795
+EarlyStopping counter: 2 out of 10
+
+Epoch 26/50
+------------------------------
+Current learning rate: 0.000030
+Train | Loss: 0.1370 | Acc: 0.9661 | F1: 0.9668 | AUC: 0.9968
+Valid | Loss: 0.3728 | Acc: 0.8853 | F1: 0.7692 | AUC: 0.9801
+EarlyStopping counter: 3 out of 10
+
+Epoch 27/50
+------------------------------
+Current learning rate: 0.000028
+Train | Loss: 0.1225 | Acc: 0.9694 | F1: 0.9701 | AUC: 0.9972
+Valid | Loss: 0.2721 | Acc: 0.9265 | F1: 0.8366 | AUC: 0.9851
+EarlyStopping counter: 4 out of 10
+
+Epoch 28/50
+------------------------------
+Current learning rate: 0.000026
+Train | Loss: 0.0941 | Acc: 0.9801 | F1: 0.9803 | AUC: 0.9982
+Valid | Loss: 0.1958 | Acc: 0.9324 | F1: 0.8516 | AUC: 0.9930
+EarlyStopping counter: 5 out of 10
+
+Epoch 29/50
+------------------------------
+Current learning rate: 0.000025
+Train | Loss: 0.0986 | Acc: 0.9759 | F1: 0.9764 | AUC: 0.9980
+Valid | Loss: 0.1989 | Acc: 0.9529 | F1: 0.8889 | AUC: 0.9922
+*** New best model for Final Training saved with Val F1: 0.8889 at epoch 29 ***
+EarlyStopping: Validation score improved (0.872483 --> 0.888889). Resetting counter.
+
+Epoch 30/50
+------------------------------
+Current learning rate: 0.000023
+Train | Loss: 0.0814 | Acc: 0.9803 | F1: 0.9805 | AUC: 0.9983
+Valid | Loss: 0.3252 | Acc: 0.9559 | F1: 0.8905 | AUC: 0.9878
+*** New best model for Final Training saved with Val F1: 0.8905 at epoch 30 ***
+EarlyStopping: Validation score improved (0.888889 --> 0.890511). Resetting counter.
+
+Epoch 31/50
+------------------------------
+Current learning rate: 0.000021
+Train | Loss: 0.0801 | Acc: 0.9807 | F1: 0.9809 | AUC: 0.9988
+Valid | Loss: 0.2100 | Acc: 0.9647 | F1: 0.9143 | AUC: 0.9917
+*** New best model for Final Training saved with Val F1: 0.9143 at epoch 31 ***
+EarlyStopping: Validation score improved (0.890511 --> 0.914286). Resetting counter.
+
+Epoch 32/50
+------------------------------
+Current learning rate: 0.000020
+Train | Loss: 0.0732 | Acc: 0.9825 | F1: 0.9827 | AUC: 0.9990
+Valid | Loss: 0.1482 | Acc: 0.9500 | F1: 0.8889 | AUC: 0.9939
+EarlyStopping counter: 1 out of 10
+
+Epoch 33/50
+------------------------------
+Current learning rate: 0.000018
+Train | Loss: 0.0725 | Acc: 0.9836 | F1: 0.9837 | AUC: 0.9988
+Valid | Loss: 0.1554 | Acc: 0.9706 | F1: 0.9286 | AUC: 0.9948
+*** New best model for Final Training saved with Val F1: 0.9286 at epoch 33 ***
+EarlyStopping: Validation score improved (0.914286 --> 0.928571). Resetting counter.
+
+Epoch 34/50
+------------------------------
+Current learning rate: 0.000016
+Train | Loss: 0.0589 | Acc: 0.9844 | F1: 0.9846 | AUC: 0.9993
+Valid | Loss: 0.1811 | Acc: 0.9471 | F1: 0.8800 | AUC: 0.9941
+EarlyStopping counter: 1 out of 10
+
+Epoch 35/50
+------------------------------
+Current learning rate: 0.000015
+Train | Loss: 0.0633 | Acc: 0.9860 | F1: 0.9862 | AUC: 0.9992
+Valid | Loss: 0.1562 | Acc: 0.9735 | F1: 0.9343 | AUC: 0.9948
+*** New best model for Final Training saved with Val F1: 0.9343 at epoch 35 ***
+EarlyStopping: Validation score improved (0.928571 --> 0.934307). Resetting counter.
+
+Epoch 36/50
+------------------------------
+Current learning rate: 0.000013
+Train | Loss: 0.0602 | Acc: 0.9850 | F1: 0.9852 | AUC: 0.9992
+Valid | Loss: 0.1992 | Acc: 0.9647 | F1: 0.9143 | AUC: 0.9923
+EarlyStopping counter: 1 out of 10
+
+Epoch 37/50
+------------------------------
+Current learning rate: 0.000012
+Train | Loss: 0.0471 | Acc: 0.9893 | F1: 0.9894 | AUC: 0.9996
+Valid | Loss: 0.1997 | Acc: 0.9765 | F1: 0.9403 | AUC: 0.9941
+*** New best model for Final Training saved with Val F1: 0.9403 at epoch 37 ***
+EarlyStopping: Validation score improved (0.934307 --> 0.940299). Resetting counter.
+
+Epoch 38/50
+------------------------------
+Current learning rate: 0.000010
+Train | Loss: 0.0355 | Acc: 0.9916 | F1: 0.9916 | AUC: 0.9998
+Valid | Loss: 0.1750 | Acc: 0.9647 | F1: 0.9143 | AUC: 0.9936
+EarlyStopping counter: 1 out of 10
+
+Epoch 39/50
+------------------------------
+Current learning rate: 0.000009
+Train | Loss: 0.0321 | Acc: 0.9926 | F1: 0.9926 | AUC: 0.9998
+Valid | Loss: 0.2062 | Acc: 0.9794 | F1: 0.9481 | AUC: 0.9933
+*** New best model for Final Training saved with Val F1: 0.9481 at epoch 39 ***
+EarlyStopping: Validation score improved (0.940299 --> 0.948148). Resetting counter.
+
+Epoch 40/50
+------------------------------
+Current learning rate: 0.000008
+Train | Loss: 0.0381 | Acc: 0.9899 | F1: 0.9900 | AUC: 0.9997
+Valid | Loss: 0.1585 | Acc: 0.9765 | F1: 0.9429 | AUC: 0.9946
+EarlyStopping counter: 1 out of 10
+
+Epoch 41/50
+------------------------------
+Current learning rate: 0.000007
+Train | Loss: 0.0369 | Acc: 0.9907 | F1: 0.9908 | AUC: 0.9997
+Valid | Loss: 0.2082 | Acc: 0.9647 | F1: 0.9155 | AUC: 0.9923
+EarlyStopping counter: 2 out of 10
+
+Epoch 42/50
+------------------------------
+Current learning rate: 0.000006
+Train | Loss: 0.0314 | Acc: 0.9928 | F1: 0.9928 | AUC: 0.9998
+Valid | Loss: 0.2268 | Acc: 0.9735 | F1: 0.9343 | AUC: 0.9928
+EarlyStopping counter: 3 out of 10
+
+Epoch 43/50
+------------------------------
+Current learning rate: 0.000005
+Train | Loss: 0.0299 | Acc: 0.9930 | F1: 0.9930 | AUC: 0.9998
+Valid | Loss: 0.1972 | Acc: 0.9735 | F1: 0.9343 | AUC: 0.9942
+EarlyStopping counter: 4 out of 10
+
+Epoch 44/50
+------------------------------
+Current learning rate: 0.000004
+Train | Loss: 0.0303 | Acc: 0.9940 | F1: 0.9941 | AUC: 0.9998
+Valid | Loss: 0.1919 | Acc: 0.9706 | F1: 0.9275 | AUC: 0.9932
+EarlyStopping counter: 5 out of 10
+
+Epoch 45/50
+------------------------------
+Current learning rate: 0.000003
+Train | Loss: 0.0360 | Acc: 0.9907 | F1: 0.9908 | AUC: 0.9998
+Valid | Loss: 0.1873 | Acc: 0.9765 | F1: 0.9412 | AUC: 0.9950
+EarlyStopping counter: 6 out of 10
+
+Epoch 46/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0250 | Acc: 0.9940 | F1: 0.9941 | AUC: 0.9999
+Valid | Loss: 0.1962 | Acc: 0.9794 | F1: 0.9481 | AUC: 0.9946
+EarlyStopping counter: 7 out of 10
+
+Epoch 47/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0286 | Acc: 0.9920 | F1: 0.9920 | AUC: 0.9998
+Valid | Loss: 0.1777 | Acc: 0.9765 | F1: 0.9412 | AUC: 0.9948
+EarlyStopping counter: 8 out of 10
+
+Epoch 48/50
+------------------------------
+Current learning rate: 0.000002
+Train | Loss: 0.0246 | Acc: 0.9949 | F1: 0.9949 | AUC: 0.9999
+Valid | Loss: 0.1843 | Acc: 0.9765 | F1: 0.9412 | AUC: 0.9946
+EarlyStopping counter: 9 out of 10
+
+Epoch 49/50
+------------------------------
+Current learning rate: 0.000001
+Train | Loss: 0.0280 | Acc: 0.9938 | F1: 0.9939 | AUC: 0.9999
+Valid | Loss: 0.1803 | Acc: 0.9765 | F1: 0.9412 | AUC: 0.9952
+EarlyStopping counter: 10 out of 10
+Early stopping triggered at epoch 49 for Final Training
+
+Final training complete. Best model from this run saved at epoch 39 with Validation F1: 0.9481 to D:\Projects\aol-cv-dl\dementia dataset\models\tuned_v2\vit_ti_final_trained_model.pth
+Saved training history plot to D:\Projects\aol-cv-dl\dementia dataset\plots\tuned_v2\training_metrics_final_20251205-150402.png
+
+--- Testing Final Trained Model ---
+
+Loading model state for final testing...
+Model loaded successfully for testing.
+Evaluating on the test set...
+
+--- Test Set Results ---
+Loss:      0.0759
+Accuracy:  0.9750
+Precision: 0.9412
+Recall:    0.9333
+F1 Score:  0.9372
+AUC-ROC:   0.9947
+
+Classification Report:
+               precision    recall  f1-score   support
+
+Non_Dementia       0.98      0.99      0.98       480
+    Dementia       0.94      0.93      0.94       120
+
+     accuracy                           0.97       600
+    macro avg       0.96      0.96      0.96       600
+ weighted avg       0.97      0.97      0.97       600
+
+Saved ROC curve plot to D:\Projects\aol-cv-dl\dementia dataset\plots\tuned_v2\test_roc_curve_20251205-150404.png
+Saved Precision-Recall curve plot to D:\Projects\aol-cv-dl\dementia dataset\plots\tuned_v2\test_pr_curve_20251205-150404.png
