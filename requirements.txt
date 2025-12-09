@@ -1,11 +1,11 @@
-torch==2.3.1+cpu
-torchvision==0.18.1+cpu
-torchaudio==2.3.1+cpu
---extra-index-url https://download.pytorch.org/whl/cpu
 
-timm==1.0.9
-pillow
-numpy
-matplotlib
+torch
+torchvision
+timm
 pytorch-grad-cam
+
+
 streamlit
+numpy
+pillow
+matplotlib
