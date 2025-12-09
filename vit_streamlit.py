@@ -133,6 +133,9 @@ st.caption(
     f"Model: {MODEL_NAME} | Device: {DEVICE} | Checkpoint: {MODEL_PATH.relative_to(SCRIPT_DIR)}"
 )
 
+if st.button("BALON!!!!"):
+    st.balloons()
+
 model = load_model()
 if model is None:
     st.stop()
@@ -162,3 +165,4 @@ if uploaded is not None:
         st.info("No attention heatmap could be generated for this image.")
 else:
     st.info("Upload an image to get a prediction.")
+
